@@ -1,7 +1,13 @@
-import type { NextConfig } from "next";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import withPWA from "next-pwa";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  turbopack: {},
 };
 
-export default nextConfig;
+export default withPWA({
+  dest: "public",
+  register: true,
+  skipWaiting: true,
+})(nextConfig as any);

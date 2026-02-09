@@ -59,8 +59,8 @@ export default async function SurahPage({
       </Link>
 
       <LanguageSelector currentLang={lang} id={id} />
-      
-      <AudioPlayer surahId={id} />
+
+      <AudioPlayer surahId={id} lang={lang} />
 
       <div className="space-y-10 mt-6">
         {verses.map((v) => (
