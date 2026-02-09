@@ -1,5 +1,6 @@
 import Link from "next/link";
 import LanguageSelector from "@/app/components/language-selector";
+import AudioPlayer from "@/app/components/audio-player";
 
 type Word = {
   transliteration?: { text: string };
@@ -58,6 +59,8 @@ export default async function SurahPage({
       </Link>
 
       <LanguageSelector currentLang={lang} id={id} />
+      
+      <AudioPlayer surahId={id} />
 
       <div className="space-y-10 mt-6">
         {verses.map((v) => (
