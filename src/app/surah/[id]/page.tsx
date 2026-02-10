@@ -1,5 +1,4 @@
 import Link from "next/link";
-import LanguageSelector from "@/app/components/language-selector";
 import AudioPlayer from "@/app/components/audio-player";
 
 const backLabels: Record<string, string> = {
@@ -62,35 +61,31 @@ export default async function SurahPage({
 
   return (
     <main className="max-w-3xl mx-auto p-6">
-      <Link href="/" className="text-blue-500 mb-4 inline-block">
+      <Link
+        href={`/?lang=${lang}`}
+        className="text-blue-500 mb-4 inline-block"
+      >
         ← {backLabels[lang] || "Back"}
       </Link>
-
-      <LanguageSelector currentLang={lang} id={id} />
 
       <AudioPlayer surahId={id} lang={lang} />
 
       <div className="space-y-10 mt-6">
         {verses.map((v) => (
           <div key={v.id} className="border-b pb-8">
-
-            {/* Arabic */}
             <p className="arabic text-right text-4xl leading-loose mb-3">
               {v.text_uthmani}
             </p>
 
-            {/* Transliteration */}
             <p className="italic text-gray-500 mb-2">
               {buildTransliteration(v.words)}
             </p>
 
-            {/* Translation */}
             <p
               dangerouslySetInnerHTML={{
                 __html: v.translations?.[0]?.text || "",
               }}
             />
-
           </div>
         ))}
       </div>
