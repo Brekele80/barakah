@@ -47,6 +47,7 @@ export default function Header() {
           alt="Barakah"
           width={160}
           height={60}
+          className="dark:invert-0 invert"
           priority
         />
       </Link>

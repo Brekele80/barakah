@@ -1,6 +1,6 @@
 "use client";
 
-import { useSearchParams, useRouter } from "next/navigation";
+import { useSearchParams, useRouter, usePathname } from "next/navigation";
 
 const langs = [
   { id: "20", name: "English" },
@@ -13,16 +13,20 @@ const langs = [
 export default function GlobalLanguageSelector() {
   const params = useSearchParams();
   const router = useRouter();
+  const pathname = usePathname();
 
   const current = params.get("lang") || "20";
 
   function changeLang(newLang: string) {
+    // persist
     localStorage.setItem("lang", newLang);
 
+    // update query
     const newParams = new URLSearchParams(params.toString());
     newParams.set("lang", newLang);
 
-    router.push(`/?${newParams.toString()}`);
+    // stay on SAME PAGE
+    router.push(`${pathname}?${newParams.toString()}`);
   }
 
   return (
