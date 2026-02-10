@@ -1,11 +1,13 @@
 import Link from "next/link";
-import GlobalLanguageSelector from "./components/global-language-selector";
+import GlobalLanguageSelector from "@/app/components/global-language-selector";
+import ContinueReading from "@/app/components/continue-reading";
 
 type Surah = {
   id: number;
   name_simple: string;
   name_arabic: string;
   translated_name: { name: string };
+  verses_count: number;
 };
 
 const langMap: Record<string, string> = {
@@ -43,6 +45,8 @@ export default async function HomePage({
         <GlobalLanguageSelector />
       </div>
 
+      <ContinueReading lang={lang} />
+
       <div className="grid gap-3">
         {surahs.map((s) => (
           <Link
@@ -52,7 +56,7 @@ export default async function HomePage({
           >
             <div className="flex justify-between">
               <span>
-                {s.id}. {s.name_simple}
+                {s.id}. {s.name_simple} ({s.verses_count})
               </span>
               <span>{s.name_arabic}</span>
             </div>

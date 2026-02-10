@@ -1,5 +1,8 @@
 import Link from "next/link";
 import AudioPlayer from "@/app/components/audio-player";
+import VerseBlock from "@/app/components/verse-block";
+import ScrollToAyah from "@/app/components/scroll-to-ayah";
+import BackToTop from "@/app/components/back-to-top";
 
 const backLabels: Record<string, string> = {
   "20": "Back",
@@ -15,22 +18,34 @@ type Word = {
 
 type Verse = {
   id: number;
+  verse_number: number;
   text_uthmani: string;
   words: Word[];
   translations: { text: string }[];
 };
 
-function buildTransliteration(words: Word[]) {
-  return words
-    ?.map((w) => w.transliteration?.text)
-    .filter(Boolean)
-    .join(" ");
+async function getSurahInfo(id: string, lang: string) {
+  const langMap: Record<string, string> = {
+    "20": "en",
+    "33": "id",
+    "31": "tr",
+    "85": "fr",
+    "97": "ur",
+  };
+
+  const apiLang = langMap[lang] || "en";
+
+  const res = await fetch(
+    `https://api.quran.com/api/v4/chapters/${id}?language=${apiLang}`
+  );
+  const data = await res.json();
+  return data.chapter;
 }
 
 async function getData(id: string, lang: string): Promise<Verse[]> {
   try {
     const res = await fetch(
-      `https://api.quran.com/api/v4/verses/by_chapter/${id}?words=true&translations=${lang}&fields=text_uthmani`,
+      `https://api.quran.com/api/v4/verses/by_chapter/${id}?words=true&translations=${lang}&fields=text_uthmani&per_page=300`,
       {
         headers: { Accept: "application/json" },
         next: { revalidate: 3600 },
@@ -57,38 +72,34 @@ export default async function SurahPage({
   const { id } = await params;
   const { lang = "20" } = await searchParams;
 
-  const verses = await getData(id, lang);
+  const [verses, chapter] = await Promise.all([
+    getData(id, lang),
+    getSurahInfo(id, lang),
+  ]);
 
   return (
     <main className="max-w-3xl mx-auto p-6">
-      <Link
-        href={`/?lang=${lang}`}
-        className="text-blue-500 mb-4 inline-block"
-      >
+      <Link href={`/?lang=${lang}`} className="text-blue-500 mb-4 inline-block">
         ← {backLabels[lang] || "Back"}
       </Link>
 
+      {/* Surah title */}
+      <div className="text-center mb-6">
+        <h1 className="text-3xl font-bold">{chapter.name_simple}</h1>
+        <p className="text-xl arabic">{chapter.name_arabic}</p>
+        <p className="text-gray-500">{chapter.translated_name.name}</p>
+      </div>
+
       <AudioPlayer surahId={id} lang={lang} />
+      <ScrollToAyah />
 
       <div className="space-y-10 mt-6">
         {verses.map((v) => (
-          <div key={v.id} className="border-b pb-8">
-            <p className="arabic text-right text-4xl leading-loose mb-3">
-              {v.text_uthmani}
-            </p>
-
-            <p className="italic text-gray-500 mb-2">
-              {buildTransliteration(v.words)}
-            </p>
-
-            <p
-              dangerouslySetInnerHTML={{
-                __html: v.translations?.[0]?.text || "",
-              }}
-            />
-          </div>
+          <VerseBlock key={v.id} verse={v} surahId={id} lang={lang} />
         ))}
       </div>
+      <BackToTop />
     </main>
   );
 }
+
