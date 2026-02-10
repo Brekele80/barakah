@@ -70,7 +70,13 @@ export default async function SurahPage({
   searchParams: Promise<{ lang?: string }>;
 }) {
   const { id } = await params;
-  const { lang = "20" } = await searchParams;
+  const { lang: urlLang } = await searchParams;
+
+  const lang =
+    urlLang ??
+    (typeof window !== "undefined"
+      ? localStorage.getItem("lang") ?? "20"
+      : "20");
 
   const [verses, chapter] = await Promise.all([
     getData(id, lang),
