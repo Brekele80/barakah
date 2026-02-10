@@ -8,13 +8,17 @@ type Word = {
   transliteration?: { text: string };
 };
 
-type VerseApi = {
+type VerseApiResponse = {
   verse: {
     verse_key: string;
     text_uthmani: string;
     words: Word[];
     translations: { text: string }[];
   };
+};
+
+type SearchResultApi = {
+  verse_key: string;
 };
 
 type VerseDetail = {
@@ -24,6 +28,7 @@ type VerseDetail = {
   translation: string;
 };
 
+/** UI language → search API language */
 const langMap: Record<string, string> = {
   "20": "en",
   "33": "id",
@@ -32,7 +37,19 @@ const langMap: Record<string, string> = {
   "97": "ur",
 };
 
-const labels: Record<string, { title: string; placeholder: string; button: string }> = {
+/** UI language → translation ID (IMPORTANT) */
+const translationMap: Record<string, string> = {
+  "20": "20", // English
+  "33": "33",  // Indonesian
+  "31": "77",  // Turkish
+  "85": "136", // French
+  "97": "97",  // Urdu
+};
+
+const labels: Record<
+  string,
+  { title: string; placeholder: string; button: string }
+> = {
   "20": { title: "Search", placeholder: "Search...", button: "Search" },
   "33": { title: "Cari", placeholder: "Cari...", button: "Cari" },
   "31": { title: "Ara", placeholder: "Ara...", button: "Ara" },
@@ -45,7 +62,9 @@ export default function SearchContent() {
 
   const query = params.get("q") ?? "";
   const lang = params.get("lang") ?? "20";
+
   const apiLang = langMap[lang] ?? "en";
+  const translationId = translationMap[lang] ?? "131";
 
   const [results, setResults] = useState<VerseDetail[]>([]);
   const [loading, setLoading] = useState(false);
@@ -56,6 +75,7 @@ export default function SearchContent() {
     async function run() {
       setLoading(true);
 
+      // search API
       const res = await fetch(
         `https://api.quran.com/api/v4/search?q=${encodeURIComponent(
           query
@@ -63,20 +83,19 @@ export default function SearchContent() {
       );
 
       const data = await res.json();
-      const raw = data.search?.results ?? [];
+      const raw: SearchResultApi[] = data.search?.results ?? [];
 
       const detailed: VerseDetail[] = await Promise.all(
-        raw.map(async (r: { verse_key: string }) => {
+        raw.map(async (r) => {
           const verseRes = await fetch(
-            `https://api.quran.com/api/v4/verses/by_key/${r.verse_key}?words=true&translations=${lang}&fields=text_uthmani`
+            `https://api.quran.com/api/v4/verses/by_key/${r.verse_key}?words=true&translations=${translationId}&fields=text_uthmani`
           );
 
-          const verseData: VerseApi = await verseRes.json();
+          const verseData: VerseApiResponse = await verseRes.json();
           const v = verseData.verse;
 
-          const transliteration = v.words
-            ?.map((w: Word) => w.transliteration?.text ?? "")
-            .join(" ");
+          const transliteration =
+            v.words?.map((w) => w.transliteration?.text ?? "").join(" ") ?? "";
 
           return {
             verse_key: r.verse_key,
@@ -92,7 +111,7 @@ export default function SearchContent() {
     }
 
     run();
-  }, [query, lang, apiLang]);
+  }, [query, apiLang, translationId]);
 
   const ui = labels[lang] ?? labels["20"];
 

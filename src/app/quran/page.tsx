@@ -1,5 +1,4 @@
 import Link from "next/link";
-import GlobalLanguageSelector from "@/app/components/global-language-selector";
 import ContinueReading from "@/app/components/continue-reading";
 
 type Surah = {
@@ -43,10 +42,10 @@ async function getSurahs(lang: string): Promise<Surah[]> {
   return data.chapters;
 }
 
-export default async function HomePage({
+export default async function QuranPage({
   searchParams,
 }: {
-  searchParams: Promise<{ lang?: string }>;
+  searchParams: { lang?: string };
 }) {
   const { lang = "20" } = await searchParams;
   const surahs = await getSurahs(lang);
@@ -58,7 +57,6 @@ export default async function HomePage({
       {/* HEADER */}
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-bold">Qur&apos;an</h1>
-        <GlobalLanguageSelector />
       </div>
 
       {/* SEARCH */}

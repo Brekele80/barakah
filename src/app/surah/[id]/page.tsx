@@ -42,10 +42,20 @@ async function getSurahInfo(id: string, lang: string) {
   return data.chapter;
 }
 
+const translationMap: Record<string, string> = {
+  "20": "20", // English
+  "33": "33",  // Indonesian
+  "31": "77",  // Turkish
+  "85": "136", // French
+  "97": "97",  // Urdu
+};
+
 async function getData(id: string, lang: string): Promise<Verse[]> {
   try {
+    const translationId = translationMap[lang] || "131";
+
     const res = await fetch(
-      `https://api.quran.com/api/v4/verses/by_chapter/${id}?words=true&translations=${lang}&fields=text_uthmani&per_page=300`,
+      `https://api.quran.com/api/v4/verses/by_chapter/${id}?words=true&translations=${translationId}&fields=text_uthmani`,
       {
         headers: { Accept: "application/json" },
         next: { revalidate: 3600 },
@@ -61,6 +71,7 @@ async function getData(id: string, lang: string): Promise<Verse[]> {
     return [];
   }
 }
+
 
 export default async function SurahPage({
   params,

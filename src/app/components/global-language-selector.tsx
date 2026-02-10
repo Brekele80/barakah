@@ -1,7 +1,6 @@
 "use client";
 
-import { useRouter, useSearchParams } from "next/navigation";
-import { getStoredLang, setStoredLang } from "@/lib/storage";
+import { useSearchParams, useRouter } from "next/navigation";
 
 const langs = [
   { id: "20", name: "English" },
@@ -12,14 +11,13 @@ const langs = [
 ];
 
 export default function GlobalLanguageSelector() {
-  const router = useRouter();
   const params = useSearchParams();
+  const router = useRouter();
 
-  const urlLang = params.get("lang");
-  const currentLang = urlLang ?? getStoredLang();
+  const current = params.get("lang") || "20";
 
-  function changeLanguage(newLang: string) {
-    setStoredLang(newLang);
+  function changeLang(newLang: string) {
+    localStorage.setItem("lang", newLang);
 
     const newParams = new URLSearchParams(params.toString());
     newParams.set("lang", newLang);
@@ -29,9 +27,9 @@ export default function GlobalLanguageSelector() {
 
   return (
     <select
-      value={currentLang}
-      onChange={(e) => changeLanguage(e.target.value)}
-      className="border rounded p-2 bg-white text-black dark:bg-gray-900 dark:text-white"
+      value={current}
+      onChange={(e) => changeLang(e.target.value)}
+      className="border rounded p-2 bg-white dark:bg-gray-900"
     >
       {langs.map((l) => (
         <option key={l.id} value={l.id}>

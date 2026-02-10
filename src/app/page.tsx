@@ -1,41 +1,100 @@
 import Link from "next/link";
-import Image from "next/image";
-import GlobalLanguageSelector from "./components/global-language-selector";
 
-export default function DashboardPage({
+type DashboardUI = {
+  quran: string;
+  hadith: string;
+  zakat: string;
+  tafsir: string;
+  duas: string;
+  qibla: string;
+  stories: string;
+  donations: string;
+  tagline: string;
+};
+
+const dashboardText: Record<string, DashboardUI> = {
+  "20": {
+    quran: "The Holy Qur'an",
+    hadith: "Hadith",
+    zakat: "Zakat Calculator",
+    tafsir: "Tafsir",
+    duas: "Duas",
+    qibla: "Qibla",
+    stories: "Stories of the Prophets",
+    donations: "Donations",
+    tagline: "Faith. Giving. Guidance.",
+  },
+
+  "33": {
+    quran: "Al-Qur'an",
+    hadith: "Hadits",
+    zakat: "Kalkulator Zakat",
+    tafsir: "Tafsir",
+    duas: "Doa",
+    qibla: "Arah Kiblat",
+    stories: "Kisah Para Nabi",
+    donations: "Donasi",
+    tagline: "Faith. Giving. Guidance.",
+  },
+
+  "31": {
+    quran: "Kur'an-ı Kerim",
+    hadith: "Hadis",
+    zakat: "Zekat Hesaplayıcı",
+    tafsir: "Tefsir",
+    duas: "Dualar",
+    qibla: "Kıble",
+    stories: "Peygamber Hikayeleri",
+    donations: "Bağış",
+    tagline: "Faith. Giving. Guidance.",
+  },
+
+  "85": {
+    quran: "Le Saint Coran",
+    hadith: "Hadith",
+    zakat: "Calculateur de Zakat",
+    tafsir: "Tafsir",
+    duas: "Invocations",
+    qibla: "Qibla",
+    stories: "Histoires des Prophètes",
+    donations: "Dons",
+    tagline: "Faith. Giving. Guidance.",
+  },
+
+  "97": {
+    quran: "القرآن الكريم",
+    hadith: "حدیث",
+    zakat: "زکوٰۃ کیلکولیٹر",
+    tafsir: "تفسیر",
+    duas: "دعائیں",
+    qibla: "قبلہ",
+    stories: "انبیاء کے واقعات",
+    donations: "عطیات",
+    tagline: "Faith. Giving. Guidance.",
+  },
+};
+
+export default async function DashboardPage({
   searchParams,
 }: {
-  searchParams: { lang?: string };
+  searchParams: Promise<{ lang?: string }>;
 }) {
-  const lang = searchParams?.lang || "20";
+  const { lang = "20" } = await searchParams;
+
+  const t = dashboardText[lang] ?? dashboardText["20"];
 
   return (
     <main className="max-w-3xl mx-auto p-6 text-center">
 
-      {/* LOGO */}
-      <div className="flex flex-col items-center mb-4">
-        <Image
-          src="/barakah-logo.png"
-          alt="Barakah"
-          width={220}
-          height={80}
-          priority
-        />
-        <p className="text-gray-500 mt-2">
-          Faith. Giving. Guidance.
-        </p>
-      </div>
+      {/* TAGLINE */}
+      <p className="text-gray-500 mb-6">{t.tagline}</p>
 
-      {/* LANGUAGE */}
-      <div className="flex justify-center mb-6">
-        <GlobalLanguageSelector />
-      </div>
-
-      {/* PLACEHOLDER widgets */}
+      {/* WIDGET PLACEHOLDERS */}
       <div className="grid grid-cols-2 gap-4 mb-6">
         <div className="border rounded-xl p-4">
           Islamic Date loading...
         </div>
+
         <div className="border rounded-xl p-4">
           Prayer times loading...
         </div>
@@ -50,35 +109,35 @@ export default function DashboardPage({
       <div className="grid gap-4">
 
         <FeatureCard href="/quran" lang={lang}>
-          The Holy Qur&apos;an
+          {t.quran}
         </FeatureCard>
 
         <FeatureCard href="/hadith" lang={lang}>
-          Hadith
+          {t.hadith}
         </FeatureCard>
 
         <FeatureCard href="/zakat" lang={lang}>
-          Zakat Calculator
+          {t.zakat}
         </FeatureCard>
 
         <FeatureCard href="/tafsir" lang={lang}>
-          Tafsir
+          {t.tafsir}
         </FeatureCard>
 
         <FeatureCard href="/duas" lang={lang}>
-          Duas
+          {t.duas}
         </FeatureCard>
 
         <FeatureCard href="/qibla" lang={lang}>
-          Qibla
+          {t.qibla}
         </FeatureCard>
 
         <FeatureCard href="/stories" lang={lang}>
-          Stories of the Prophets
+          {t.stories}
         </FeatureCard>
 
         <FeatureCard href="/donations" lang={lang}>
-          Donations
+          {t.donations}
         </FeatureCard>
 
       </div>
@@ -88,12 +147,12 @@ export default function DashboardPage({
 
 function FeatureCard({
   href,
-  children,
   lang,
+  children,
 }: {
   href: string;
-  children: React.ReactNode;
   lang: string;
+  children: React.ReactNode;
 }) {
   return (
     <Link
