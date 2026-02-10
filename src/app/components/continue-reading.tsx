@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useSyncExternalStore } from "react";
 
 type LastRead = {
   surah: string;
@@ -16,7 +16,9 @@ const labels: Record<string, string> = {
   "97": "پڑھنا جاری رکھیں",
 };
 
-function readLastRead(): LastRead {
+let cached: LastRead = null;
+
+function getSnapshot(): LastRead {
   if (typeof window === "undefined") return null;
 
   try {
@@ -24,17 +26,29 @@ function readLastRead(): LastRead {
     if (!raw) return null;
 
     const parsed = JSON.parse(raw);
-    if (!parsed?.surah || !parsed?.ayah) return null;
 
-    return parsed;
+    if (
+      cached &&
+      parsed.surah === cached.surah &&
+      parsed.ayah === cached.ayah
+    ) {
+      return cached; // return SAME reference
+    }
+
+    cached = parsed;
+    return cached;
   } catch {
     return null;
   }
 }
 
+function subscribe(callback: () => void) {
+  window.addEventListener("storage", callback);
+  return () => window.removeEventListener("storage", callback);
+}
+
 export default function ContinueReading({ lang }: { lang: string }) {
-  // initialize directly from localStorage
-  const [last] = useState<LastRead>(readLastRead);
+  const last = useSyncExternalStore(subscribe, getSnapshot, () => null);
 
   if (!last) return null;
 

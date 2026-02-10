@@ -2,7 +2,7 @@ import "./globals.css";
 import Link from "next/link";
 import { ThemeProvider } from "next-themes";
 import ThemeToggle from "./theme-toggle";
-import { BookmarkCheck } from "lucide-react";
+import { Bookmark } from "lucide-react";
 
 export default function RootLayout({
   children,
@@ -14,6 +14,25 @@ export default function RootLayout({
       <head>
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000000" />
+
+        {/* restore language on first load */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(){
+                try{
+                  const lang = localStorage.getItem("lang");
+                  if(!lang) return;
+                  const url = new URL(window.location.href);
+                  if(!url.searchParams.get("lang")){
+                    url.searchParams.set("lang", lang);
+                    window.location.replace(url.toString());
+                  }
+                }catch(e){}
+              })();
+            `,
+          }}
+        />
       </head>
 
       <body>
@@ -28,7 +47,7 @@ export default function RootLayout({
 
                 <div className="flex items-center gap-4">
                   <Link href="/bookmarks" className="text-xl">
-                    <BookmarkCheck className="w-6 h-6 fill-current" />
+                    <Bookmark className="w-6 h-6 fill-current" />
                   </Link>
 
                   <ThemeToggle />
