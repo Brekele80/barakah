@@ -1,108 +1,106 @@
 import Link from "next/link";
-import GlobalLanguageSelector from "@/app/components/global-language-selector";
-import ContinueReading from "@/app/components/continue-reading";
+import Image from "next/image";
+import GlobalLanguageSelector from "./components/global-language-selector";
 
-type Surah = {
-  id: number;
-  name_simple: string;
-  name_arabic: string;
-  translated_name: { name: string };
-  verses_count: number;
-};
-
-type SearchUI = {
-  placeholder: string;
-  button: string;
-};
-
-const langMap: Record<string, string> = {
-  "20": "en",
-  "33": "id",
-  "31": "tr",
-  "85": "fr",
-  "97": "ur",
-};
-
-const searchLabels: Record<string, SearchUI> = {
-  "20": { placeholder: "Search...", button: "Search" },
-  "33": { placeholder: "Cari...", button: "Cari" },
-  "31": { placeholder: "Ara...", button: "Ara" },
-  "85": { placeholder: "Recherche...", button: "Rechercher" },
-  "97": { placeholder: "تلاش کریں...", button: "تلاش" },
-};
-
-async function getSurahs(lang: string): Promise<Surah[]> {
-  const apiLang = langMap[lang] || "en";
-
-  const res = await fetch(
-    `https://api.quran.com/api/v4/chapters?language=${apiLang}`,
-    { cache: "force-cache" }
-  );
-
-  const data = await res.json();
-  return data.chapters;
-}
-
-export default async function HomePage({
+export default function DashboardPage({
   searchParams,
 }: {
-  searchParams: Promise<{ lang?: string }>;
+  searchParams: { lang?: string };
 }) {
-  const { lang = "20" } = await searchParams;
-  const surahs = await getSurahs(lang);
-
-  const ui = searchLabels[lang] || searchLabels["20"];
+  const lang = searchParams?.lang || "20";
 
   return (
-    <main className="max-w-3xl mx-auto p-6">
-      {/* HEADER */}
-      <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold">Qur&apos;an</h1>
+    <main className="max-w-3xl mx-auto p-6 text-center">
+
+      {/* LOGO */}
+      <div className="flex flex-col items-center mb-4">
+        <Image
+          src="/barakah-logo.png"
+          alt="Barakah"
+          width={220}
+          height={80}
+          priority
+        />
+        <p className="text-gray-500 mt-2">
+          Faith. Giving. Guidance.
+        </p>
+      </div>
+
+      {/* LANGUAGE */}
+      <div className="flex justify-center mb-6">
         <GlobalLanguageSelector />
       </div>
 
-      {/* SEARCH */}
-      <form action="/search" className="mb-6 flex gap-2">
-        <input
-          name="q"
-          placeholder={ui.placeholder}
-          className="flex-1 border rounded-lg p-2 bg-white dark:bg-black"
-        />
+      {/* PLACEHOLDER widgets */}
+      <div className="grid grid-cols-2 gap-4 mb-6">
+        <div className="border rounded-xl p-4">
+          Islamic Date loading...
+        </div>
+        <div className="border rounded-xl p-4">
+          Prayer times loading...
+        </div>
+      </div>
 
-        <input type="hidden" name="lang" value={lang} />
+      {/* COUNTDOWN */}
+      <div className="border rounded-xl p-4 mb-8">
+        Countdown loading...
+      </div>
 
-        <button
-          type="submit"
-          className="px-4 py-2 bg-black text-white dark:bg-white dark:text-black rounded-lg"
-        >
-          {ui.button}
-        </button>
-      </form>
+      {/* FEATURES */}
+      <div className="grid gap-4">
 
-      {/* CONTINUE READING */}
-      <ContinueReading lang={lang} />
+        <FeatureCard href="/quran" lang={lang}>
+          The Holy Qur&apos;an
+        </FeatureCard>
 
-      {/* SURAH LIST */}
-      <div className="grid gap-3">
-        {surahs.map((s) => (
-          <Link
-            key={s.id}
-            href={`/surah/${s.id}?lang=${lang}`}
-            className="p-4 border rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition block"
-          >
-            <div className="flex justify-between">
-              <span>
-                {s.id}. {s.name_simple} ({s.verses_count})
-              </span>
-              <span>{s.name_arabic}</span>
-            </div>
+        <FeatureCard href="/hadith" lang={lang}>
+          Hadith
+        </FeatureCard>
 
-            <div className="text-sm text-gray-500">
-              {s.translated_name.name}
-            </div>
-          </Link>
-        ))}
+        <FeatureCard href="/zakat" lang={lang}>
+          Zakat Calculator
+        </FeatureCard>
+
+        <FeatureCard href="/tafsir" lang={lang}>
+          Tafsir
+        </FeatureCard>
+
+        <FeatureCard href="/duas" lang={lang}>
+          Duas
+        </FeatureCard>
+
+        <FeatureCard href="/qibla" lang={lang}>
+          Qibla
+        </FeatureCard>
+
+        <FeatureCard href="/stories" lang={lang}>
+          Stories of the Prophets
+        </FeatureCard>
+
+        <FeatureCard href="/donations" lang={lang}>
+          Donations
+        </FeatureCard>
+
       </div>
     </main>
+  );
+}
+
+function FeatureCard({
+  href,
+  children,
+  lang,
+}: {
+  href: string;
+  children: React.ReactNode;
+  lang: string;
+}) {
+  return (
+    <Link
+      href={`${href}?lang=${lang}`}
+      className="block p-5 border rounded-2xl hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+    >
+      {children}
+    </Link>
   );
 }

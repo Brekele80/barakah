@@ -85,7 +85,7 @@ export default async function SurahPage({
 
   return (
     <main className="max-w-3xl mx-auto p-6">
-      <Link href={`/?lang=${lang}`} className="text-blue-500 mb-4 inline-block">
+      <Link href={`/quran?lang=${lang}`} className="text-blue-500 mb-4 inline-block">
         ← {backLabels[lang] || "Back"}
       </Link>
 
