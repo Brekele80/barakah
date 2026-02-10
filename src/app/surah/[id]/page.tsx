@@ -2,6 +2,14 @@ import Link from "next/link";
 import LanguageSelector from "@/app/components/language-selector";
 import AudioPlayer from "@/app/components/audio-player";
 
+const backLabels: Record<string, string> = {
+  "20": "Back",
+  "33": "Kembali",
+  "31": "Geri",
+  "85": "Retour",
+  "97": "واپس",
+};
+
 type Word = {
   transliteration?: { text: string };
 };
@@ -55,7 +63,7 @@ export default async function SurahPage({
   return (
     <main className="max-w-3xl mx-auto p-6">
       <Link href="/" className="text-blue-500 mb-4 inline-block">
-        ← Back
+        ← {backLabels[lang] || "Back"}
       </Link>
 
       <LanguageSelector currentLang={lang} id={id} />
