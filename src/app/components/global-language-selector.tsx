@@ -3,11 +3,11 @@
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 
 const langs = [
-  { id: "20", name: "English" },
-  { id: "33", name: "Bahasa Indonesia" },
-  { id: "31", name: "Türkçe" },
-  { id: "85", name: "Français" },
-  { id: "97", name: "اردو" },
+  { id: "20", name: "UK" },
+  { id: "33", name: "ID" },
+  { id: "31", name: "TK" },
+  { id: "85", name: "FR" },
+  { id: "97", name: "PK" },
 ];
 
 export default function GlobalLanguageSelector() {
