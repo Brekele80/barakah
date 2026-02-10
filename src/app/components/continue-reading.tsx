@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState, useRef } from "react";
+import { useState } from "react";
 
 type LastRead = {
   surah: string;
@@ -16,20 +16,25 @@ const labels: Record<string, string> = {
   "97": "پڑھنا جاری رکھیں",
 };
 
-export default function ContinueReading({ lang }: { lang: string }) {
-  const [last, setLast] = useState<LastRead>(null);
-  const mounted = useRef(false);
+function readLastRead(): LastRead {
+  if (typeof window === "undefined") return null;
 
-  useEffect(() => {
-    if (mounted.current) return;
-    mounted.current = true;
-
+  try {
     const raw = localStorage.getItem("lastRead");
-    if (raw) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      setLast(JSON.parse(raw));
-    }
-  }, []);
+    if (!raw) return null;
+
+    const parsed = JSON.parse(raw);
+    if (!parsed?.surah || !parsed?.ayah) return null;
+
+    return parsed;
+  } catch {
+    return null;
+  }
+}
+
+export default function ContinueReading({ lang }: { lang: string }) {
+  // initialize directly from localStorage
+  const [last] = useState<LastRead>(readLastRead);
 
   if (!last) return null;
 
