@@ -3,6 +3,7 @@
 import PrayerWidget from "@/app/components/prayer-widget";
 import HijriWidget from "@/app/components/hijri-widget";
 import CountdownWidget from "@/app/components/countdown-widget";
+import DailyHadithWidget from "@/app/components/daily-hadith-widget";
 
 export default function DashboardWidgets({ lang }: { lang: string }) {
   return (
@@ -13,6 +14,7 @@ export default function DashboardWidgets({ lang }: { lang: string }) {
       </div>
 
       <CountdownWidget lang={lang} />
+      <DailyHadithWidget lang={lang} />
     </>
   );
 }
