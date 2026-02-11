@@ -1,4 +1,5 @@
 import Link from "next/link";
+import DashboardWidgets from "@/app/components/dashboard-widgets";
 
 type DashboardUI = {
   quran: string;
@@ -24,7 +25,6 @@ const dashboardText: Record<string, DashboardUI> = {
     donations: "Donations",
     tagline: "Faith. Giving. Guidance.",
   },
-
   "33": {
     quran: "Al-Qur'an",
     hadith: "Hadits",
@@ -36,7 +36,6 @@ const dashboardText: Record<string, DashboardUI> = {
     donations: "Donasi",
     tagline: "Faith. Giving. Guidance.",
   },
-
   "31": {
     quran: "Kur'an-ı Kerim",
     hadith: "Hadis",
@@ -48,7 +47,6 @@ const dashboardText: Record<string, DashboardUI> = {
     donations: "Bağış",
     tagline: "Faith. Giving. Guidance.",
   },
-
   "85": {
     quran: "Le Saint Coran",
     hadith: "Hadith",
@@ -60,7 +58,6 @@ const dashboardText: Record<string, DashboardUI> = {
     donations: "Dons",
     tagline: "Faith. Giving. Guidance.",
   },
-
   "97": {
     quran: "القرآن الكريم",
     hadith: "حدیث",
@@ -80,7 +77,6 @@ export default async function DashboardPage({
   searchParams: Promise<{ lang?: string }>;
 }) {
   const { lang = "20" } = await searchParams;
-
   const t = dashboardText[lang] ?? dashboardText["20"];
 
   return (
@@ -89,56 +85,25 @@ export default async function DashboardPage({
       {/* TAGLINE */}
       <p className="text-gray-500 mb-6">{t.tagline}</p>
 
-      {/* WIDGET PLACEHOLDERS */}
-      <div className="grid grid-cols-2 gap-4 mb-6">
-        <div className="border rounded-xl p-4">
-          Islamic Date loading...
-        </div>
+      {/* WIDGETS */}
+      <DashboardWidgets />
 
-        <div className="border rounded-xl p-4">
-          Prayer times loading...
-        </div>
-      </div>
-
-      {/* COUNTDOWN */}
+      {/* COUNTDOWN placeholder */}
       <div className="border rounded-xl p-4 mb-8">
-        Countdown loading...
+        Islamic events countdown coming soon
       </div>
 
       {/* FEATURES */}
       <div className="grid gap-4">
 
-        <FeatureCard href="/quran" lang={lang}>
-          {t.quran}
-        </FeatureCard>
-
-        <FeatureCard href="/hadith" lang={lang}>
-          {t.hadith}
-        </FeatureCard>
-
-        <FeatureCard href="/zakat" lang={lang}>
-          {t.zakat}
-        </FeatureCard>
-
-        <FeatureCard href="/tafsir" lang={lang}>
-          {t.tafsir}
-        </FeatureCard>
-
-        <FeatureCard href="/duas" lang={lang}>
-          {t.duas}
-        </FeatureCard>
-
-        <FeatureCard href="/qibla" lang={lang}>
-          {t.qibla}
-        </FeatureCard>
-
-        <FeatureCard href="/stories" lang={lang}>
-          {t.stories}
-        </FeatureCard>
-
-        <FeatureCard href="/donations" lang={lang}>
-          {t.donations}
-        </FeatureCard>
+        <FeatureCard href="/quran" lang={lang}>{t.quran}</FeatureCard>
+        <FeatureCard href="/hadith" lang={lang}>{t.hadith}</FeatureCard>
+        <FeatureCard href="/zakat" lang={lang}>{t.zakat}</FeatureCard>
+        <FeatureCard href="/tafsir" lang={lang}>{t.tafsir}</FeatureCard>
+        <FeatureCard href="/duas" lang={lang}>{t.duas}</FeatureCard>
+        <FeatureCard href="/qibla" lang={lang}>{t.qibla}</FeatureCard>
+        <FeatureCard href="/stories" lang={lang}>{t.stories}</FeatureCard>
+        <FeatureCard href="/donations" lang={lang}>{t.donations}</FeatureCard>
 
       </div>
     </main>
