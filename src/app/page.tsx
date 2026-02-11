@@ -86,12 +86,7 @@ export default async function DashboardPage({
       <p className="text-gray-500 mb-6">{t.tagline}</p>
 
       {/* WIDGETS */}
-      <DashboardWidgets />
-
-      {/* COUNTDOWN placeholder */}
-      <div className="border rounded-xl p-4 mb-8">
-        Islamic events countdown coming soon
-      </div>
+      <DashboardWidgets lang={lang} />
 
       {/* FEATURES */}
       <div className="grid gap-4">
