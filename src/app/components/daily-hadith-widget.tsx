@@ -100,13 +100,15 @@ export default function DailyHadithWidget({ lang }: Props) {
             <HadithBookmarkButton id={hadith.id} lang={lang} />
           </div>
 
-          <div className="text-sm line-clamp-4">{hadith.title}</div>
+          <Link href={`/hadith/${hadith.id}?lang=${lang}`}>
+            <div className="text-sm line-clamp-4">{hadith.title}</div>
+          </Link>
 
           <div className="text-[10px] text-gray-400">
             Source: {hadith.source} • HadeethEnc.com
           </div>
 
-          <Link href={`/hadith?lang=${lang}`} className="text-xs text-blue-500">
+          <Link href={`/hadith/${hadith.id}?lang=${lang}`} className="text-xs text-blue-500">
             →
           </Link>
         </>

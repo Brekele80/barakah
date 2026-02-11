@@ -150,21 +150,26 @@ export default function HadithClient({ lang }: Props) {
       {loading ? (
         <div className="text-gray-400 animate-pulse">Loading hadith…</div>
       ) : hadith ? (
-        <div className="border rounded-2xl p-6 space-y-4">
-          <div className="flex justify-between items-start gap-3">
-            <div className="text-sm text-gray-500">{hadith.source}</div>
+        <Link href={`/hadith/${hadith.id}?lang=${lang}`}>
+          <div className="border rounded-2xl p-6 space-y-4 hover:bg-gray-50 dark:hover:bg-zinc-900 transition cursor-pointer">
+            <div className="flex justify-between items-start gap-3">
+              <div className="text-sm text-gray-500">{hadith.source}</div>
 
-            <HadithBookmarkButton id={hadith.id} lang={lang} />
-          </div>
+              <HadithBookmarkButton
+                id={hadith.id}
+                lang={lang}
+              />
+            </div>
 
-          <div className="text-lg leading-relaxed whitespace-pre-line">
-            {hadith.text}
-          </div>
+            <div className="text-lg leading-relaxed whitespace-pre-line">
+              {hadith.text}
+            </div>
 
-          <div className="text-xs text-gray-400 pt-2 border-t">
-            Source: {hadith.source} • HadeethEnc.com
+            <div className="text-xs text-gray-400 pt-2 border-t">
+              Source: {hadith.source} • HadeethEnc.com
+            </div>
           </div>
-        </div>
+        </Link>
       ) : (
         <div>No hadith found</div>
       )}

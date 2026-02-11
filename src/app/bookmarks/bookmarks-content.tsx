@@ -34,15 +34,6 @@ const langMap: Record<string, string> = {
   "97": "ur",
 };
 
-function readQuranBookmarks(): QuranBookmark[] {
-  if (typeof window === "undefined") return [];
-  try {
-    return JSON.parse(localStorage.getItem("bookmarks") || "[]");
-  } catch {
-    return [];
-  }
-}
-
 export default function BookmarksContent() {
   const params = useSearchParams();
   const urlLang = params.get("lang");
@@ -50,11 +41,30 @@ export default function BookmarksContent() {
 
   const [tab, setTab] = useState<"quran" | "hadith">("quran");
 
-  const [quranBookmarks] = useState<QuranBookmark[]>(readQuranBookmarks);
-  const [hadithList, setHadithList] = useState<HadithFull[]>([]);
+  const [quranBookmarks, setQuranBookmarks] = useState<QuranBookmark[] | null>(null);
+  const [hadithList, setHadithList] = useState<HadithFull[] | null>(null);
 
-  // 🔥 fetch bookmarked hadith in selected language
+  // 🔹 load quran bookmarks safely
   useEffect(() => {
+    async function run() {
+      const data = (() => {
+        try {
+          return JSON.parse(localStorage.getItem("bookmarks") || "[]");
+        } catch {
+          return [];
+        }
+      })();
+
+      setQuranBookmarks(data);
+    }
+
+    run();
+  }, []);
+
+  // 🔹 load hadith bookmarks in selected language
+  useEffect(() => {
+    let active = true;
+
     async function load() {
       const apiLang = langMap[lang] ?? "en";
       const saved = getHadithBookmarks();
@@ -76,11 +86,20 @@ export default function BookmarksContent() {
         } catch {}
       }
 
-      setHadithList(full);
+      if (active) setHadithList(full);
     }
 
     load();
+
+    return () => {
+      active = false;
+    };
   }, [lang]);
+
+  // avoid rendering until client ready
+  if (!quranBookmarks) {
+    return <div className="p-6">Loading...</div>;
+  }
 
   return (
     <main className="max-w-3xl mx-auto p-6">
@@ -90,6 +109,7 @@ export default function BookmarksContent() {
 
       <h1 className="text-2xl font-bold mb-6">Bookmarks</h1>
 
+      {/* tabs */}
       <div className="flex gap-2 mb-6">
         <button
           onClick={() => setTab("quran")}
@@ -132,19 +152,29 @@ export default function BookmarksContent() {
       {/* HADITH */}
       {tab === "hadith" && (
         <div className="space-y-6">
-          {hadithList.map((h) => (
-            <div key={h.id} className="border rounded-2xl p-6 space-y-4">
-              <div className="text-sm text-gray-500">{h.source}</div>
+          {!hadithList ? (
+            <div className="text-gray-400">Loading…</div>
+          ) : (
+            hadithList.map((h) => (
+              <Link
+                key={h.id}
+                href={`/hadith/${h.id}?lang=${lang}`}
+                className="block"
+              >
+                <div className="border rounded-2xl p-6 space-y-4 hover:bg-gray-50 dark:hover:bg-zinc-900 transition">
+                  <div className="text-sm text-gray-500">{h.source}</div>
 
-              <div className="text-lg leading-relaxed whitespace-pre-line">
-                {h.text}
-              </div>
+                  <div className="text-lg leading-relaxed whitespace-pre-line">
+                    {h.text}
+                  </div>
 
-              <div className="text-xs text-gray-400 pt-2 border-t">
-                Source: {h.source} • HadeethEnc.com
-              </div>
-            </div>
-          ))}
+                  <div className="text-xs text-gray-400 pt-2 border-t">
+                    Source: {h.source} • HadeethEnc.com
+                  </div>
+                </div>
+              </Link>
+            ))
+          )}
         </div>
       )}
     </main>
