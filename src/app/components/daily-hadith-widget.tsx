@@ -2,10 +2,12 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import HadithBookmarkButton from "@/app/components/hadith-bookmark-button";
 
 type Hadith = {
   id: string;
   title: string;
+  source: string;
 };
 
 type Props = {
@@ -32,40 +34,44 @@ export default function DailyHadithWidget({ lang }: Props) {
   const [hadith, setHadith] = useState<Hadith | null>(null);
 
   useEffect(() => {
-    let mounted = true;
+    let active = true;
 
     async function load() {
       const todayKey = `daily-hadith-${lang}-${new Date().toDateString()}`;
       const cached = localStorage.getItem(todayKey);
 
-      // async boundary prevents eslint error
       if (cached) {
-        const parsed = JSON.parse(cached);
-        if (mounted) setHadith(parsed);
+        if (active) setHadith(JSON.parse(cached));
         return;
       }
 
       try {
         const apiLang = langMap[lang] ?? "en";
 
-        const res = await fetch(
+        const listRes = await fetch(
           `https://hadeethenc.com/api/v1/hadeeths/list/?language=${apiLang}&category_id=5&page=1&per_page=50`
         );
 
-        const json = await res.json();
-        const list = json.data ?? [];
+        const listJson = await listRes.json();
+        const list = listJson.data ?? [];
         if (!list.length) return;
 
         const random = list[Math.floor(Math.random() * list.length)];
 
+        const oneRes = await fetch(
+          `https://hadeethenc.com/api/v1/hadeeths/one/?language=${apiLang}&id=${random.id}`
+        );
+
+        const oneJson = await oneRes.json();
+
         const item = {
           id: random.id,
-          title: random.title,
+          title: oneJson.hadeeth,
+          source: oneJson.attribution,
         };
 
         localStorage.setItem(todayKey, JSON.stringify(item));
-
-        if (mounted) setHadith(item);
+        if (active) setHadith(item);
       } catch (e) {
         console.error("Daily hadith failed", e);
       }
@@ -74,30 +80,33 @@ export default function DailyHadithWidget({ lang }: Props) {
     load();
 
     return () => {
-      mounted = false;
+      active = false;
     };
   }, [lang]);
 
   return (
     <div className="h-45 border rounded-2xl p-6 bg-white dark:bg-black flex flex-col justify-between mb-4">
-      <div className="text-sm text-gray-500 mb-2">
+      <div className="text-sm text-gray-500">
         {labels[lang] || labels["20"]}
       </div>
 
       {!hadith ? (
-        <div className="text-gray-400 animate-pulse">
-          Loading hadith…
-        </div>
+        <div className="text-gray-400 animate-pulse">Loading hadith…</div>
       ) : (
         <>
-          <div className="text-sm line-clamp-4">
-            {hadith.title}
+          <div className="flex justify-between items-start gap-2">
+            <div className="text-xs text-gray-500">{hadith.source}</div>
+
+            <HadithBookmarkButton id={hadith.id} lang={lang} />
           </div>
 
-          <Link
-            href={`/hadith?lang=${lang}`}
-            className="text-xs mt-3 text-blue-500"
-          >
+          <div className="text-sm line-clamp-4">{hadith.title}</div>
+
+          <div className="text-[10px] text-gray-400">
+            Source: {hadith.source} • HadeethEnc.com
+          </div>
+
+          <Link href={`/hadith?lang=${lang}`} className="text-xs text-blue-500">
             →
           </Link>
         </>
