@@ -126,6 +126,18 @@ export default function HadithClient({ lang }: Props) {
         ← {backLabels[lang] || "Back"}
       </Link>
 
+      <form action="/hadith/search" className="mb-4 flex gap-2">
+        <input
+          name="q"
+          placeholder="Search..."
+          className="flex-1 border rounded-xl p-2 bg-white dark:bg-black"
+        />
+        <input type="hidden" name="lang" value={lang} />
+        <button className="px-4 border rounded-xl">
+          Search
+        </button>
+      </form>
+
       <div className="flex gap-2 mb-4">
         <select
           value={category}
