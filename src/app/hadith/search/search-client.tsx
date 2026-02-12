@@ -4,6 +4,8 @@ import { useEffect, useState, useMemo } from "react";
 import Link from "next/link";
 import Fuse from "fuse.js";
 import PaginationArrows from "@/app/components/pagination-arrows";
+import SearchSuggestions from "@/app/components/search-suggestions";
+import { trending } from "@/lib/hadith-trending";
 
 type HadithItem = {
   id: string;
@@ -29,15 +31,12 @@ const langMap: Record<string, string> = {
   "97": "ur",
 };
 
-const uiText: Record<
-  string,
-  { placeholder: string; no: string; search: string }
-> = {
-  "20": { placeholder: "Search hadith...", no: "No results", search: "Search" },
-  "33": { placeholder: "Cari hadits...", no: "Tidak ada hasil", search: "Cari" },
-  "31": { placeholder: "Hadis ara...", no: "Sonuç yok", search: "Ara" },
-  "85": { placeholder: "Rechercher...", no: "Aucun résultat", search: "Chercher" },
-  "97": { placeholder: "تلاش کریں...", no: "کوئی نتیجہ نہیں", search: "تلاش" },
+const uiText: Record<string, { placeholder: string; no: string }> = {
+  "20": { placeholder: "Search hadith...", no: "No results" },
+  "33": { placeholder: "Cari hadits...", no: "Tidak ada hasil" },
+  "31": { placeholder: "Hadis ara...", no: "Sonuç yok" },
+  "85": { placeholder: "Rechercher...", no: "Aucun résultat" },
+  "97": { placeholder: "تلاش کریں...", no: "کوئی نتیجہ نہیں" },
 };
 
 export default function HadithSearchClient({ query, lang }: Props) {
@@ -45,10 +44,10 @@ export default function HadithSearchClient({ query, lang }: Props) {
   const ui = uiText[lang] ?? uiText["20"];
 
   const [index, setIndex] = useState<HadithItem[]>([]);
-  const [loading, setLoading] = useState(false);
   const [q, setQ] = useState(query);
   const [page, setPage] = useState(1);
   const [details, setDetails] = useState<Record<string, HadithFull>>({});
+  const [showSuggestions, setShowSuggestions] = useState(false);
 
   const PER_PAGE = 10;
 
@@ -62,8 +61,6 @@ export default function HadithSearchClient({ query, lang }: Props) {
         setIndex(JSON.parse(cached));
         return;
       }
-
-      setLoading(true);
 
       try {
         const catRes = await fetch(
@@ -91,22 +88,19 @@ export default function HadithSearchClient({ query, lang }: Props) {
         const all = Array.from(map.values());
         localStorage.setItem(cacheKey, JSON.stringify(all));
         setIndex(all);
-      } catch {
-        setIndex([]);
-      }
-
-      setLoading(false);
+      } catch {}
     }
 
     buildIndex();
   }, [apiLang]);
 
-  /* ---------------- SEARCH ---------------- */
+  /* ---------------- FUSE ---------------- */
   const fuse = useMemo(() => {
     return new Fuse(index, {
       keys: ["title"],
-      threshold: 0.4,
+      threshold: 0.45,
       ignoreLocation: true,
+      minMatchCharLength: 2,
     });
   }, [index]);
 
@@ -119,17 +113,14 @@ export default function HadithSearchClient({ query, lang }: Props) {
   const totalPages = Math.ceil(results.length / PER_PAGE);
   const paginated = results.slice((page - 1) * PER_PAGE, page * PER_PAGE);
 
-  /* reset page when typing */
   useEffect(() => {
     const t = setTimeout(() => setPage(1), 300);
     return () => clearTimeout(t);
   }, [q]);
 
-  /* ---------------- LOAD DETAILS (SAFE) ---------------- */
+  /* ---------------- LOAD DETAILS ---------------- */
   useEffect(() => {
     if (!paginated.length) return;
-
-    let active = true;
 
     async function loadDetails() {
       const missing = paginated.filter((h) => !details[h.id]);
@@ -153,39 +144,67 @@ export default function HadithSearchClient({ query, lang }: Props) {
         } catch {}
       }
 
-      if (!active) return;
-
       setDetails((prev) => ({ ...prev, ...newDetails }));
     }
 
     loadDetails();
+  }, [paginated, apiLang, details]);
 
-    return () => {
-      active = false;
-    };
-  }, [paginated, apiLang, details]); // ❗ no "details" dependency → no loop
+  /* ---------------- SEARCH HISTORY ---------------- */
+  useEffect(() => {
+    if (!q) return;
+    const key = `hadith-history-${lang}`;
+    const prev = JSON.parse(localStorage.getItem(key) || "[]");
+
+    if (!prev.includes(q)) {
+      localStorage.setItem(key, JSON.stringify([q, ...prev.slice(0, 5)]));
+    }
+  }, [q, lang]);
+
+  const suggestions = useMemo(() => {
+    if (!q) return [];
+    return results.slice(0, 5);
+  }, [results, q]);
 
   /* ---------------- UI ---------------- */
   return (
     <main className="max-w-3xl mx-auto p-6 space-y-6">
-      <form action="/hadith/search" className="flex gap-2">
+      <div className="relative">
         <input
-          name="q"
           value={q}
-          onChange={(e) => setQ(e.target.value)}
+          onChange={(e) => {
+            setQ(e.target.value);
+            setShowSuggestions(true);
+          }}
           placeholder={ui.placeholder}
-          className="flex-1 border rounded-xl p-3 bg-white dark:bg-black"
+          className="w-full border rounded-xl p-3 bg-white dark:bg-black"
         />
-        <input type="hidden" name="lang" value={lang} />
-        <button className="px-4 rounded-xl border">{ui.search}</button>
-      </form>
 
-      {loading && (
-        <div className="text-gray-400 animate-pulse">
-          Building search index…
+        {showSuggestions && q && (
+          <SearchSuggestions
+            items={suggestions}
+            lang={lang}
+            onSelect={() => setShowSuggestions(false)}
+          />
+        )}
+      </div>
+
+      {/* TRENDING */}
+      {!q && (
+        <div className="flex flex-wrap gap-2">
+          {(trending[lang] || []).map((t) => (
+            <button
+              key={t}
+              onClick={() => setQ(t)}
+              className="px-3 py-1 border rounded-full text-sm"
+            >
+              {t}
+            </button>
+          ))}
         </div>
       )}
 
+      {/* RESULTS */}
       <div className="space-y-6">
         {paginated.map((h) => {
           const full = details[h.id];
@@ -202,7 +221,7 @@ export default function HadithSearchClient({ query, lang }: Props) {
                   <div className="text-sm text-gray-500">{full.source}</div>
                 )}
 
-                <div className="text-lg leading-relaxed whitespace-pre-line">
+                <div className="text-lg whitespace-pre-line">
                   {full ? highlight(full.text, q) : highlight(h.title, q)}
                 </div>
 
@@ -217,7 +236,7 @@ export default function HadithSearchClient({ query, lang }: Props) {
         })}
       </div>
 
-      {!loading && results.length === 0 && q && (
+      {!results.length && q && (
         <div className="text-gray-500">{ui.no}</div>
       )}
 
@@ -229,7 +248,6 @@ export default function HadithSearchClient({ query, lang }: Props) {
 /* highlight */
 function highlight(text: string, q: string): React.ReactNode {
   if (!q) return text;
-
   const parts = text.split(new RegExp(`(${q})`, "gi"));
 
   return parts.map((p, i) =>
