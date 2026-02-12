@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import HadithBookmarkButton from "@/app/components/hadith-bookmark-button";
+import HadithShareButton from "@/app/components/hadith-share-button";
 
 type Hadith = {
   id: string;
@@ -71,13 +72,17 @@ export default function HadithDetailClient({ id, lang }: Props) {
       </Link>
 
       <div className="border rounded-2xl p-6 space-y-4">
-        <div className="flex justify-between items-start">
+        <div className="flex justify-between items-start gap-3">
           <div className="text-sm text-gray-500">{hadith.source}</div>
 
-          <HadithBookmarkButton
-            id={hadith.id}
-            lang={lang}
-          />
+          <div className="flex items-center gap-3">
+            <HadithShareButton id={hadith.id} lang={lang} />
+
+            <HadithBookmarkButton
+              id={hadith.id}
+              lang={lang}
+            />
+          </div>
         </div>
 
         <div className="text-xl leading-relaxed whitespace-pre-line">
