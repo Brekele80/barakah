@@ -1,9 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import Link from "next/link";
+import Fuse from "fuse.js";
+import PaginationArrows from "@/app/components/pagination-arrows";
 
-type HadithListItem = {
+type HadithItem = {
   id: string;
   title: string;
 };
@@ -12,10 +14,6 @@ type HadithFull = {
   id: string;
   text: string;
   source: string;
-};
-
-type ListResponse = {
-  data: HadithListItem[];
 };
 
 type Props = {
@@ -31,117 +29,145 @@ const langMap: Record<string, string> = {
   "97": "ur",
 };
 
-const labels: Record<
+const uiText: Record<
   string,
-  {
-    placeholder: string;
-    button: string;
-    searching: string;
-    empty: string;
-  }
+  { placeholder: string; no: string; search: string }
 > = {
-  "20": {
-    placeholder: "Search hadith...",
-    button: "Search",
-    searching: "Searching…",
-    empty: "No results",
-  },
-  "33": {
-    placeholder: "Cari hadits...",
-    button: "Cari",
-    searching: "Mencari…",
-    empty: "Tidak ada hasil",
-  },
-  "31": {
-    placeholder: "Hadis ara...",
-    button: "Ara",
-    searching: "Aranıyor…",
-    empty: "Sonuç yok",
-  },
-  "85": {
-    placeholder: "Rechercher...",
-    button: "Rechercher",
-    searching: "Recherche…",
-    empty: "Aucun résultat",
-  },
-  "97": {
-    placeholder: "تلاش کریں...",
-    button: "تلاش",
-    searching: "تلاش جاری ہے…",
-    empty: "کوئی نتیجہ نہیں",
-  },
+  "20": { placeholder: "Search hadith...", no: "No results", search: "Search" },
+  "33": { placeholder: "Cari hadits...", no: "Tidak ada hasil", search: "Cari" },
+  "31": { placeholder: "Hadis ara...", no: "Sonuç yok", search: "Ara" },
+  "85": { placeholder: "Rechercher...", no: "Aucun résultat", search: "Chercher" },
+  "97": { placeholder: "تلاش کریں...", no: "کوئی نتیجہ نہیں", search: "تلاش" },
 };
 
 export default function HadithSearchClient({ query, lang }: Props) {
   const apiLang = langMap[lang] ?? "en";
+  const ui = uiText[lang] ?? uiText["20"];
 
-  const [results, setResults] = useState<HadithFull[]>([]);
+  const [index, setIndex] = useState<HadithItem[]>([]);
   const [loading, setLoading] = useState(false);
   const [q, setQ] = useState(query);
+  const [page, setPage] = useState(1);
+  const [details, setDetails] = useState<Record<string, HadithFull>>({});
 
-  const ui = labels[lang] || labels["20"];
+  const PER_PAGE = 10;
 
+  /* ---------------- BUILD INDEX ---------------- */
   useEffect(() => {
-    if (!query) {
-      setResults([]);
-      return;
-    }
+    async function buildIndex() {
+      const cacheKey = `hadith-index-${apiLang}`;
+      const cached = localStorage.getItem(cacheKey);
 
-    let active = true;
+      if (cached) {
+        setIndex(JSON.parse(cached));
+        return;
+      }
 
-    async function run() {
       setLoading(true);
 
       try {
-        const res = await fetch(
-          `https://hadeethenc.com/api/v1/hadeeths/list/?language=${apiLang}&category_id=5&page=1&per_page=200`
+        const catRes = await fetch(
+          `https://hadeethenc.com/api/v1/categories/roots/?language=${apiLang}`
         );
+        const categories: { id: string }[] = await catRes.json();
 
-        const json: ListResponse = await res.json();
-        const list = json.data ?? [];
+        const map = new Map<string, HadithItem>();
 
-        const filtered = list.filter((h) =>
-          h.title.toLowerCase().includes(query.toLowerCase())
-        );
+        for (const c of categories) {
+          const res = await fetch(
+            `https://hadeethenc.com/api/v1/hadeeths/list/?language=${apiLang}&category_id=${c.id}&page=1&per_page=2000`
+          );
 
-        const full: HadithFull[] = [];
+          const json = await res.json();
+          const data = json.data ?? [];
 
-        for (const h of filtered.slice(0, 25)) {
-          try {
-            const one = await fetch(
-              `https://hadeethenc.com/api/v1/hadeeths/one/?language=${apiLang}&id=${h.id}`
-            );
-
-            const j = await one.json();
-
-            full.push({
-              id: h.id,
-              text: j.hadeeth,
-              source: j.attribution,
-            });
-          } catch {}
+          for (const h of data) {
+            if (!map.has(h.id)) {
+              map.set(h.id, { id: h.id, title: h.title });
+            }
+          }
         }
 
-        if (!active) return;
-        setResults(full);
+        const all = Array.from(map.values());
+        localStorage.setItem(cacheKey, JSON.stringify(all));
+        setIndex(all);
       } catch {
-        if (!active) return;
-        setResults([]);
-      } finally {
-        if (active) setLoading(false);
+        setIndex([]);
       }
+
+      setLoading(false);
     }
 
-    run();
+    buildIndex();
+  }, [apiLang]);
+
+  /* ---------------- SEARCH ---------------- */
+  const fuse = useMemo(() => {
+    return new Fuse(index, {
+      keys: ["title"],
+      threshold: 0.4,
+      ignoreLocation: true,
+    });
+  }, [index]);
+
+  const results = useMemo(() => {
+    if (!q) return [];
+    return fuse.search(q).map((r) => r.item);
+  }, [q, fuse]);
+
+  /* ---------------- PAGINATION ---------------- */
+  const totalPages = Math.ceil(results.length / PER_PAGE);
+  const paginated = results.slice((page - 1) * PER_PAGE, page * PER_PAGE);
+
+  /* reset page when typing */
+  useEffect(() => {
+    const t = setTimeout(() => setPage(1), 300);
+    return () => clearTimeout(t);
+  }, [q]);
+
+  /* ---------------- LOAD DETAILS (SAFE) ---------------- */
+  useEffect(() => {
+    if (!paginated.length) return;
+
+    let active = true;
+
+    async function loadDetails() {
+      const missing = paginated.filter((h) => !details[h.id]);
+      if (!missing.length) return;
+
+      const newDetails: Record<string, HadithFull> = {};
+
+      for (const item of missing) {
+        try {
+          const res = await fetch(
+            `https://hadeethenc.com/api/v1/hadeeths/one/?language=${apiLang}&id=${item.id}`
+          );
+
+          const json = await res.json();
+
+          newDetails[item.id] = {
+            id: item.id,
+            text: json.hadeeth,
+            source: json.attribution,
+          };
+        } catch {}
+      }
+
+      if (!active) return;
+
+      setDetails((prev) => ({ ...prev, ...newDetails }));
+    }
+
+    loadDetails();
 
     return () => {
       active = false;
     };
-  }, [query, apiLang]);
+  }, [paginated, apiLang, details]); // ❗ no "details" dependency → no loop
 
+  /* ---------------- UI ---------------- */
   return (
     <main className="max-w-3xl mx-auto p-6 space-y-6">
-      {/* SEARCH */}
       <form action="/hadith/search" className="flex gap-2">
         <input
           name="q"
@@ -150,50 +176,69 @@ export default function HadithSearchClient({ query, lang }: Props) {
           placeholder={ui.placeholder}
           className="flex-1 border rounded-xl p-3 bg-white dark:bg-black"
         />
-
         <input type="hidden" name="lang" value={lang} />
-
-        <button className="px-4 rounded-xl border">
-          {ui.button}
-        </button>
+        <button className="px-4 rounded-xl border">{ui.search}</button>
       </form>
 
-      {/* LOADING */}
       {loading && (
         <div className="text-gray-400 animate-pulse">
-          {ui.searching}
+          Building search index…
         </div>
       )}
 
-      {/* RESULTS */}
       <div className="space-y-6">
-        {results.map((h) => (
-          <Link
-            key={h.id}
-            href={`/hadith/${h.id}?lang=${lang}`}
-            className="block"
-          >
-            <div className="border rounded-2xl p-6 space-y-4 hover:bg-gray-50 dark:hover:bg-zinc-900 transition">
-              
-              <div className="text-sm text-gray-500">
-                {h.source}
-              </div>
+        {paginated.map((h) => {
+          const full = details[h.id];
 
-              <div className="text-lg leading-relaxed whitespace-pre-line">
-                {h.text}
-              </div>
+          return (
+            <Link
+              key={`${h.id}-${lang}`}
+              href={`/hadith/${h.id}?lang=${lang}`}
+              className="block"
+            >
+              <div className="border rounded-2xl p-6 space-y-4 hover:bg-gray-50 dark:hover:bg-zinc-900 transition">
 
-              <div className="text-xs text-gray-400 pt-2 border-t">
-                Source: {h.source} • HadeethEnc.com
+                {full && (
+                  <div className="text-sm text-gray-500">{full.source}</div>
+                )}
+
+                <div className="text-lg leading-relaxed whitespace-pre-line">
+                  {full ? highlight(full.text, q) : highlight(h.title, q)}
+                </div>
+
+                {full && (
+                  <div className="text-xs text-gray-400 pt-2 border-t">
+                    Source: {full.source} • HadeethEnc.com
+                  </div>
+                )}
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          );
+        })}
       </div>
 
-      {!loading && results.length === 0 && query && (
-        <div className="text-gray-500">{ui.empty}</div>
+      {!loading && results.length === 0 && q && (
+        <div className="text-gray-500">{ui.no}</div>
       )}
+
+      <PaginationArrows page={page} total={totalPages} onChange={setPage} />
     </main>
+  );
+}
+
+/* highlight */
+function highlight(text: string, q: string): React.ReactNode {
+  if (!q) return text;
+
+  const parts = text.split(new RegExp(`(${q})`, "gi"));
+
+  return parts.map((p, i) =>
+    p.toLowerCase() === q.toLowerCase() ? (
+      <mark key={i} className="bg-yellow-200 dark:bg-yellow-700">
+        {p}
+      </mark>
+    ) : (
+      p
+    )
   );
 }
