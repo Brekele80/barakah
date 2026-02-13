@@ -5,9 +5,9 @@ import { useSearchParams, useRouter, usePathname } from "next/navigation";
 const langs = [
   { id: "20", name: "UK" },
   { id: "33", name: "ID" },
-  { id: "31", name: "TK" },
+  { id: "31", name: "TR" },
   { id: "85", name: "FR" },
-  { id: "97", name: "PK" },
+  { id: "97", name: "UR" },
 ];
 
 export default function GlobalLanguageSelector() {

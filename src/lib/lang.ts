@@ -3,10 +3,11 @@
    =============================== */
 
 export const DEFAULT_LANG = "20";
+export const LANG_COOKIE = "lang";
 
-/**
- * Read language from URLSearchParams
- */
+/* ---------------------------------
+   URL PARAM
+---------------------------------- */
 export function getLangFromSearchParams(
   params: URLSearchParams | { get(name: string): string | null } | null
 ): string {
@@ -14,9 +15,9 @@ export function getLangFromSearchParams(
   return params.get("lang") ?? DEFAULT_LANG;
 }
 
-/**
- * Safe read from localStorage
- */
+/* ---------------------------------
+   LOCAL STORAGE
+---------------------------------- */
 export function getStoredLang(): string {
   if (typeof window === "undefined") return DEFAULT_LANG;
 
@@ -27,9 +28,6 @@ export function getStoredLang(): string {
   }
 }
 
-/**
- * Write language to localStorage
- */
 export function setStoredLang(lang: string) {
   if (typeof window === "undefined") return;
 
@@ -38,17 +36,37 @@ export function setStoredLang(lang: string) {
   } catch {}
 }
 
-/**
- * Resolve final language
- */
+/* ---------------------------------
+   COOKIE (SSR READY)
+---------------------------------- */
+export function getLangFromCookie(): string | null {
+  if (typeof document === "undefined") return null;
+
+  const match = document.cookie.match(/(?:^|;\s*)lang=([^;]+)/);
+  return match ? decodeURIComponent(match[1]) : null;
+}
+
+export function setLangCookie(lang: string) {
+  if (typeof document === "undefined") return;
+
+  document.cookie = `${LANG_COOKIE}=${lang}; path=/; max-age=31536000`;
+}
+
+/* ---------------------------------
+   FINAL RESOLUTION
+---------------------------------- */
 export function resolveLang(urlLang?: string | null): string {
   if (urlLang) return urlLang;
+
+  const cookie = getLangFromCookie();
+  if (cookie) return cookie;
+
   return getStoredLang();
 }
 
-/**
- * Build link with lang
- */
+/* ---------------------------------
+   BUILD LINK WITH LANG
+---------------------------------- */
 export function withLang(path: string, lang: string): string {
   if (!path.includes("?")) {
     return `${path}?lang=${lang}`;
@@ -60,9 +78,9 @@ export function withLang(path: string, lang: string): string {
   return url.pathname + url.search + url.hash;
 }
 
-/**
- * Sync storage → URL (header hydration fix)
- */
+/* ---------------------------------
+   SYNC STORAGE → URL (HEADER FIX)
+---------------------------------- */
 export function syncLangToUrl(
   currentUrlLang: string | null,
   routerReplace: (url: string) => void,
@@ -79,4 +97,12 @@ export function syncLangToUrl(
   newParams.set("lang", stored);
 
   routerReplace(`${currentPath}?${newParams.toString()}`);
+}
+
+/* ---------------------------------
+   SAVE LANG EVERYWHERE
+---------------------------------- */
+export function persistLang(lang: string) {
+  setStoredLang(lang);
+  setLangCookie(lang);
 }
