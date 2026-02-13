@@ -3,6 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import Link from "next/link";
 import HadithBookmarkButton from "@/app/components/hadith-bookmark-button";
+import { withLang } from "@/lib/lang";
 
 type Hadith = {
   id: string;
@@ -122,7 +123,7 @@ export default function HadithClient({ lang }: Props) {
 
   return (
     <main className="max-w-3xl mx-auto p-6">
-      <Link href={`/?lang=${lang}`} className="text-blue-500 mb-4 inline-block">
+      <Link href={withLang("/", lang)} className="text-blue-500 mb-4 inline-block">
         ← {backLabels[lang] || "Back"}
       </Link>
 
@@ -162,7 +163,7 @@ export default function HadithClient({ lang }: Props) {
       {loading ? (
         <div className="text-gray-400 animate-pulse">Loading hadith…</div>
       ) : hadith ? (
-        <Link href={`/hadith/${hadith.id}?lang=${lang}`}>
+        <Link href={withLang(`/hadith/${hadith.id}`, lang)}>
           <div className="border rounded-2xl p-6 space-y-4 hover:bg-gray-50 dark:hover:bg-zinc-900 transition cursor-pointer">
             <div className="flex justify-between items-start gap-3">
               <div className="text-sm text-gray-500">{hadith.source}</div>

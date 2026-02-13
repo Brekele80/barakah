@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { getStoredLang } from "@/lib/lang";
 import { getHadithBookmarks } from "@/lib/hadith-bookmarks";
+import { withLang } from "@/lib/lang";
 
 type QuranBookmark = {
   key: string;
@@ -103,7 +104,7 @@ export default function BookmarksContent() {
 
   return (
     <main className="max-w-3xl mx-auto p-6">
-      <Link href={`/?lang=${lang}`} className="text-blue-500 mb-4 inline-block">
+      <Link href={withLang("/", lang)} className="text-blue-500 mb-4 inline-block">
         ← {backLabels[lang] || "Back"}
       </Link>
 
@@ -140,7 +141,7 @@ export default function BookmarksContent() {
           {quranBookmarks.map((b) => (
             <Link
               key={b.key}
-              href={`/surah/${b.surah}?lang=${lang}#ayah-${b.ayah}`}
+              href={withLang(`/surah/${b.surah}#ayah-${b.ayah}`, lang)}
               className="block p-4 border rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               Surah {b.surah} — Ayah {b.ayah}
@@ -158,7 +159,7 @@ export default function BookmarksContent() {
             hadithList.map((h) => (
               <Link
                 key={h.id}
-                href={`/hadith/${h.id}?lang=${lang}`}
+                href={withLang(`/hadith/${h.id}`, lang)}
                 className="block"
               >
                 <div className="border rounded-2xl p-6 space-y-4 hover:bg-gray-50 dark:hover:bg-zinc-900 transition">

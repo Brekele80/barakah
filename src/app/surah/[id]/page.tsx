@@ -3,6 +3,7 @@ import AudioPlayer from "@/app/components/audio-player";
 import VerseBlock from "@/app/components/verse-block";
 import ScrollToAyah from "@/app/components/scroll-to-ayah";
 import BackToTop from "@/app/components/back-to-top";
+import { withLang } from "@/lib/lang";
 
 const backLabels: Record<string, string> = {
   "20": "Back",
@@ -43,11 +44,11 @@ async function getSurahInfo(id: string, lang: string) {
 }
 
 const translationMap: Record<string, string> = {
-  "20": "20", // English
-  "33": "33",  // Indonesian
-  "31": "77",  // Turkish
-  "85": "136", // French
-  "97": "97",  // Urdu
+  "20": "20",
+  "33": "33",
+  "31": "77",
+  "85": "136",
+  "97": "97",
 };
 
 async function getData(id: string, lang: string): Promise<Verse[]> {
@@ -66,12 +67,10 @@ async function getData(id: string, lang: string): Promise<Verse[]> {
 
     const data = await res.json();
     return data.verses;
-  } catch (err) {
-    console.error("Quran API failed:", err);
+  } catch {
     return [];
   }
 }
-
 
 export default async function SurahPage({
   params,
@@ -81,13 +80,7 @@ export default async function SurahPage({
   searchParams: Promise<{ lang?: string }>;
 }) {
   const { id } = await params;
-  const { lang: urlLang } = await searchParams;
-
-  const lang =
-    urlLang ??
-    (typeof window !== "undefined"
-      ? localStorage.getItem("lang") ?? "20"
-      : "20");
+  const { lang = "20" } = await searchParams;
 
   const [verses, chapter] = await Promise.all([
     getData(id, lang),
@@ -96,11 +89,13 @@ export default async function SurahPage({
 
   return (
     <main className="max-w-3xl mx-auto p-6">
-      <Link href={`/quran?lang=${lang}`} className="text-blue-500 mb-4 inline-block">
+      <Link
+        href={withLang("/quran", lang)}
+        className="text-blue-500 mb-4 inline-block"
+      >
         ← {backLabels[lang] || "Back"}
       </Link>
 
-      {/* Surah title */}
       <div className="text-center mb-6">
         <h1 className="text-3xl font-bold">{chapter.name_simple}</h1>
         <p className="text-xl arabic">{chapter.name_arabic}</p>
@@ -115,8 +110,8 @@ export default async function SurahPage({
           <VerseBlock key={v.id} verse={v} surahId={id} lang={lang} />
         ))}
       </div>
+
       <BackToTop />
     </main>
   );
 }
-

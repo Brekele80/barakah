@@ -1,5 +1,6 @@
 import Link from "next/link";
 import DashboardWidgets from "@/app/components/dashboard-widgets";
+import { withLang } from "@/lib/lang";
 
 type DashboardUI = {
   quran: string;
@@ -116,7 +117,7 @@ function FeatureCard({
 }) {
   return (
     <Link
-      href={`${href}?lang=${lang}`}
+      href={withLang(href, lang)}
       className="block p-5 border rounded-2xl hover:bg-gray-100 dark:hover:bg-gray-800 transition"
     >
       {children}

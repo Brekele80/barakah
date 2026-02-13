@@ -3,6 +3,7 @@
 import { useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { withLang } from "@/lib/lang";
 
 type Word = {
   transliteration?: { text: string };
@@ -117,7 +118,7 @@ export default function SearchContent() {
 
   return (
     <main className="max-w-3xl mx-auto p-6">
-      <Link href={`/?lang=${lang}`} className="text-blue-500 mb-4 inline-block">
+      <Link href={withLang("/", lang)} className="text-blue-500 mb-4 inline-block">
         ← Back
       </Link>
 
@@ -150,7 +151,7 @@ export default function SearchContent() {
           return (
             <Link
               key={r.verse_key}
-              href={`/surah/${surah}?lang=${lang}#ayah-${ayah}`}
+              href={withLang(`/surah/${surah}#ayah-${ayah}`, lang)}
               className="block p-4 border rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               <div className="text-sm text-gray-500 mb-2">{r.verse_key}</div>

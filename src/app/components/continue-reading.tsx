@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useSyncExternalStore } from "react";
+import { withLang } from "@/lib/lang";
 
 type LastRead = {
   surah: string;
@@ -59,7 +60,7 @@ export default function ContinueReading({ lang }: { lang: string }) {
       </p>
 
       <Link
-        href={`/surah/${last.surah}?lang=${lang}#ayah-${last.ayah}`}
+        href={withLang(`/surah/${last.surah}#ayah-${last.ayah}`, lang)}
         className="font-semibold underline"
       >
         Surah {last.surah} — Ayah {last.ayah}
