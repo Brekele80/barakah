@@ -7,6 +7,8 @@ import { getStoredLang } from "@/lib/lang";
 import { getHadithBookmarks } from "@/lib/hadith-bookmarks";
 import { withLang } from "@/lib/lang";
 import SkeletonCard from "@/app/components/skeleton-card";
+import { getDuaBookmarks } from "@/lib/dua-bookmarks";
+import { loadDuas, Dua } from "@/lib/duas";
 
 type QuranBookmark = {
   key: string;
@@ -28,6 +30,42 @@ const backLabels: Record<string, string> = {
   "97": "واپس",
 };
 
+const tabLabels: Record<
+  string,
+  { quran: string; hadith: string; duas: string; title: string }
+> = {
+  "20": {
+    quran: "Quran",
+    hadith: "Hadith",
+    duas: "Duas",
+    title: "Bookmarks",
+  },
+  "33": {
+    quran: "Al-Qur'an",
+    hadith: "Hadits",
+    duas: "Doa",
+    title: "Bookmark",
+  },
+  "31": {
+    quran: "Kur'an",
+    hadith: "Hadis",
+    duas: "Dualar",
+    title: "Yer İmleri",
+  },
+  "85": {
+    quran: "Coran",
+    hadith: "Hadith",
+    duas: "Invocations",
+    title: "Favoris",
+  },
+  "97": {
+    quran: "قرآن",
+    hadith: "حدیث",
+    duas: "دعائیں",
+    title: "بُک مارکس",
+  },
+};
+
 const langMap: Record<string, string> = {
   "20": "en",
   "33": "id",
@@ -41,10 +79,12 @@ export default function BookmarksContent() {
   const urlLang = params.get("lang");
   const lang = urlLang ?? getStoredLang();
 
-  const [tab, setTab] = useState<"quran" | "hadith">("quran");
+  const [tab, setTab] = useState<"quran" | "hadith" | "duas">("quran");
+  const tTabs = tabLabels[lang] ?? tabLabels["20"];
 
   const [quranBookmarks, setQuranBookmarks] = useState<QuranBookmark[] | null>(null);
   const [hadithList, setHadithList] = useState<HadithFull[] | null>(null);
+  const [duaList, setDuaList] = useState<Dua[] | null>(null);
 
   // 🔹 load quran bookmarks safely
   useEffect(() => {
@@ -98,6 +138,33 @@ export default function BookmarksContent() {
     };
   }, [lang]);
 
+  useEffect(() => {
+    let active = true;
+
+    async function loadDuaBookmarks() {
+      const saved = getDuaBookmarks();
+
+      if (!saved.length) {
+        setDuaList([]);
+        return;
+      }
+
+      const all = await loadDuas(lang);
+
+      const list: Dua[] = saved
+        .map((b) => all.find((d) => d.id === b.id))
+        .filter((d): d is Dua => Boolean(d));
+
+      if (active) setDuaList(list);
+    }
+
+    loadDuaBookmarks();
+
+    return () => {
+      active = false;
+    };
+  }, [lang]);
+
   if (!quranBookmarks) {
     return (
       <div className="max-w-3xl mx-auto p-6 space-y-4">
@@ -113,7 +180,7 @@ export default function BookmarksContent() {
         ← {backLabels[lang] || "Back"}
       </Link>
 
-      <h1 className="text-2xl font-bold mb-6">Bookmarks</h1>
+      <h1 className="text-2xl font-bold mb-6">{tTabs.title}</h1>
 
       {/* tabs */}
       <div className="flex gap-2 mb-6">
@@ -125,7 +192,7 @@ export default function BookmarksContent() {
               : "opacity-60"
           }`}
         >
-          Quran
+          {tTabs.quran}
         </button>
 
         <button
@@ -136,7 +203,18 @@ export default function BookmarksContent() {
               : "opacity-60"
           }`}
         >
-          Hadith
+          {tTabs.hadith}
+        </button>
+
+        <button
+          onClick={() => setTab("duas")}
+          className={`px-4 py-2 rounded-xl border ${
+            tab === "duas"
+              ? "bg-black text-white dark:bg-white dark:text-black"
+              : "opacity-60"
+          }`}
+        >
+          {tTabs.duas}
         </button>
       </div>
 
@@ -178,6 +256,25 @@ export default function BookmarksContent() {
                     Source: {h.source} • HadeethEnc.com
                   </div>
                 </div>
+              </Link>
+            ))
+          )}
+        </div>
+      )}
+
+      {/* DUAS */}
+      {tab === "duas" && (
+        <div className="space-y-3">
+          {!duaList ? (
+            <SkeletonCard />
+          ) : (
+            duaList.map((d) => (
+              <Link
+                key={d.id}
+                href={withLang(`/duas/${d.id}`, lang)}
+                className="block p-4 border rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800"
+              >
+                {d.title}
               </Link>
             ))
           )}
