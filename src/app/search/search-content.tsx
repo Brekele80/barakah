@@ -4,6 +4,14 @@ import { useSearchParams } from "next/navigation";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { withLang } from "@/lib/lang";
+import SkeletonCard from "@/app/components/skeleton-card";
+
+type Surah = {
+  id: number;
+  name_simple: string;
+  name_arabic: string;
+  translated_name: { name: string };
+};
 
 type Word = {
   transliteration?: { text: string };
@@ -29,7 +37,6 @@ type VerseDetail = {
   translation: string;
 };
 
-/** UI language → search API language */
 const langMap: Record<string, string> = {
   "20": "en",
   "33": "id",
@@ -38,24 +45,12 @@ const langMap: Record<string, string> = {
   "97": "ur",
 };
 
-/** UI language → translation ID (IMPORTANT) */
 const translationMap: Record<string, string> = {
-  "20": "20", // English
-  "33": "33",  // Indonesian
-  "31": "77",  // Turkish
-  "85": "136", // French
-  "97": "97",  // Urdu
-};
-
-const labels: Record<
-  string,
-  { title: string; placeholder: string; button: string }
-> = {
-  "20": { title: "Search", placeholder: "Search...", button: "Search" },
-  "33": { title: "Cari", placeholder: "Cari...", button: "Cari" },
-  "31": { title: "Ara", placeholder: "Ara...", button: "Ara" },
-  "85": { title: "Recherche", placeholder: "Recherche...", button: "Rechercher" },
-  "97": { title: "تلاش", placeholder: "تلاش کریں...", button: "تلاش" },
+  "20": "20",
+  "33": "33",
+  "31": "77",
+  "85": "136",
+  "97": "97",
 };
 
 export default function SearchContent() {
@@ -65,9 +60,10 @@ export default function SearchContent() {
   const lang = params.get("lang") ?? "20";
 
   const apiLang = langMap[lang] ?? "en";
-  const translationId = translationMap[lang] ?? "131";
+  const translationId = translationMap[lang] ?? "20";
 
   const [results, setResults] = useState<VerseDetail[]>([]);
+  const [surahResults, setSurahResults] = useState<Surah[]>([]);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -76,7 +72,21 @@ export default function SearchContent() {
     async function run() {
       setLoading(true);
 
-      // search API
+      /* ---------- SURAH SEARCH ---------- */
+      try {
+        const surahRes = await fetch(
+          `https://api.quran.com/api/v4/chapters?language=${apiLang}`
+        );
+        const surahJson = await surahRes.json();
+
+        const filtered = surahJson.chapters.filter((s: Surah) =>
+          s.name_simple.toLowerCase().includes(query.toLowerCase())
+        );
+
+        setSurahResults(filtered);
+      } catch {}
+
+      /* ---------- VERSE SEARCH ---------- */
       const res = await fetch(
         `https://api.quran.com/api/v4/search?q=${encodeURIComponent(
           query
@@ -96,7 +106,7 @@ export default function SearchContent() {
           const v = verseData.verse;
 
           const transliteration =
-            v.words?.map((w) => w.transliteration?.text ?? "").join(" ") ?? "";
+            v.words?.map((w: Word) => w.transliteration?.text ?? "").join(" ") ?? "";
 
           return {
             verse_key: r.verse_key,
@@ -114,61 +124,55 @@ export default function SearchContent() {
     run();
   }, [query, apiLang, translationId]);
 
-  const ui = labels[lang] ?? labels["20"];
-
   return (
-    <main className="max-w-3xl mx-auto p-6">
-      <Link href={withLang("/", lang)} className="text-blue-500 mb-4 inline-block">
-        ← Back
-      </Link>
+    <main className="max-w-3xl mx-auto p-6 space-y-6">
+      {loading && (
+        <div className="space-y-4">
+          <SkeletonCard />
+          <SkeletonCard />
+        </div>
+      )}
 
-      <h1 className="text-3xl font-bold mb-6">{ui.title}</h1>
-
-      <form action="/search" className="mb-6 flex gap-2">
-        <input
-          name="q"
-          defaultValue={query}
-          placeholder={ui.placeholder}
-          className="flex-1 border rounded-lg p-2 bg-white dark:bg-black"
-        />
-
-        <input type="hidden" name="lang" value={lang} />
-
-        <button
-          type="submit"
-          className="px-4 py-2 bg-black text-white dark:bg-white dark:text-black rounded-lg"
+      {/* SURAH RESULTS */}
+      {surahResults.map((s) => (
+        <Link
+          key={s.id}
+          href={withLang(`/surah/${s.id}`, lang)}
+          className="block p-4 border rounded-xl bg-green-50 dark:bg-green-900"
         >
-          {ui.button}
-        </button>
-      </form>
+          <div className="font-semibold">
+            {s.id}. {s.name_simple}
+          </div>
+          <div className="text-sm text-gray-500">
+            {s.translated_name.name}
+          </div>
+        </Link>
+      ))}
 
-      {loading && <p>Searching...</p>}
+      {/* VERSE RESULTS */}
+      {results.map((r) => {
+        const [surah, ayah] = r.verse_key.split(":");
 
-      <div className="space-y-6">
-        {results.map((r) => {
-          const [surah, ayah] = r.verse_key.split(":");
+        return (
+          <Link
+            key={r.verse_key}
+            href={withLang(`/surah/${surah}#ayah-${ayah}`, lang)}
+            className="block p-4 border rounded-xl"
+          >
+            <div className="text-sm text-gray-500">{r.verse_key}</div>
 
-          return (
-            <Link
-              key={r.verse_key}
-              href={withLang(`/surah/${surah}#ayah-${ayah}`, lang)}
-              className="block p-4 border rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800"
-            >
-              <div className="text-sm text-gray-500 mb-2">{r.verse_key}</div>
+            <div className="arabic text-right text-2xl">
+              {r.text_uthmani}
+            </div>
 
-              <div className="arabic text-right text-2xl mb-2">
-                {r.text_uthmani}
-              </div>
+            <div className="italic text-gray-500">
+              {r.transliteration}
+            </div>
 
-              <div className="italic text-gray-500 mb-2">
-                {r.transliteration}
-              </div>
-
-              <div dangerouslySetInnerHTML={{ __html: r.translation }} />
-            </Link>
-          );
-        })}
-      </div>
+            <div dangerouslySetInnerHTML={{ __html: r.translation }} />
+          </Link>
+        );
+      })}
     </main>
   );
 }

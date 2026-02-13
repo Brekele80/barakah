@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { getStoredLang } from "@/lib/lang";
 import { getHadithBookmarks } from "@/lib/hadith-bookmarks";
 import { withLang } from "@/lib/lang";
+import SkeletonCard from "@/app/components/skeleton-card";
 
 type QuranBookmark = {
   key: string;
@@ -97,9 +98,13 @@ export default function BookmarksContent() {
     };
   }, [lang]);
 
-  // avoid rendering until client ready
   if (!quranBookmarks) {
-    return <div className="p-6">Loading...</div>;
+    return (
+      <div className="max-w-3xl mx-auto p-6 space-y-4">
+        <SkeletonCard />
+        <SkeletonCard />
+      </div>
+    );
   }
 
   return (

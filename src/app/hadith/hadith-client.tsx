@@ -4,6 +4,7 @@ import { useEffect, useState, useCallback } from "react";
 import Link from "next/link";
 import HadithBookmarkButton from "@/app/components/hadith-bookmark-button";
 import { withLang } from "@/lib/lang";
+import SkeletonCard from "@/app/components/skeleton-card";
 
 type Hadith = {
   id: string;
@@ -161,7 +162,10 @@ export default function HadithClient({ lang }: Props) {
       </div>
 
       {loading ? (
-        <div className="text-gray-400 animate-pulse">Loading hadith…</div>
+        <div className="space-y-4">
+          <SkeletonCard />
+          <SkeletonCard />
+        </div>
       ) : hadith ? (
         <Link href={withLang(`/hadith/${hadith.id}`, lang)}>
           <div className="border rounded-2xl p-6 space-y-4 hover:bg-gray-50 dark:hover:bg-zinc-900 transition cursor-pointer">
