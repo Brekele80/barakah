@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
+import { safeFetch } from "@/lib/fetcher";
 
 type Times = {
   Fajr: string;
@@ -10,38 +11,64 @@ type Times = {
   Isha: string;
 };
 
+type AladhanResponse = {
+  data: { timings: Times };
+};
+
+type GeoResponse = {
+  city?: string;
+  locality?: string;
+  countryName?: string;
+};
+
 type Props = {
   lang?: string;
 };
 
 const labels: Record<
   string,
-  { change: string; updated: string; refreshed: string }
+  {
+    change: string;
+    updated: string;
+    refreshed: string;
+    detecting: string;
+    error: string;
+  }
 > = {
   "20": {
     change: "Change location",
     updated: "Location updated",
     refreshed: "Prayer times refreshed",
+    detecting: "Detecting location…",
+    error: "Location unavailable",
   },
   "33": {
     change: "Ubah lokasi",
     updated: "Lokasi diperbarui",
     refreshed: "Jadwal sholat diperbarui",
+    detecting: "Mendeteksi lokasi…",
+    error: "Lokasi tidak tersedia",
   },
   "31": {
     change: "Konumu değiştir",
     updated: "Konum güncellendi",
     refreshed: "Namaz vakitleri güncellendi",
+    detecting: "Konum algılanıyor…",
+    error: "Konum alınamadı",
   },
   "85": {
     change: "Changer l'emplacement",
     updated: "Emplacement mis à jour",
     refreshed: "Horaires actualisés",
+    detecting: "Localisation…",
+    error: "Position indisponible",
   },
   "97": {
     change: "مقام تبدیل کریں",
     updated: "مقام اپڈیٹ ہوگیا",
     refreshed: "نماز کے اوقات اپڈیٹ ہوگئے",
+    detecting: "مقام معلوم کیا جا رہا ہے…",
+    error: "مقام دستیاب نہیں",
   },
 };
 
@@ -49,48 +76,83 @@ export default function PrayerWidget({ lang = "20" }: Props) {
   const t = labels[lang] ?? labels["20"];
 
   const [times, setTimes] = useState<Times | null>(null);
-  const [location, setLocation] = useState<string>("Detecting location…");
+  const [location, setLocation] = useState<string>(t.detecting);
   const [modal, setModal] = useState(false);
 
+  /* ---------- FETCH TIMES ---------- */
   const fetchTimes = useCallback(async (lat: number, lon: number) => {
     const method =
       lat >= -11 && lat <= 6 && lon >= 95 && lon <= 141 ? 11 : 2;
 
-    const res = await fetch(
+    const json = await safeFetch<AladhanResponse>(
       `https://api.aladhan.com/v1/timings?latitude=${lat}&longitude=${lon}&method=${method}`
     );
 
-    const json = await res.json();
+    if (!json) return;
     setTimes(json.data.timings);
   }, []);
 
+  /* ---------- SET LOCATION TEXT ---------- */
+  const setLocationText = useCallback(async (lat: number, lon: number) => {
+    const geo = await safeFetch<GeoResponse>(
+      `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lon}`
+    );
+
+    const city = geo?.city || geo?.locality || "";
+    const country = geo?.countryName || "";
+
+    if (!city && !country) {
+      setLocation(t.error);
+      return;
+    }
+
+    setLocation(`${city}, ${country}`);
+  }, [t.error]);
+
+  /* ---------- DETECT ---------- */
   const detect = useCallback(() => {
-    if (!navigator.geolocation) return;
+    if (!navigator.geolocation) {
+      setLocation(t.error);
+      return;
+    }
 
-    navigator.geolocation.getCurrentPosition(async (pos) => {
-      const lat = pos.coords.latitude;
-      const lon = pos.coords.longitude;
+    navigator.geolocation.getCurrentPosition(
+      async (pos) => {
+        const lat = pos.coords.latitude;
+        const lon = pos.coords.longitude;
 
-      const geo = await fetch(
-        `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lon}`
-      );
+        const current = JSON.stringify({
+          lat: lat.toFixed(2),
+          lon: lon.toFixed(2),
+        });
 
-      const geoData = await geo.json();
+        const last = localStorage.getItem("prayer-location");
 
-      const city = geoData.city || geoData.locality || "";
-      const country = geoData.countryName || "";
+        /* ALWAYS update visible location text */
+        await setLocationText(lat, lon);
 
-      setLocation(`${city}, ${country}`);
+        /* ALWAYS refresh prayer times */
+        await fetchTimes(lat, lon);
 
-      await fetchTimes(lat, lon);
+        /* SAME LOCATION → no modal */
+        if (last === current) return;
 
-      setModal(true);
-      setTimeout(() => setModal(false), 2000);
-    });
-  }, [fetchTimes]);
+        /* NEW LOCATION */
+        localStorage.setItem("prayer-location", current);
+
+        setModal(true);
+        setTimeout(() => setModal(false), 2000);
+      },
+      () => {
+        setLocation(t.error);
+      },
+      { enableHighAccuracy: true }
+    );
+  }, [fetchTimes, setLocationText, t.error]);
 
   useEffect(() => {
-    detect();
+    const id = setTimeout(() => detect(), 0);
+    return () => clearTimeout(id);
   }, [detect]);
 
   return (

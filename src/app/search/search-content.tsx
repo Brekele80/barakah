@@ -6,13 +6,6 @@ import Link from "next/link";
 import { withLang } from "@/lib/lang";
 import SkeletonCard from "@/app/components/skeleton-card";
 
-type Surah = {
-  id: number;
-  name_simple: string;
-  name_arabic: string;
-  translated_name: { name: string };
-};
-
 type Word = {
   transliteration?: { text: string };
 };
@@ -53,6 +46,47 @@ const translationMap: Record<string, string> = {
   "97": "97",
 };
 
+const labels: Record<
+  string,
+  { title: string; placeholder: string; button: string; back: string; empty: string }
+> = {
+  "20": {
+    title: "Search",
+    placeholder: "Search...",
+    button: "Search",
+    back: "Back",
+    empty: "No results found",
+  },
+  "33": {
+    title: "Cari",
+    placeholder: "Cari...",
+    button: "Cari",
+    back: "Kembali",
+    empty: "Tidak ada hasil",
+  },
+  "31": {
+    title: "Ara",
+    placeholder: "Ara...",
+    button: "Ara",
+    back: "Geri",
+    empty: "Sonuç bulunamadı",
+  },
+  "85": {
+    title: "Recherche",
+    placeholder: "Recherche...",
+    button: "Rechercher",
+    back: "Retour",
+    empty: "Aucun résultat",
+  },
+  "97": {
+    title: "تلاش",
+    placeholder: "تلاش کریں...",
+    button: "تلاش",
+    back: "واپس",
+    empty: "کوئی نتیجہ نہیں",
+  },
+};
+
 export default function SearchContent() {
   const params = useSearchParams();
 
@@ -60,33 +94,21 @@ export default function SearchContent() {
   const lang = params.get("lang") ?? "20";
 
   const apiLang = langMap[lang] ?? "en";
-  const translationId = translationMap[lang] ?? "20";
+  const translationId = translationMap[lang] ?? "131";
+  const ui = labels[lang] ?? labels["20"];
 
   const [results, setResults] = useState<VerseDetail[]>([]);
-  const [surahResults, setSurahResults] = useState<Surah[]>([]);
   const [loading, setLoading] = useState(false);
 
+  /* ---------------- FETCH ---------------- */
   useEffect(() => {
-    if (!query) return;
+    if (!query) return; // ✅ do nothing if empty
+
+    let active = true;
 
     async function run() {
       setLoading(true);
 
-      /* ---------- SURAH SEARCH ---------- */
-      try {
-        const surahRes = await fetch(
-          `https://api.quran.com/api/v4/chapters?language=${apiLang}`
-        );
-        const surahJson = await surahRes.json();
-
-        const filtered = surahJson.chapters.filter((s: Surah) =>
-          s.name_simple.toLowerCase().includes(query.toLowerCase())
-        );
-
-        setSurahResults(filtered);
-      } catch {}
-
-      /* ---------- VERSE SEARCH ---------- */
       const res = await fetch(
         `https://api.quran.com/api/v4/search?q=${encodeURIComponent(
           query
@@ -106,7 +128,8 @@ export default function SearchContent() {
           const v = verseData.verse;
 
           const transliteration =
-            v.words?.map((w: Word) => w.transliteration?.text ?? "").join(" ") ?? "";
+            v.words?.map((w: Word) => w.transliteration?.text ?? "").join(" ") ??
+            "";
 
           return {
             verse_key: r.verse_key,
@@ -117,62 +140,88 @@ export default function SearchContent() {
         })
       );
 
+      if (!active) return;
+
       setResults(detailed);
       setLoading(false);
     }
 
     run();
+
+    return () => {
+      active = false;
+    };
   }, [query, apiLang, translationId]);
 
+  /* ---------------- UI ---------------- */
   return (
-    <main className="max-w-3xl mx-auto p-6 space-y-6">
+    <main className="max-w-3xl mx-auto p-6">
+      {/* BACK */}
+      <Link href={withLang("/", lang)} className="text-blue-500 mb-4 inline-block">
+        ← {ui.back}
+      </Link>
+
+      <h1 className="text-3xl font-bold mb-6">{ui.title}</h1>
+
+      {/* SEARCH */}
+      <form action="/search" className="mb-6 flex gap-2">
+        <input
+          name="q"
+          defaultValue={query}
+          placeholder={ui.placeholder}
+          className="flex-1 border rounded-lg p-2 bg-white dark:bg-black"
+        />
+
+        <input type="hidden" name="lang" value={lang} />
+
+        <button
+          type="submit"
+          className="px-4 py-2 bg-black text-white dark:bg-white dark:text-black rounded-lg"
+        >
+          {ui.button}
+        </button>
+      </form>
+
+      {/* LOADING */}
       {loading && (
         <div className="space-y-4">
+          <SkeletonCard />
           <SkeletonCard />
           <SkeletonCard />
         </div>
       )}
 
-      {/* SURAH RESULTS */}
-      {surahResults.map((s) => (
-        <Link
-          key={s.id}
-          href={withLang(`/surah/${s.id}`, lang)}
-          className="block p-4 border rounded-xl bg-green-50 dark:bg-green-900"
-        >
-          <div className="font-semibold">
-            {s.id}. {s.name_simple}
-          </div>
-          <div className="text-sm text-gray-500">
-            {s.translated_name.name}
-          </div>
-        </Link>
-      ))}
+      {/* EMPTY */}
+      {!loading && query && results.length === 0 && (
+        <div className="text-gray-500">{ui.empty}</div>
+      )}
 
-      {/* VERSE RESULTS */}
-      {results.map((r) => {
-        const [surah, ayah] = r.verse_key.split(":");
+      {/* RESULTS */}
+      <div className="space-y-6">
+        {results.map((r) => {
+          const [surah, ayah] = r.verse_key.split(":");
 
-        return (
-          <Link
-            key={r.verse_key}
-            href={withLang(`/surah/${surah}#ayah-${ayah}`, lang)}
-            className="block p-4 border rounded-xl"
-          >
-            <div className="text-sm text-gray-500">{r.verse_key}</div>
+          return (
+            <Link
+              key={r.verse_key}
+              href={withLang(`/surah/${surah}#ayah-${ayah}`, lang)}
+              className="block p-4 border rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800"
+            >
+              <div className="text-sm text-gray-500 mb-2">{r.verse_key}</div>
 
-            <div className="arabic text-right text-2xl">
-              {r.text_uthmani}
-            </div>
+              <div className="arabic text-right text-2xl mb-2">
+                {r.text_uthmani}
+              </div>
 
-            <div className="italic text-gray-500">
-              {r.transliteration}
-            </div>
+              <div className="italic text-gray-500 mb-2">
+                {r.transliteration}
+              </div>
 
-            <div dangerouslySetInnerHTML={{ __html: r.translation }} />
-          </Link>
-        );
-      })}
+              <div dangerouslySetInnerHTML={{ __html: r.translation }} />
+            </Link>
+          );
+        })}
+      </div>
     </main>
   );
 }
