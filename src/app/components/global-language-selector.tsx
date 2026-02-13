@@ -1,43 +1,45 @@
 "use client";
 
-import { useSearchParams, useRouter, usePathname } from "next/navigation";
+import { useRouter, useSearchParams, usePathname } from "next/navigation";
+import { persistLang, getLangFromSearchParams, DEFAULT_LANG } from "@/lib/lang";
 
-const langs = [
-  { id: "20", name: "UK" },
-  { id: "33", name: "ID" },
-  { id: "31", name: "TR" },
-  { id: "85", name: "FR" },
-  { id: "97", name: "UR" },
+const languages = [
+  { code: "20", label: "English" },
+  { code: "33", label: "Bahasa" },
+  { code: "31", label: "Türkçe" },
+  { code: "85", label: "Français" },
+  { code: "97", label: "اردو" },
 ];
 
 export default function GlobalLanguageSelector() {
-  const params = useSearchParams();
   const router = useRouter();
+  const params = useSearchParams();
   const pathname = usePathname();
 
-  const current = params.get("lang") || "20";
+  const currentLang = getLangFromSearchParams(params);
 
   function changeLang(newLang: string) {
-    // persist
-    localStorage.setItem("lang", newLang);
+    if (newLang === currentLang) return;
 
-    // update query
+    // persist everywhere
+    persistLang(newLang);
+
+    // build new url
     const newParams = new URLSearchParams(params.toString());
     newParams.set("lang", newLang);
 
-    // stay on SAME PAGE
-    router.push(`${pathname}?${newParams.toString()}`);
+    router.replace(`${pathname}?${newParams.toString()}`);
   }
 
   return (
     <select
-      value={current}
+      value={currentLang ?? DEFAULT_LANG}
       onChange={(e) => changeLang(e.target.value)}
-      className="border rounded p-2 bg-white dark:bg-gray-900"
+      className="border rounded-lg px-2 py-1 bg-white dark:bg-black"
     >
-      {langs.map((l) => (
-        <option key={l.id} value={l.id}>
-          {l.name}
+      {languages.map((l) => (
+        <option key={l.code} value={l.code}>
+          {l.label}
         </option>
       ))}
     </select>
