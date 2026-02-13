@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import {
   getLangFromSearchParams,
   syncLangToUrl,
+  withLang,
   DEFAULT_LANG,
 } from "@/lib/lang";
 
@@ -19,15 +20,8 @@ export default function Header() {
   const router = useRouter();
   const pathname = usePathname();
 
-  // language from URL (SSR safe)
   const lang = getLangFromSearchParams(params);
 
-  /**
-   * Sync stored lang → URL after mount
-   * - no setState
-   * - no render mutation
-   * - no hydration mismatch
-   */
   useEffect(() => {
     syncLangToUrl(
       params.get("lang"),
@@ -40,7 +34,7 @@ export default function Header() {
   return (
     <header className="flex justify-between items-center mb-6">
       {/* LOGO */}
-      <Link href={`/?lang=${lang ?? DEFAULT_LANG}`} className="flex items-center">
+      <Link href={withLang("/", lang ?? DEFAULT_LANG)} className="flex items-center">
         <Image
           src="/barakah-logo.png"
           alt="Barakah"
@@ -53,7 +47,7 @@ export default function Header() {
 
       {/* RIGHT */}
       <div className="flex items-center gap-4">
-        <Link href={`/bookmarks?lang=${lang}`} className="text-xl">
+        <Link href={withLang("/bookmarks", lang)} className="text-xl">
           <Bookmark className="w-6 h-6 fill-current" />
         </Link>
 

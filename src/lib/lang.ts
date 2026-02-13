@@ -65,17 +65,29 @@ export function resolveLang(urlLang?: string | null): string {
 }
 
 /* ---------------------------------
-   BUILD LINK WITH LANG
+   SAFE URL BUILDER (STRICT ENGINE)
 ---------------------------------- */
 export function withLang(path: string, lang: string): string {
-  if (!path.includes("?")) {
-    return `${path}?lang=${lang}`;
+  if (!path) return `/?lang=${lang}`;
+
+  // already has hash → preserve it
+  const hasHash = path.includes("#");
+
+  let base = path;
+  let hash = "";
+
+  if (hasHash) {
+    const parts = path.split("#");
+    base = parts[0];
+    hash = "#" + parts[1];
   }
 
-  const url = new URL(path, "http://dummy");
+  // build URL safely
+  const url = new URL(base, "http://dummy");
+
   url.searchParams.set("lang", lang);
 
-  return url.pathname + url.search + url.hash;
+  return url.pathname + url.search + hash;
 }
 
 /* ---------------------------------
