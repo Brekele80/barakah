@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import BookmarkButton from "./bookmark-button";
+import Link from "next/link";
 
 type Word = {
   transliteration?: { text: string };
@@ -58,16 +59,19 @@ export default function VerseBlock({
         <BookmarkButton verseKey={`${surahId}:${verse.verse_number}`} />
       </div>
 
-      {/* Arabic */}
-      <p
-        className="arabic text-right text-4xl leading-loose mb-3 cursor-pointer pr-10"
+      {/* CLICKABLE AYAH */}
+      <Link
+        href={`/ayah/${surahId}/${verse.verse_number}?lang=${lang}`}
+        className="block"
         onClick={saveLastRead}
       >
-        {verse.text_uthmani}
-        <span className="text-sm ml-2 text-gray-500">
-          ({verse.verse_number})
-        </span>
-      </p>
+        <p className="arabic text-right text-4xl leading-loose mb-3 cursor-pointer pr-10 hover:opacity-80">
+          {verse.text_uthmani}
+          <span className="text-sm ml-2 text-gray-500">
+            ({verse.verse_number})
+          </span>
+        </p>
+      </Link>
 
       {show && (
         <div className="text-green-600 text-sm mb-2">
