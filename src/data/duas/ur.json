@@ -1,8 +1,352 @@
 {
   "1": {
     "title": "صبح کی دعا",
-    "arabic": "اللّهُـمَّ أَنْتَ رَبِّـي",
-    "translation": "اے اللہ تو میرا رب ہے۔",
-    "source": "بخاری"
+    "arabic": "اللَّهُمَّ بِكَ أَصْبَحْنَا وَبِكَ أَمْسَيْنَا وَبِكَ نَحْيَا وَبِكَ نَمُوتُ وَإِلَيْكَ النُّشُورُ",
+    "transliteration": "Allahumma bika asbahna wa bika amsayna wa bika nahya wa bika namutu wa ilaykan-nushur.",
+    "translation": "اے اللہ! تیرے ہی حکم سے ہم نے صبح کی اور تیرے ہی حکم سے ہم نے شام کی، اور تیرے ہی حکم سے ہم جیتے ہیں اور تیرے ہی حکم سے ہم مریں گے اور تیری ہی طرف اٹھ کر جانا ہے۔",
+    "source": "Tirmidhi"
+  },
+  "2": {
+    "title": "سید الاستغفار (سب سے بہترین توبہ)",
+    "arabic": "اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ خَلَقْتَنِي وَأَنَا عَبْدُكَ وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
+    "transliteration": "Allahumma anta Rabbi la ilaha illa anta, khalaqtani wa ana ‘abduka, wa ana ‘ala ‘ahdika wa wa‘dika mastata‘tu, a‘udhu bika min sharri ma sana‘tu, abu’u laka bini‘matika ‘alayya wa abu’u bidhanbi faghfir li fa’innahu la yaghfirudh-dhunuba illa ant.",
+    "translation": "اے اللہ! تو ہی میرا رب ہے، تیرے سوا کوئی معبود نہیں، تو نے ہی مجھے پیدا کیا اور میں تیرا بندہ ہوں، اور میں اپنی طاقت کے مطابق تیرے عہد اور وعدے پر قائم ہوں۔ میں اپنے کاموں کے شر سے تیری پناہ مانگتا ہوں، میں تیرے سامنے تیری نعمتوں کا اقرار کرتا ہوں اور اپنے گناہوں کا اعتراف کرتا ہوں۔ پس مجھے بخش دے کیونکہ تیرے سوا کوئی گناہوں کو نہیں بخش سکتا۔",
+    "source": "Bukhari"
+  },
+  "3": {
+    "title": "صبح کی حفاظت کی دعا",
+    "arabic": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+    "transliteration": "Bismillahilladhi la yadurru ma‘asmihi shay’un fil-ardi wa la fis-sama’i wa huwas-sami‘ul-‘alim.",
+    "translation": "اللہ کے نام سے (میں اپنی صبح کا آغاز کرتا ہوں) جس کے نام کی برکت سے زمین اور آسمان میں کوئی چیز نقصان نہیں پہنچا سکتی، اور وہ خوب سننے والا اور سب کچھ جاننے والا ہے۔",
+    "source": "Abu Dawud"
+  },
+  "4": {
+    "title": "شام کی دعا",
+    "arabic": "اللَّهُمَّ بِكَ أَمْسَيْنَا وَبِكَ أَصْبَحْنَا وَبِكَ نَحْيَا وَبِكَ نَمُوتُ وَإِلَيْكَ الْمَصِيرُ",
+    "transliteration": "Allahumma bika amsayna wa bika asbahna wa bika nahya wa bika namutu wa ilaykal-masir.",
+    "translation": "اے اللہ! تیرے ہی حکم سے ہم نے شام کی اور تیرے ہی حکم سے ہم نے صبح کی، تیرے ہی حکم سے ہم جیتے ہیں اور تیرے ہی حکم سے ہم مریں گے اور تیری ہی طرف لوٹ کر جانا ہے۔",
+    "source": "Tirmidhi"
+  },
+  "5": {
+    "title": "شام کا ذکر اور توحید",
+    "arabic": "أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ وَالْحَمْدُ لِلَّهِ لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِیکَ لَهُ لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى کُلِّ شَيْءٍ قَدِيرٌ",
+    "transliteration": "Amsayna wa amsal-mulku lillahi wal-hamdu lillahi, la ilaha illallahu wahdahu la sharika lahu, lahul-mulku wa lahul-hamdu wa huwa ‘ala kulli shay’in qadir.",
+    "translation": "ہم نے شام کی اور شام کے وقت تمام بادشاہت اللہ ہی کے لیے ہے، اور تمام تعریف اللہ ہی کے لیے ہے۔ اللہ کے سوا کوئی معبود نہیں، وہ اکیلا ہے، اس کا کوئی شریک نہیں، اسی کی بادشاہت ہے اور اسی کے لیے تعریف ہے، اور وہ ہر چیز پر قادر ہے۔",
+    "source": "Muslim"
+  },
+  "6": {
+    "title": "شام کی نعمتوں کا شکر",
+    "arabic": "اللَّهُمَّ مَا أَمْسَى بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ",
+    "transliteration": "Allahumma ma amsa bi min ni‘matin aw bi’ahadin min khalqika faminka wahdaka la sharika laka, falakal-hamdu wa lakash-shukr.",
+    "translation": "اے اللہ! اس شام جو بھی نعمت مجھے ملی یا تیری مخلوق میں سے کسی اور کو ملی، وہ صرف تیری ہی طرف سے ہے، تو اکیلا ہے تیرا کوئی شریک نہیں۔ پس تمام تعریفیں اور شکر تیرے ہی لیے ہے۔",
+    "source": "Abu Dawud"
+  },
+  "7": {
+    "title": "سونے سے پہلے کی دعا",
+    "arabic": "بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا",
+    "transliteration": "Bismika Allahumma amutu wa ahya.",
+    "translation": "اے اللہ! میں تیرے ہی نام کے ساتھ مرتا (سوتا) ہوں اور جیتا (جاگتا) ہوں۔",
+    "source": "Bukhari"
+  },
+  "8": {
+    "title": "قیامت کے عذاب سے پناہ",
+    "arabic": "اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ",
+    "transliteration": "Allahumma qini ‘adhabaka yawma tab‘athu ‘ibadaka.",
+    "translation": "اے اللہ! مجھے اس دن اپنے عذاب سے بچانا جس دن تو اپنے بندوں کو دوبارہ اٹھائے گا۔",
+    "source": "Abu Dawud"
+  },
+  "9": {
+    "title": "سفر کی دعا",
+    "arabic": "اللَّهُ أَكْبَرُ، اللَّهُ أَكْبَرُ، اللَّهُ أَكْبَرُ، سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ",
+    "transliteration": "Allahu Akbar, Allahu Akbar, Allahu Akbar. Subhanalladhi sakhkhara lana hadha wa ma kunna lahu muqrinina, wa inna ila Rabbina lamunqalibun.",
+    "translation": "اللہ سب سے بڑا ہے (تین بار)۔ پاک ہے وہ ذات جس نے اس (سواری) کو ہمارے قابو میں کر دیا حالانکہ ہم اسے قابو میں کرنے والے نہ تھے، اور بے شک ہمیں اپنے رب ہی کی طرف لوٹ کر جانا ہے۔",
+    "source": "Muslim"
+  },
+  "10": {
+    "title": "سفر سے واپسی کا ذکر",
+    "arabic": "آيِبُونَ تَائِبُونَ عَابِدُونَ لِرَبِّنَا حَامِدُونَ",
+    "transliteration": "Ayibuna, ta’ibuna, ‘abiduna, li-Rabbina hamidun.",
+    "translation": "ہم واپس لوٹنے والے ہیں، توبہ کرنے والے ہیں، عبادت کرنے والے ہیں اور اپنے رب کی تعریف کرنے والے ہیں۔",
+    "source": "Muslim"
+  },
+  "11": {
+    "title": "ہر گناہ کی مغفرت کی دعا",
+    "arabic": "اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ دِقَّهُ وَجِلَّهُ وَأَوَّلَهُ وَآخِرَهُ وَعَلَانِيَتَهُ وَسِرَّهُ",
+    "transliteration": "Allahummaghfir li dhanbi kullahu diqqahu wa jillahu wa awwalahu wa akhirahu wa ‘alaniyatahu wa sirrahu.",
+    "translation": "اے اللہ! میرے تمام گناہ بخش دے، چھوٹے بھی اور بڑے بھی، پہلے بھی اور پچھلے بھی، ظاہر بھی اور پوشیدہ بھی۔",
+    "source": "Muslim"
+  },
+  "12": {
+    "title": "نفس پر ظلم کی معافی",
+    "arabic": "اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْمًا كَثِيرًا وَلَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ",
+    "transliteration": "Allahumma inni zalamtu nafsi zulman kathiran wa la yaghfirudh-dhunuba illa anta faghfir li maghfiratan min ‘indika warhamni innaka antal-ghafurur-rahim.",
+    "translation": "اے اللہ! میں نے اپنی جان پر بہت زیادہ ظلم کیا ہے اور تیرے سوا کوئی گناہوں کو نہیں بخش سکتا، پس اپنی خاص رحمت سے میری مغفرت فرما اور مجھ پر رحم کر، بے شک تو ہی بہت بخشنے والا، نہایت رحم کرنے والا ہے۔",
+    "source": "Bukhari & Muslim"
+  },
+  "13": {
+    "title": "مشکلات میں آسانی کی دعا",
+    "arabic": "اللَّهُمَّ لَا سَهْلَ إِلَّا مَا جَعَلْتَهُ سَهْلًا وَأَنْتَ تَجْعَلُ الْحَزْنَ إِذَا شِئْتَ سَهْلًا",
+    "transliteration": "Allahumma la sahla illa ma ja‘altahu sahlan wa anta taj‘alul-hazna idha shi’ta sahla.",
+    "translation": "اے اللہ! کوئی کام آسان نہیں مگر وہی جسے تو آسان کر دے، اور جب تو چاہے تو مشکل کو بھی آسان کر دیتا ہے۔",
+    "source": "Ibn Hibban"
+  },
+  "14": {
+    "title": "دعاِ یونس علیہ السلام (پریشانی سے نجات)",
+    "arabic": "لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ",
+    "transliteration": "La ilaha illa anta subhanaka inni kuntu minaz-zalimin.",
+    "translation": "تیرے سوا کوئی معبود نہیں، تو پاک ہے، بے شک میں ہی ظالموں میں سے تھا۔",
+    "source": "Qur'an 21:87"
+  },
+  "15": {
+    "title": "غم اور قرض سے پناہ",
+    "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ وَأَعُوذُ بِكَ مِنَ الْعَجْزِ وَالْكَسَلِ وَأَعُوذُ بِكَ مِنَ الْجُبْنِ وَالْبُخْلِ وَأَعُوذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ وَقَهْرِ الرِّجَالِ",
+    "transliteration": "Allahumma inni a‘udhu bika minal-hammi wal-hazan wa a‘udhu bika minal-‘ajzi wal-kasal wa a‘udhu bika minal-jubni wal-bukhl wa a‘udhu bika min ghalabatid-dayni wa qahrir-rijal.",
+    "translation": "اے اللہ! میں فکر اور غم سے تیری پناہ مانگتا ہوں، اور عاجزی اور سستی سے تیری پناہ مانگتا ہوں، اور بزدلی اور کنجوسی سے تیری پناہ مانگتا ہوں، اور قرض کے بوجھ اور لوگوں کے دباؤ سے تیری پناہ مانگتا ہوں۔",
+    "source": "Bukhari"
+  },
+  "16": {
+    "title": "علم میں اضافے کی دعا",
+    "arabic": "رَبِّ زِدْنِي عِلْمًا",
+    "transliteration": "Rabbi zidni ‘ilma.",
+    "translation": "اے میرے رب! میرے علم میں اضافہ فرما۔",
+    "source": "Qur'an 20:114"
+  },
+  "17": {
+    "title": "نافع علم اور پاکیزہ رزق کی دعا",
+    "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا طَيِّبًا وَعَمَلًا مُتَقَبَّلًا",
+    "transliteration": "Allahumma inni as’aluka ‘ilman nafi‘an wa rizqan tayyiban wa ‘amalan mutaqabbalan.",
+    "translation": "اے اللہ! میں تجھ سے نفع دینے والے علم، پاکیزہ رزق اور قبول ہونے والے عمل کا سوال کرتا ہوں۔",
+    "source": "Ibn Majah"
+  },
+  "18": {
+    "title": "ہدایت اور استقامت کی دعا",
+    "arabic": "اللَّهُمَّ اهْدِنِي وَسَدِّدْنِي",
+    "transliteration": "Allahumma ihdini wa saddidni.",
+    "translation": "اے اللہ! مجھے ہدایت دے اور مجھے سیدھی راہ پر ثابت قدم رکھ۔",
+    "source": "Muslim"
+  },
+  "19": {
+    "title": "والدین کے لیے دعا",
+    "arabic": "رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا",
+    "transliteration": "Rabbighfir li wa liwalidayya warhamhuma kama rabbayani saghira.",
+    "translation": "اے میرے رب! مجھے اور میرے والدین کو بخش دے اور ان دونوں پر رحم فرما جیسا کہ انہوں نے بچپن میں میری پرورش کی۔",
+    "source": "Abu Dawud"
+  },
+  "20": {
+    "title": "اہل و عیال کے لیے دعا",
+    "arabic": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+    "transliteration": "Rabbana hab lana min azwajina wa dhurriyyatina qurrata a‘yunin waj‘alna lil-muttaqina imama.",
+    "translation": "اے ہمارے رب! ہمیں ہماری بیویوں اور ہماری اولاد سے آنکھوں کی ٹھنڈک عطا فرما اور ہمیں پرہیزگاروں کا پیشوا بنا۔",
+    "source": "Qur'an 25:74"
+  },
+  "21": {
+    "title": "گھر میں داخل ہونے کی دعا",
+    "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ الْمَوْلِجِ وَخَيْرَ الْمَخْرَجِ بِسْمِ اللَّهِ وَلَجْنَا وَبِسْمِ اللَّهِ خَرَجْنَا وَعَلَى اللَّهِ رَبِّنَا تَوَكَّلْنَا",
+    "transliteration": "Allahumma inni as’aluka khayral-mawliji wa khayral-makhraji. Bismillah walajna wa bismillah kharajna wa ‘alallahi rabbina tawakkalna.",
+    "translation": "اے اللہ! میں تجھ سے بہتر داخلے اور بہتر نکلنے کا سوال کرتا ہوں۔ اللہ کے نام سے ہم داخل ہوئے اور اللہ ہی کے نام سے ہم نکلے، اور ہم نے اپنے رب اللہ ہی پر بھروسہ کیا۔",
+    "source": "Abu Dawud"
+  },
+  "22": {
+    "title": "گھر سے نکلنے کی دعا",
+    "arabic": "بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+    "transliteration": "Bismillah tawakkaltu ‘alallah la hawla wa la quwwata illa billah.",
+    "translation": "اللہ کے نام سے (نکلتا ہوں)، میں نے اللہ پر بھروسہ کیا، گناہوں سے بچنے کی طاقت اور نیکی کرنے کی قوت اللہ ہی کی طرف سے ہے۔",
+    "source": "Abu Dawud"
+  },
+  "23": {
+    "title": "کھانا کھانے سے پہلے کی دعا",
+    "arabic": "بِسْمِ اللَّهِ",
+    "transliteration": "Bismillah.",
+    "translation": "اللہ کے نام سے (شروع کرتا ہوں)۔",
+    "source": "Bukhari"
+  },
+  "24": {
+    "title": "کھانے کے بعد کی دعا",
+    "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنِي هَذَا وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّةٍ",
+    "transliteration": "Alhamdulillahilladhi at‘amani hadha wa razaqanihi min ghayri hawlin minni wa la quwwah.",
+    "translation": "تمام تعریفیں اللہ کے لیے ہیں جس نے مجھے یہ کھلایا اور میری کسی طاقت اور قوت کے بغیر مجھے یہ رزق عطا فرمایا۔",
+    "source": "Tirmidhi"
+  },
+  "25": {
+    "title": "تندرستی اور عافیت کی دعا",
+    "arabic": "اللَّهُمَّ عَافِنِي فِي بَدَنِي اللَّهُمَّ عَافِنِي فِي سَمْعِي اللَّهُمَّ عَافِنِي فِي بَصَرِي",
+    "transliteration": "Allahumma ‘afini fi badani, Allahumma ‘afini fi sam‘i, Allahumma ‘afini fi basari.",
+    "translation": "اے اللہ! میرے بدن میں مجھے عافیت دے، اے اللہ! میری سماعت میں مجھے عافیت دے، اے اللہ! میری بصارت میں مجھے عافیت دے۔",
+    "source": "Abu Dawud"
+  },
+  "26": {
+    "title": "شفا کی دعا",
+    "arabic": "اللَّهُمَّ رَبَّ النَّاسِ أَذْهِبِ الْبَأْسَ اشْفِ أَنْتَ الشَّافِي لَا شِفَاءَ إِلَّا شِفَاؤُكَ شِفَاءً لَا يُغَادِرُ سَقَمًا",
+    "transliteration": "Allahumma Rabban-nas adhhibil-ba’s ishfi anta ash-shafi la shifa’a illa shifa’uka shifa’an la yughadiru saqama.",
+    "translation": "اے اللہ! اے لوگوں کے رب، بیماری کو دور کر دے اور شفا عطا فرما، تو ہی شفا دینے والا ہے، تیری شفا کے سوا کوئی شفا نہیں، ایسی شفا عطا فرما جو کسی بیماری کو باقی نہ چھوڑے۔",
+    "source": "Bukhari & Muslim"
+  },
+  "27": {
+    "title": "مخلوق کے شر سے پناہ",
+    "arabic": "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ",
+    "transliteration": "A‘udhu bikalimatillahit-tammati min sharri ma khalaq.",
+    "translation": "میں اللہ کے مکمل کلمات کے ذریعے ہر اس چیز کے شر سے پناہ مانگتا ہوں جو اس نے پیدا کی ہے۔",
+    "source": "Muslim"
+  },
+  "28": {
+    "title": "بچوں کی حفاظت کی دعا",
+    "arabic": "أُعِيذُكُمَا بِكَلِمَاتِ اللَّهِ التَّامَّةِ مِنْ كُلِّ شَيْطَانٍ وَهَامَّةٍ وَمِنْ كُلِّ عَيْنٍ لَامَّةٍ",
+    "transliteration": "U‘idhukuma bikalimatillahit-tammah min kulli shaytanin wa hammah wa min kulli ‘aynin lammah.",
+    "translation": "میں تم دونوں کو اللہ کے مکمل کلمات کی پناہ میں دیتا ہوں ہر شیطان اور زہریلے جانور سے اور ہر نقصان پہنچانے والی (بد) نظر سے۔",
+    "source": "Bukhari"
+  },
+  "29": {
+    "title": "بازار میں داخل ہونے کی دعا",
+    "arabic": "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ حَيٌّ لَا يَمُوتُ بِيَدِهِ الْخَيْرُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+    "transliteration": "La ilaha illallahu wahdahu la sharika lahu, lahul-mulku wa lahul-hamdu yuhyi wa yumitu wa huwa hayyun la yamutu biyadihil-khayr wa huwa ‘ala kulli shay’in qadir.",
+    "translation": "اللہ کے سوا کوئی معبود نہیں، وہ اکیلا ہے اس کا کوئی شریک نہیں، اسی کی بادشاہی ہے اور اسی کے لیے تعریف ہے، وہی زندگی دیتا ہے اور وہی موت دیتا ہے، وہ ہمیشہ زندہ ہے اسے موت نہیں آئے گی، اسی کے ہاتھ میں خیر ہے اور وہ ہر چیز پر قادر ہے۔",
+    "source": "Tirmidhi"
+  },
+  "30": {
+    "title": "جہنم سے پناہ",
+    "arabic": "اللَّهُمَّ أَجِرْنِي مِنَ النَّارِ",
+    "transliteration": "Allahumma ajirni minan-nar.",
+    "translation": "اے اللہ! مجھے آگ (جہنم) سے پناہ دے۔",
+    "source": "Abu Dawud"
+  },
+  "31": {
+    "title": "جنت کا سوال اور جہنم سے پناہ",
+    "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْجَنَّةَ وَأَعُوذُ بِكَ مِنَ النَّارِ",
+    "transliteration": "Allahumma inni as’alukal-jannah wa a‘udhu bika minan-nar.",
+    "translation": "اے اللہ! میں تجھ سے جنت کا سوال کرتا ہوں اور آگ (جہنم) سے تیری پناہ مانگتا ہوں۔",
+    "source": "Abu Dawud"
+  },
+  "32": {
+    "title": "استخارہ کی دعا",
+    "arabic": "اللَّهُمَّ إِنِّي أَسْتَخِيرُكَ بِعِلْمِكَ وَأَسْتَقْدِرُكَ بِقُدْرَتِكَ وَأَسْأَلُكَ مِنْ فَضْلِكَ الْعَظِيمِ فَإِنَّكَ تَقْدِرُ وَلَا أَقْدِرُ وَتَعْلَمُ وَلَا أَعْلَمُ وَأَنْتَ عَلَّامُ الْغُيُوبِ اللَّهُمَّ إِنْ كُنْتَ تَعْلَمُ أَنَّ هَذَا الْأَمْرَ خَيْرٌ لِي فِي دِينِي وَمَعَاشِي وَعَاقِبَةِ أَمْرِي فَاقْدُرْهُ لِي وَيَسِّرْهُ لِي ثُمَّ بَارِكْ لِي فِيهِ وَإِنْ كُنْتَ تَعْلَمُ أَنَّهُ شَرٌّ لِي فَاصْرِفْهُ عَنِّي وَاصْرِفْنِي عَنْهُ وَاقْدُرْ لِيَ الْخَيْرَ حَيْثُ كَانَ ثُمَّ أَرْضِنِي بِهِ",
+    "transliteration": "Allahumma inni astakhiruka bi ‘ilmika wa astaqdiruka bi qudratika wa as’aluka min fadlikal-‘azim fa innaka taqdiru wa la aqdir wa ta‘lamu wa la a‘lam wa anta ‘allamul-ghuyub. Allahumma in kunta ta‘lamu anna hadhal-amra khayrun li fi dini wa ma‘ashi wa ‘aqibati amri faqdurhu li wa yassirhu li thumma barik li fihi. Wa in kunta ta‘lamu annahu sharrun li fasrifhu ‘anni wasrifni ‘anhu waqdur li al-khayra haythu kana thumma ardini bih.",
+    "translation": "اے اللہ! میں تیرے علم کے ذریعے تجھ سے خیر طلب کرتا ہوں اور تیری قدرت کے ذریعے تجھ سے طاقت مانگتا ہوں اور تیرے بڑے فضل کا سوال کرتا ہوں، کیونکہ تو قدرت رکھتا ہے اور میں قدرت نہیں رکھتا، تو جانتا ہے اور میں نہیں جانتا اور تو غیبوں کا خوب جاننے والا ہے۔ اے اللہ! اگر تو جانتا ہے کہ یہ کام میرے دین، میری زندگی اور میرے انجامِ کار کے لحاظ سے بہتر ہے تو اسے میرے لیے مقدر کر دے اور اسے میرے لیے آسان کر دے، پھر اس میں میرے لیے برکت ڈال دے۔ اور اگر تو جانتا ہے کہ یہ کام میرے لیے برا ہے تو اسے مجھ سے دور کر دے اور مجھے اس سے دور کر دے، اور جہاں کہیں بھی خیر ہو وہ میرے لیے مقدر کر دے پھر مجھے اس پر راضی کر دے۔",
+    "source": "Bukhari"
+  },
+  "33": {
+    "title": "رات کو آنکھ کھلنے پر ذکر",
+    "arabic": "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ سُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ وَلَا إِلَهَ إِلَّا اللَّهُ وَاللَّهُ أَكْبَرُ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+    "transliteration": "La ilaha illallahu wahdahu la sharika lahu lahul-mulku wa lahul-hamdu wa huwa ‘ala kulli shay’in qadir. Subhanallahi wal-hamdu lillahi wa la ilaha illallahu wallahu akbar wa la hawla wa la quwwata illa billah.",
+    "translation": "اللہ کے سوا کوئی معبود نہیں، وہ اکیلا ہے اس کا کوئی شریک نہیں، اسی کی بادشاہی ہے اور اسی کے لیے تعریف ہے اور وہ ہر چیز پر قادر ہے۔ اللہ پاک ہے، تمام تعریف اللہ کے لیے ہے، اللہ کے سوا کوئی معبود نہیں، اللہ سب سے بڑا ہے اور اللہ کی مدد کے بغیر نہ گناہوں سے بچنے کی طاقت ہے نہ نیکی کرنے کی قوت۔",
+    "source": "Bukhari"
+  },
+  "34": {
+    "title": "غصہ کے وقت کی دعا",
+    "arabic": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
+    "transliteration": "A‘udhu billahi minash-shaytanir-rajim.",
+    "translation": "میں شیطان مردود سے اللہ کی پناہ مانگتا ہوں۔",
+    "source": "Bukhari & Muslim"
+  },
+  "35": {
+    "title": "دل کی استقامت کی دعا",
+    "arabic": "يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ",
+    "transliteration": "Ya Muqallibal-qulub thabbit qalbi ‘ala dinik.",
+    "translation": "اے دلوں کو پھیرنے والے! میرے دل کو اپنے دین پر ثابت قدم رکھ۔",
+    "source": "Tirmidhi"
+  },
+  "36": {
+    "title": "سبحان اللہ وبحمدہ کی فضیلت",
+    "arabic": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ",
+    "transliteration": "Subhanallahi wa bihamdih.",
+    "translation": "اللہ اپنی تعریفوں کے ساتھ پاک ہے۔",
+    "source": "Bukhari"
+  },
+  "37": {
+    "title": "میزان میں بھاری کلمات",
+    "arabic": "سُبْحَانَ اللَّهِ الْعَظِيمِ وَبِحَمْدِهِ",
+    "transliteration": "Subhanallahil-‘azim wa bihamdih.",
+    "translation": "عظمت والا اللہ اپنی تعریفوں کے ساتھ پاک ہے۔",
+    "source": "Bukhari"
+  },
+  "38": {
+    "title": "تسبیحِ فاطمہ رضی اللہ عنہا",
+    "arabic": "سُبْحَانَ اللَّهِ (٣٣) وَالْحَمْدُ لِلَّهِ (٣٣) وَاللَّهُ أَكْبَرُ (٣٤)",
+    "transliteration": "Subhanallah 33, Alhamdulillah 33, Allahu akbar 34.",
+    "translation": "اللہ پاک ہے (33 بار)، تمام تعریف اللہ کے لیے ہے (33 بار)، اللہ سب سے بڑا ہے (34 بار)۔",
+    "source": "Bukhari"
+  },
+  "39": {
+    "title": "صبح کا ایک اور جامع ذکر",
+    "arabic": "اللَّهُمَّ بِكَ أَصْبَحْنَا وَبِكَ أَمْسَيْنَا وَبِكَ نَحْيَا وَبِكَ نَمُوتُ وَإِلَيْكَ النُّشُورُ",
+    "transliteration": "Allahumma bika asbahna wa bika amsayna wa bika nahya wa bika namut wa ilaykan-nushur.",
+    "translation": "اے اللہ! تیرے ہی حکم سے ہم نے صبح کی اور تیرے ہی حکم سے ہم نے شام کی، تیرے ہی حکم سے ہم جیتے ہیں اور تیرے ہی حکم سے ہم مریں گے اور تیری ہی طرف دوبارہ اٹھ کر جانا ہے۔",
+    "source": "Tirmidhi"
+  },
+  "40": {
+    "title": "شام کا ایک اور جامع ذکر",
+    "arabic": "اللَّهُمَّ بِكَ أَمْسَيْنَا وَبِكَ أَصْبَحْنَا وَبِكَ نَحْيَا وَبِكَ نَمُوتُ وَإِلَيْكَ الْمَصِيرُ",
+    "transliteration": "Allahumma bika amsayna wa bika asbahna wa bika nahya wa bika namut wa ilaykal-masir.",
+    "translation": "اے اللہ! تیرے ہی حکم سے ہم نے شام کی اور تیرے ہی حکم سے ہم نے صبح کی، تیرے ہی حکم سے ہم جیتے ہیں اور تیرے ہی حکم سے ہم مریں گے اور تیری ہی طرف لوٹ کر جانا ہے۔",
+    "source": "Tirmidhi"
+  },
+  "41": {
+    "title": "وضو کے بعد کی دعا",
+    "arabic": "أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
+    "transliteration": "Ashhadu an la ilaha illallahu wahdahu la sharika lahu wa ashhadu anna Muhammadan ‘abduhu wa rasuluh.",
+    "translation": "میں گواہی دیتا ہوں کہ اللہ کے سوا کوئی معبود نہیں، وہ اکیلا ہے اس کا کوئی شریک نہیں، اور میں گواہی دیتا ہوں کہ محمد (صلی اللہ علیہ وسلم) اس کے بندے اور رسول ہیں۔",
+    "source": "Muslim"
+  },
+  "42": {
+    "title": "مسجد میں داخل ہونے کی دعا",
+    "arabic": "اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ",
+    "transliteration": "Allahummaftah li abwaba rahmatik.",
+    "translation": "اے اللہ! میرے لیے اپنی رحمت کے دروازے کھول دے۔",
+    "source": "Muslim"
+  },
+  "43": {
+    "title": "مسجد سے نکلنے کی دعا",
+    "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ",
+    "transliteration": "Allahumma inni as’aluka min fadlik.",
+    "translation": "اے اللہ! میں تجھ سے تیرے فضل کا سوال کرتا ہوں۔",
+    "source": "Muslim"
+  },
+  "44": {
+    "title": "حلال رزق اور بے نیازی کی دعا",
+    "arabic": "اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ",
+    "transliteration": "Allahummakfini bihalalika ‘an haramika wa aghnini bifadlika ‘amman siwak.",
+    "translation": "اے اللہ! مجھے اپنے حلال رزق کے ذریعے اپنے حرام کردہ رزق سے بچا لے، اور اپنے فضل کے ذریعے مجھے اپنے سوا ہر کسی سے بے نیاز کر دے۔",
+    "source": "Tirmidhi"
+  },
+  "45": {
+    "title": "رضاِ الٰہی اور برکت کی دعا",
+    "arabic": "اللَّهُمَّ رَضِّنِي بِمَا قَضَيْتَ وَبَارِكْ لِي فِيمَا أُعْطِيتَ",
+    "transliteration": "Allahumma raddini bima qadayta wa barik li fima a‘tayta.",
+    "translation": "اے اللہ! مجھے اپنے فیصلے پر راضی کر دے اور مجھے جو کچھ تو نے عطا کیا اس میں میرے لیے برکت ڈال دے۔",
+    "source": "Ahmad"
+  },
+  "46": {
+    "title": "شرک سے بچنے کی دعا",
+    "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أُشْرِكَ بِكَ وَأَنَا أَعْلَمُ وَأَسْتَغْفِرُكَ لِمَا لَا أَعْلَمُ",
+    "transliteration": "Allahumma inni a‘udhu bika an ushrika bika wa ana a‘lam wa astaghfiruka lima la a‘lam.",
+    "translation": "اے اللہ! میں اس بات سے تیری پناہ مانگتا ہوں کہ میں جانتے بوجھتے تیرے ساتھ کسی کو شریک ٹھہراؤں، اور میں اس (شرک) سے معافی مانگتا ہوں جو میں نہیں جانتا۔",
+    "source": "Ahmad"
+  },
+  "47": {
+    "title": "دنیا و آخرت کی جامع دعا",
+    "arabic": "اللَّهُمَّ آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+    "transliteration": "Allahumma atina fid-dunya hasanah wa fil-akhirati hasanah wa qina ‘adhaban-nar.",
+    "translation": "اے اللہ! ہمیں دنیا میں بھی بھلائی عطا فرما اور آخرت میں بھی بھلائی عطا فرما اور ہمیں آگ (جہنم) کے عذاب سے بچا۔",
+    "source": "Bukhari & Muslim"
+  },
+  "48": {
+    "title": "اطاعت پر دل کو پھیرنے کی دعا",
+    "arabic": "اللَّهُمَّ يَا مُصَرِّفَ الْقُلُوبِ صَرِّفْ قُلُوبَنَا عَلَى طَاعَتِكَ",
+    "transliteration": "Allahumma ya musarrifal-qulub sarrif qulubana ‘ala ta‘atik.",
+    "translation": "اے دلوں کو پھیرنے والے اللہ! ہمارے دلوں کو اپنی اطاعت کی طرف پھیر دے۔",
+    "source": "Muslim"
+  },
+  "49": {
+    "title": "خاتمہ بالخیر کی دعا",
+    "arabic": "اللَّهُمَّ اخْتِمْ لَنَا بِخَيْرٍ",
+    "transliteration": "Allahummakhtim lana bikhayr.",
+    "translation": "اے اللہ! ہمارا خاتمہ خیر پر فرما۔",
+    "source": "Ibn Hibban"
+  },
+  "50": {
+    "title": "جامع خیر کی دعا",
+    "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنَ الْخَيْرِ كُلِّهِ عَاجِلِهِ وَآجِلِهِ مَا عَلِمْتُ مِنْهُ وَمَا لَمْ أَعْلَمْ وَأَعُوذُ بِكَ مِنَ الشَّرِّ كُلِّهِ عَاجِلِهِ وَآجِلِهِ مَا عَلِمْتُ مِنْهُ وَمَا لَمْ أَعْلَمْ",
+    "transliteration": "Allahumma inni as’aluka minal-khayri kullihi ‘ajilihi wa ajilihi ma ‘alimtu minhu wa ma lam a‘lam wa a‘udhu bika minash-sharri kullihi ‘ajilihi wa ajilihi ma ‘alimtu minhu wa ma lam a‘lam.",
+    "translation": "اے اللہ! میں تجھ سے ہر طرح کی خیر کا سوال کرتا ہوں، جلد ملنے والی ہو یا دیر سے، جسے میں جانتا ہوں اور جسے میں نہیں جانتا۔ اور میں ہر طرح کے شر سے تیری پناہ مانگتا ہوں، جلد آنے والا ہو یا دیر سے، جسے میں جانتا ہوں اور جسے میں نہیں جانتا۔",
+    "source": "Ibn Majah"
   }
 }

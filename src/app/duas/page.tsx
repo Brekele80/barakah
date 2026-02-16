@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const ui: Record<string, { title: string; back: string; search: string }> = {
   "20": { title: "Duas", back: "Back", search: "Search..." },
-  "33": { title: "Doa", back: "Kembali", search: "Cari..." },
+  "33": { title: "Kumpulan Doa", back: "Kembali", search: "Cari..." },
   "31": { title: "Dualar", back: "Geri", search: "Ara..." },
   "85": { title: "Invocations", back: "Retour...", search: "Rechercher" },
   "97": { title: "دعائیں", back: "واپس", search: "تلاش" },

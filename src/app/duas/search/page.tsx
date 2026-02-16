@@ -46,7 +46,7 @@ export default async function DuaSearch({
   const { lang = "20", q = "" } = await searchParams;
   const t = ui[lang] ?? ui["20"];
 
-  const results = await searchDuas(q, lang);
+  const results = await searchDuas(lang, q);
 
   return (
     <main className="max-w-3xl mx-auto p-6 space-y-6">
