@@ -1,18 +1,8 @@
-[
-  {
-    "id": "morning",
-    "title": "Morning Dua",
-    "arabic": "اللّهُـمَّ بِكَ أَصْبَحْنا",
-    "translation": "O Allah, by You we enter the morning...",
-    "source": "Abu Dawud",
-    "category": "daily"
-  },
-  {
-    "id": "sleep",
-    "title": "Before Sleep",
-    "arabic": "بِاسْمِكَ اللّهُمَّ أَمُوتُ وَأَحْيَا",
-    "translation": "In Your name O Allah I live and die",
-    "source": "Bukhari",
-    "category": "daily"
+{
+  "1": {
+    "title": "Invocation du matin",
+    "arabic": "اللّهُـمَّ أَنْتَ رَبِّـي",
+    "translation": "Ô Allah, Tu es mon Seigneur.",
+    "source": "Boukhari"
   }
-]
+}

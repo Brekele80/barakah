@@ -40,6 +40,7 @@ export default function Header() {
           alt="Barakah"
           width={160}
           height={60}
+          style={{ width: "auto", height: "auto" }}
           className="dark:invert-0 invert"
           priority
         />

@@ -1,18 +1,23 @@
-[
-  {
-    "id": "morning",
-    "title": "Morning Dua",
-    "arabic": "اللّهُـمَّ بِكَ أَصْبَحْنا",
-    "translation": "O Allah, by You we enter the morning...",
-    "source": "Abu Dawud",
-    "category": "daily"
+{
+  "1": {
+    "title": "Morning remembrance",
+    "arabic": "اللّهُـمَّ أَنْتَ رَبِّـي لا إلهَ إلاّ أَنْتَ",
+    "transliteration": "Allahumma anta rabbi la ilaha illa anta",
+    "translation": "O Allah, You are my Lord, none has the right to be worshipped except You.",
+    "source": "Bukhari"
   },
-  {
-    "id": "sleep",
-    "title": "Before Sleep",
-    "arabic": "بِاسْمِكَ اللّهُمَّ أَمُوتُ وَأَحْيَا",
-    "translation": "In Your name O Allah I live and die",
-    "source": "Bukhari",
-    "category": "daily"
+  "2": {
+    "title": "Protection in morning",
+    "arabic": "بِسْمِ اللهِ الَّذِي لا يَضُرُّ",
+    "transliteration": "Bismillah alladhi la yadurru",
+    "translation": "In the name of Allah with whose name nothing is harmed.",
+    "source": "Tirmidhi"
+  },
+  "3": {
+    "title": "Gratitude",
+    "arabic": "اللّهُـمَّ ما أَصْبَـحَ بي مِنْ نِعْـمَة",
+    "transliteration": "Allahumma ma asbaha bi min ni'mah",
+    "translation": "O Allah, whatever blessing I wake with is from You.",
+    "source": "Abu Dawud"
   }
-]
+}
