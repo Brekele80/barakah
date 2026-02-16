@@ -1,0 +1,221 @@
+{
+  "adam": {
+    "id": "adam",
+    "name": "Prophet Adam",
+    "title": "The Story of Prophet Adam (peace be upon him)",
+    "summary": "Prophet Adam was the first human being and the first prophet sent by Allah to mankind.",
+    "story": [
+      "Allah created Prophet Adam from clay and then breathed into him the soul. Allah taught Adam the names of all things as a sign of the excellence of human beings in knowledge and intellect.",
+      "The angels were commanded to prostrate as a form of respect and honor to Adam. All the angels obeyed except Iblis (Satan), who refused out of arrogance. He felt superior because he was created from fire, whereas Adam was from clay.",
+      "Prophet Adam and his wife, Hawa (Eve), lived in Paradise. Allah forbade them from approaching one specific tree; however, Iblis whispered to them and tempted them until they eventually ate the fruit of that tree.",
+      "After realizing their mistake, Prophet Adam and Hawa immediately turned to Allah in sincere repentance, seeking His forgiveness. Allah accepted their repentance and sent them down to Earth to serve as His vicegerents (Khalifah).",
+      "On Earth, Prophet Adam taught mankind about Tawhid (Oneness of God), worship, and the righteous way of life. He became the first prophet to guide his descendants toward obedience to Allah."
+    ],
+    "lessons": [
+      "Arrogance is the characteristic of Iblis and must be avoided.",
+      "The door of repentance is always open for a servant who returns to Allah.",
+      "Humanity was created to worship Allah and serve as custodians (Khalifah) on Earth."
+    ],
+    "refs": ["Quran 2:30-39", "Quran 7:11-27", "Quran 20:115-123"]
+  },
+
+  "nuh": {
+    "id": "nuh",
+    "name": "Prophet Nuh",
+    "title": "The Story of Prophet Nuh (peace be upon him)",
+    "summary": "Prophet Nuh was sent to a people who worshipped idols, and he called them to Allah for hundreds of years with immense patience.",
+    "story": [
+      "Prophet Nuh (Noah) was sent to his people who had deviated from monotheism and begun worshipping idols. He called them to worship Allah alone and to abandon polytheism.",
+      "For 950 years, Prophet Nuh preached with patience, day and night, both publicly and privately. However, only a few people believed in his message.",
+      "His people mocked and rejected him. They even accused him of being far astray. Despite this, Prophet Nuh remained patient and continued his mission of calling them to the Truth.",
+      "When his people continued their defiance, Allah commanded Prophet Nuh to build a massive Ark. The believers boarded the ship along with pairs of every animal. Allah then sent a great flood that submerged the disbelievers.",
+      "Prophet Nuh’s Ark came to rest safely. This story serves as a sign that salvation is only for those who have faith and are obedient to Allah."
+    ],
+    "lessons": [
+      "Patience in calling others to the Truth is key.",
+      "Truth is not measured by the number of followers.",
+      "Salvation comes from faith and obedience to Allah."
+    ],
+    "refs": ["Quran 11:25-49", "Quran 71", "Quran 23:23-30"]
+  },
+
+  "ibrahim": {
+    "id": "ibrahim",
+    "name": "Prophet Ibrahim",
+    "title": "The Story of Prophet Ibrahim (peace be upon him)",
+    "summary": "Prophet Ibrahim is known as the Father of the Prophets and a role model in monotheism and firm faith.",
+    "story": [
+      "Prophet Ibrahim (Abraham) lived in a society of idol worshippers. He used logic and wisdom to demonstrate that idols possess no power and are not worthy of worship.",
+      "He destroyed his people's idols to show their helplessness. His people were enraged and threw Ibrahim into a massive fire, but Allah made the fire cool and a means of safety for him.",
+      "Prophet Ibrahim continued to preach the message of Tawhid. He eventually migrated, leaving his people behind for the sake of preserving his faith.",
+      "Allah tested him with the command to sacrifice his son, Ismail. With full obedience, both Prophet Ibrahim and Ismail were ready to fulfill the command. However, Allah replaced Ismail with a ram.",
+      "Prophet Ibrahim also built the Ka’bah with Prophet Ismail as a center for the monotheistic worship of Allah for all mankind."
+    ],
+    "lessons": [
+      "Monotheism (Tawhid) must be protected even in the face of severe trials.",
+      "Obedience to Allah must come before everything else.",
+      "Trials are a sign of Allah's love for His servants."
+    ],
+    "refs": ["Quran 21:51-70", "Quran 37:99-111", "Quran 2:124-129"]
+  },
+
+  "musa": {
+    "id": "musa",
+    "name": "Prophet Musa",
+    "title": "The Story of Prophet Musa (peace be upon him)",
+    "summary": "Prophet Musa was sent to Pharaoh to liberate the Children of Israel and call people to monotheism.",
+    "story": [
+      "Prophet Musa (Moses) was born during the reign of the tyrannical Pharaoh. Allah saved him as an infant by having him placed in the river, eventually leading to him being raised within Pharaoh's own palace.",
+      "After reaching adulthood, Prophet Musa received revelation at Mount Thur and was commanded to preach to Pharaoh, calling him to worship Allah.",
+      "Pharaoh refused and remained arrogant. Allah provided Musa with miracles: a staff that turned into a serpent and a hand that shone with light as proof of his prophethood.",
+      "Eventually, Allah commanded Prophet Musa to lead the Children of Israel out of Egypt. The sea parted to provide a path for them, while Pharaoh and his army were drowned.",
+      "Prophet Musa led his people and received the Torah (Taurat) as a guide. His story teaches the importance of steadfastness when facing tyranny."
+    ],
+    "lessons": [
+      "Allah helps His believing servants.",
+      "The Truth will always prevail over oppression.",
+      "Patience is essential in leading and guiding a community."
+    ],
+    "refs": ["Quran 28:3-46", "Quran 20:9-98", "Quran 10:75-92"]
+  },
+
+  "yusuf": {
+    "id": "yusuf",
+    "name": "Prophet Yusuf",
+    "title": "The Story of Prophet Yusuf (peace be upon him)",
+    "summary": "The story of Prophet Yusuf is one of patience, beautiful character, and complete trust in Allah.",
+    "story": [
+      "Prophet Yusuf (Joseph) was the son of Prophet Ya'qub. He was thrown into a well by his brothers out of jealousy, but Allah saved him.",
+      "He was sold into slavery in Egypt and grew into a young man of extraordinary beauty and noble character. He was later falsely accused and imprisoned despite his innocence.",
+      "While in prison, Prophet Yusuf interpreted dreams by the permission of Allah. This ability eventually led to him being summoned by the King of Egypt.",
+      "After interpreting the King's dream regarding an upcoming famine, Prophet Yusuf was appointed as a high official in charge of the state's food supplies.",
+      "Eventually, he was reunited with his family and forgave his brothers. His story shows that patience and reliance on Allah lead to ultimate success."
+    ],
+    "lessons": [
+      "Patience brings the help of Allah.",
+      "Kindness should be returned for evil.",
+      "Allah is the best of planners for His servants."
+    ],
+    "refs": ["Quran 12 (Entire Surah)"]
+  },
+
+  "yunus": {
+    "id": "yunus",
+    "name": "Prophet Yunus",
+    "title": "The Story of Prophet Yunus (peace be upon him)",
+    "summary": "Prophet Yunus was a prophet tested with patience and repentance after leaving his people before receiving Allah's permission.",
+    "story": [
+      "Prophet Yunus (Jonah) was sent to a city that initially rejected his message. Feeling despair over their refusal, he left his people before receiving an explicit command from Allah.",
+      "He boarded a ship that was soon caught in a violent storm. To lighten the ship, lots were cast, and Prophet Yunus was chosen to be thrown into the sea. By Allah's command, he was swallowed by a giant fish.",
+      "In the darkness of the fish's belly, beneath the sea, and in the darkness of the night, Prophet Yunus prayed with deep remorse: 'There is no god but You; Exalted are You. Indeed, I have been of the wrongdoers.'",
+      "Allah accepted his repentance and commanded the fish to cast him onto the shore. Allah caused a plant to grow over him to protect and heal him.",
+      "Afterward, Prophet Yunus returned to his people. This time, they believed in Allah and were saved from punishment. His story is a great lesson in repentance and patience."
+    ],
+    "lessons": [
+      "Never give up hope in the mission of Dawah (preaching).",
+      "Sincere repentance is always accepted by Allah.",
+      "Allah saves the servants who turn back to Him."
+    ],
+    "refs": ["Quran 10:98", "Quran 21:87-88", "Quran 37:139-148"]
+  },
+
+  "ayyub": {
+    "id": "ayyub",
+    "name": "Prophet Ayyub",
+    "title": "The Story of Prophet Ayyub (peace be upon him)",
+    "summary": "Prophet Ayyub is the ultimate example of extraordinary patience while being tested with illness and the loss of wealth and family.",
+    "story": [
+      "Prophet Ayyub (Job) was a prophet who was blessed with wealth, health, and a large family. Allah then tested him with the loss of his wealth, his children, and his physical health.",
+      "He suffered from a severe illness for a long period. Despite this, he never complained to people and remained patient, continuing his worship of Allah.",
+      "After years of patience, Prophet Ayyub prayed to Allah with great humility, stating that he had been touched by hardship and that Allah is the Most Merciful.",
+      "Allah answered his prayer and commanded Prophet Ayyub to strike the ground with his foot. A spring of water gushed forth, which healed his illness. Allah also returned his family and doubled his blessings.",
+      "The story of Prophet Ayyub stands as a symbol of true patience (Sabr) in facing the trials of life."
+    ],
+    "lessons": [
+      "Patience is the key to overcoming trials.",
+      "Trials can be a sign of Allah's love.",
+      "The relief of Allah comes after steadfast patience."
+    ],
+    "refs": ["Quran 21:83-84", "Quran 38:41-44"]
+  },
+
+  "daud": {
+    "id": "daud",
+    "name": "Prophet Daud",
+    "title": "The Story of Prophet Daud (peace be upon him)",
+    "summary": "Prophet Daud was a king and a prophet who was given strength, wisdom, and the scripture of the Psalms (Zabur).",
+    "story": [
+      "Prophet Daud (David) was granted immense strength by Allah. He successfully defeated Jalut (Goliath) in battle by the permission of Allah while still a young man.",
+      "Allah made him both a king and a prophet. He ruled with justice and wisdom and was given the Zabur (Psalms) as a book of guidance.",
+      "The mountains and the birds would join Prophet Daud in glorifying Allah. Allah also gave him the miracle of softening iron, allowing him to forge coats of armor.",
+      "Prophet Daud was known for his intense devotion, fasting, and constant remembrance of Allah. He was quick to turn back to Allah in repentance.",
+      "The story of Prophet Daud demonstrates the importance of justice, the power of faith, and total obedience to Allah."
+    ],
+    "lessons": [
+      "A leader must be just and God-fearing.",
+      "Strength and power should be used for the cause of Truth.",
+      "Constant repentance is a quality of the Prophets."
+    ],
+    "refs": ["Quran 38:17-26", "Quran 2:251"]
+  },
+
+  "sulaiman": {
+    "id": "sulaiman",
+    "name": "Prophet Sulaiman",
+    "title": "The Story of Prophet Sulaiman (peace be upon him)",
+    "summary": "Prophet Sulaiman was a king granted vast power, including the ability to understand the language of animals and control the Jinn.",
+    "story": [
+      "Prophet Sulaiman (Solomon) was the son of Prophet Daud and inherited both his kingdom and his prophethood. Allah granted him immense authority over humans, Jinn, and the wind.",
+      "He was able to understand the language of animals. On one occasion, he overheard an ant speaking and smiled, thanking Allah for the blessings bestowed upon him.",
+      "Prophet Sulaiman ruled with justice and Tawhid. He called the Queen of Sheba (Bilqis) to the faith, eventually leading her and her people to believe in Allah.",
+      "Despite possessing a vast and unparalleled kingdom, Prophet Sulaiman remained incredibly humble and always expressed gratitude to Allah.",
+      "He passed away while standing, leaning on his staff. The Jinn only realized he had died when his staff finally collapsed. This showed that only Allah knows the Unseen."
+    ],
+    "lessons": [
+      "Power is a trust (Amanah) from Allah.",
+      "Gratitude must accompany every blessing.",
+      "Only Allah possesses knowledge of the Unseen (Ghaib)."
+    ],
+    "refs": ["Quran 27:15-44", "Quran 34:12-14"]
+  },
+
+  "isa": {
+    "id": "isa",
+    "name": "Prophet Isa",
+    "title": "The Story of Prophet Isa (peace be upon him)",
+    "summary": "Prophet Isa was a prophet born through a miracle and was sent to the Children of Israel to call them to monotheism.",
+    "story": [
+      "Prophet Isa (Jesus) was born to Maryam (Mary) without a father, as a miracle from Allah. His birth was a sign of Allah's infinite power of creation.",
+      "Even as an infant in the cradle, Prophet Isa spoke to defend his mother's honor. He grew to be a prophet who called the Children of Israel to the Oneness of Allah.",
+      "Allah granted him many miracles: healing the blind and the leper, and raising the dead by Allah's permission. He also fashioned a bird from clay and breathed life into it by Allah's leave.",
+      "Some of his people rejected him and plotted to kill him. However, Allah saved Prophet Isa and raised him up to the heavens.",
+      "Prophet Isa will return toward the end of time as one of the major signs of the Day of Judgment."
+    ],
+    "lessons": [
+      "Miracles only happen by the permission of Allah.",
+      "The Oneness of God (Tawhid) is the core message of all prophets.",
+      "Allah protects His chosen messengers."
+    ],
+    "refs": ["Quran 19:16-36", "Quran 3:45-55", "Quran 5:110"]
+  },
+
+  "muhammad": {
+    "id": "muhammad",
+    "name": "Prophet Muhammad ﷺ",
+    "title": "The Story of Prophet Muhammad ﷺ",
+    "summary": "Prophet Muhammad is the final prophet sent to all of humanity as a mercy to the worlds.",
+    "story": [
+      "Prophet Muhammad was born in Makkah as an orphan. Even before his prophethood, he was known as 'Al-Amin' (The Trustworthy) because of his honesty.",
+      "At the age of 40, he received the first revelation in the Cave of Hira. He was commissioned to call mankind to worship Allah alone.",
+      "He faced severe persecution and trials from his people. However, he remained patient and continued to preach with wisdom and beautiful preaching.",
+      "He eventually migrated to Madinah, where he established a just and compassionate Islamic society. Islam spread widely through his noble character and the truth of his message.",
+      "Prophet Muhammad is the perfect role model in character, worship, leadership, and compassion. He is the Seal of the Prophets."
+    ],
+    "lessons": [
+      "Noble character (Akhlaq) is at the heart of the message.",
+      "Patience and perseverance lead to victory.",
+      "Prophet Muhammad is the best example for all of humanity."
+    ],
+    "refs": ["Quran 33:21", "Quran 21:107", "Quran 48:29"]
+  }
+}

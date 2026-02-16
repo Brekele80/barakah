@@ -1,0 +1,221 @@
+{
+  "adam": {
+    "id": "adam",
+    "name": "Hz. Adem",
+    "title": "Hz. Adem (a.s.)'ın Kıssası",
+    "summary": "Hz. Adem, Allah'ın yarattığı ilk insan ve insanlığa gönderilen ilk peygamberdir.",
+    "story": [
+      "Allah, Hz. Adem’i balçıktan yaratmış ve ona ruhundan üflemiştir. Allah, insanın ilimdeki üstünlüğünün bir nişanesi olarak Adem'e bütün varlıkların isimlerini öğretmiştir.",
+      "Meleklerin, Hz. Adem'e saygı secdesi etmeleri emredilmiştir. İblis dışındaki tüm melekler bu emre itaat etmiştir. İblis ise ateşten yaratıldığı için çamurdan yaratılan Adem'den daha üstün olduğunu iddia ederek kibrinden dolayı reddetmiştir.",
+      "Hz. Adem ve eşi Havva cennette yaşıyorlardı. Allah onlara belirli bir ağaca yaklaşmalarını yasaklamıştı; ancak İblis onları vesvese ile kandırarak o ağacın meyvesinden yemelerine sebep oldu.",
+      "Hatalarını anlayan Hz. Adem ve Havva, hemen içtenlikle tövbe ederek Allah'tan bağışlanma dilediler. Allah onların tövbesini kabul etti ve onları yeryüzüne halife olarak indirdi.",
+      "Yeryüzünde Hz. Adem, insanlara tevhid inancını, ibadeti ve doğru yaşam yolunu öğretti. Soyundan gelenleri Allah'a itaat yolunda yönlendiren ilk peygamber oldu."
+    ],
+    "lessons": [
+      "Kibir, İblis'in vasfıdır ve her türlü kötülüğün başıdır.",
+      "Tövbe kapısı, Allah'a yönelen her kul için daima açıktır.",
+      "İnsan, yeryüzünde Allah’ın halifesi olmak ve O’na ibadet etmek için yaratılmıştır."
+    ],
+    "refs": ["Bakara Suresi 30-39", "A'raf Suresi 11-27", "Taha Suresi 115-123"]
+  },
+
+  "nuh": {
+    "id": "nuh",
+    "name": "Hz. Nuh",
+    "title": "Hz. Nuh (a.s.)'ın Kıssası",
+    "summary": "Hz. Nuh, putlara tapan kavmine gönderilen ve yüzlerce yıl boyunca büyük bir sabırla tebliğde bulunan bir peygamberdir.",
+    "story": [
+      "Hz. Nuh, tevhid inancından sapıp putlara tapmaya başlayan kavmine gönderilmiştir. Onları yalnızca Allah’a ibadet etmeye ve şirki terk etmeye çağırmıştır.",
+      "Hz. Nuh, 950 yıl boyunca gece gündüz, gizli ve açık bir şekilde büyük bir sabırla tebliğ yapmıştır. Ancak çok az kişi ona iman etmiştir.",
+      "Kavmi onunla alay etmiş, onu yalanlamış ve sapıklıkla suçlamıştır. Tüm bu eziyetlere rağmen Hz. Nuh davasından dönmemiş ve sabretmeye devam etmiştir.",
+      "Kavminin azgınlığı devam edince Allah, Hz. Nuh'a büyük bir gemi yapmasını emretti. İman edenler ve her hayvan türünden birer çift gemiye bindi. Ardından Allah, inkarcıları yok eden büyük bir tufan gönderdi.",
+      "Hz. Nuh’un gemisi tufandan sonra güvenle karaya oturdu. Bu kıssa, kurtuluşun ancak iman ve Allah’a itaatle mümkün olduğunun en büyük işaretidir."
+    ],
+    "lessons": [
+      "Tebliğ ve irşad yolunda sabır en büyük anahtardır.",
+      "Hakikat, takipçi sayısının çokluğuyla ölçülemez.",
+      "Gerçek kurtuluş, yalnızca iman ve teslimiyetle gelir."
+    ],
+    "refs": ["Hud Suresi 25-49", "Nuh Suresi", "Mü'minun Suresi 23-30"]
+  },
+
+  "ibrahim": {
+    "id": "ibrahim",
+    "name": "Hz. İbrahim",
+    "title": "Hz. İbrahim (a.s.)'ın Kıssası",
+    "summary": "Hz. İbrahim, 'Peygamberlerin Babası' olarak bilinir; tevhid mücadelesi ve teslimiyetin en büyük timsalidir.",
+    "story": [
+      "Hz. İbrahim, putperest bir toplumda doğdu. Aklını ve hikmetini kullanarak putların hiçbir gücü olmadığını, asıl yaratıcının Allah olduğunu kavmine gösterdi.",
+      "Kavminin taptığı putları kırarak onların acziyetini kanıtladı. Buna öfkelenen Nemrut ve kavmi, onu büyük bir ateşe attı; ancak Allah ateşe 'Ey ateş, İbrahim’e karşı serin ve selamet ol!' emrini vererek onu kurtardı.",
+      "Hz. İbrahim, tevhid davası uğruna ailesini ve yurdunu terk ederek hicret etti. Hayatı boyunca pek çok ağır imtihandan geçti.",
+      "Allah onu oğlu İsmail’i kurban etmesi emriyle imtihan etti. Hem Hz. İbrahim hem de Hz. İsmail tam bir teslimiyetle bu emre boyun eğdiler. Allah, onların bu sadakatine karşılık büyük bir kurbanlık gönderdi.",
+      "Hz. İbrahim, oğlu İsmail ile birlikte Kabe’yi inşa ederek burayı tüm insanlık için tevhidin ve haccın merkezi kıldı."
+    ],
+    "lessons": [
+      "Tevhid inancı, en zor şartlarda bile tavizsiz korunmalıdır.",
+      "Allah'a olan bağlılık ve teslimiyet her şeyin üzerindedir.",
+      "İmtihanlar, Allah'ın kuluna olan sevgisinin ve derecesinin bir göstergesidir."
+    ],
+    "refs": ["Enbiya Suresi 51-70", "Saffat Suresi 99-111", "Bakara Suresi 124-129"]
+  },
+
+  "musa": {
+    "id": "musa",
+    "name": "Hz. Musa",
+    "title": "Hz. Musa (a.s.)'ın Kıssası",
+    "summary": "Hz. Musa, İsrailoğulları'nı Firavun'un zulmünden kurtarmak ve onları tevhide davet etmek için gönderilmiştir.",
+    "story": [
+      "Hz. Musa, zalim Firavun’un hüküm sürdüğü bir dönemde doğdu. Allah onu henüz bebekken nehre bırakılmasıyla korudu ve mucizevi bir şekilde Firavun’un sarayında büyümesini sağladı.",
+      "Erişkinlik çağına geldiğinde Tur Dağı'nda vahiy alan Hz. Musa'ya, Firavun'a gidip onu Allah’a imana davet etmesi ve İsrailoğulları'nı serbest bırakması emredildi.",
+      "Firavun kibirlenerek reddetti. Allah, Hz. Musa'ya mucize olarak yılana dönüşen bir asa ve ışık saçan bir el (Yed-i Beyza) bahşetti.",
+      "Sonunda Allah'ın emriyle Hz. Musa kavmini Mısır'dan çıkardı. Kızıldeniz mucizevi bir şekilde yarılarak onlara yol açtı, Firavun ve ordusu ise denizde boğuldu.",
+      "Hz. Musa, kavmine rehberlik etti ve Allah'tan ilahi bir rehber olan Tevrat’ı aldı. Onun hayatı, zulme karşı kararlı bir duruşun örneğidir."
+    ],
+    "lessons": [
+      "Allah, iman eden ve tevekkül eden kullarına daima yardım eder.",
+      "Hak, eninde sonunda batıla ve zulme galip gelecektir.",
+      "Topluma liderlik ederken sabır ve kararlılık şarttır."
+    ],
+    "refs": ["Kasas Suresi 3-46", "Taha Suresi 9-98", "Yunus Suresi 75-92"]
+  },
+
+  "yusuf": {
+    "id": "yusuf",
+    "name": "Hz. Yusuf",
+    "title": "Hz. Yusuf (a.s.)'ın Kıssası",
+    "summary": "Hz. Yusuf’un hayatı; sabrın, iffetin, güzel ahlakın ve Allah’a sarsılmaz güvenin hikayesidir.",
+    "story": [
+      "Hz. Yusuf, Hz. Yakub'un oğludur. Kardeşleri onu kıskançlıkları yüzünden bir kuyuya attılar ancak Allah onu oradan kurtardı.",
+      "Mısır’da köle olarak satıldı, orada iffetiyle ve dürüstlüğüyle tanındı. İftiraya uğramasına rağmen hakikatten sapmadı ve yıllarca zindanda kaldı.",
+      "Zindandayken Allah'ın izniyle rüyaları yorumlama yeteneği kazandı. Bu yeteneği, sonunda Mısır hükümdarı tarafından fark edilmesini sağladı.",
+      "Kralın kıtlık rüyasını doğru yorumlayınca, Mısır’ın hazinelerinden sorumlu yüksek bir yönetici olarak görevlendirildi.",
+      "Yıllar sonra kendisine zulmeden kardeşleriyle karşılaştı, onları affetti ve ailesine kavuştu. Bu kıssa, sabredenlerin mutlaka zafere ulaşacağını gösterir."
+    ],
+    "lessons": [
+      "Sabır ve iffet, Allah'ın yardımını beraberinde getirir.",
+      "Kötülüğe karşı iyilikle mukabele etmek peygamber ahlakıdır.",
+      "Allah, kulu için daima en hayırlı planı yapandır."
+    ],
+    "refs": ["Yusuf Suresi (Tamamı)"]
+  },
+
+  "yunus": {
+    "id": "yunus",
+    "name": "Hz. Yunus",
+    "title": "Hz. Yunus (a.s.)'ın Kıssası",
+    "summary": "Hz. Yunus, tebliğ görevini terk ettiği için sınanan ve samimi tövbesiyle kurtuluşa eren bir peygamberdir.",
+    "story": [
+      "Hz. Yunus, Ninova halkına gönderildi. Halkı davetini reddedince, Allah'tan izin gelmeden öfkeyle şehri terk etti.",
+      "Bindiği gemi büyük bir fırtınaya tutuldu. Gemiyi hafifletmek için yapılan kura sonucu denize atıldı ve Allah'ın izniyle dev bir balık tarafından yutuldu.",
+      "Balığın karnındaki o derin karanlıkta Hz. Yunus, büyük bir pişmanlıkla: 'Senden başka ilah yoktur. Sen eksikliklerden münezzehsin. Ben gerçekten zalimlerden oldum' diye dua etti.",
+      "Allah onun tövbesini kabul etti ve balığa onu karaya bırakmasını emretti. Allah onu iyileştirdi ve koruması için üzerine geniş yapraklı bir bitki bitirdi.",
+      "Hz. Yunus iyileşince kavmine geri döndü. Bu kez halkı ona iman etti ve büyük bir azaptan kurtuldular. Bu olay, tövbenin gücünü gösteren büyük bir derstir."
+    ],
+    "lessons": [
+      "Hizmet ve tebliğ yolunda asla ümitsizliğe düşülmemelidir.",
+      "Hatalardan dönüp yapılan samimi tövbe Allah katında makbuldür.",
+      "Zikir ve dua, en dar anlarda kulun en büyük sığınağıdır."
+    ],
+    "refs": ["Yunus Suresi 98", "Enbiya Suresi 87-88", "Saffat Suresi 139-148"]
+  },
+
+  "ayyub": {
+    "id": "ayyub",
+    "name": "Hz. Eyyub",
+    "title": "Hz. Eyyub (a.s.)'ın Kıssası",
+    "summary": "Hz. Eyyub, hastalık ve kayıplar karşısında gösterdiği efsanevi sabrıyla tanınan bir peygamberdir.",
+    "story": [
+      "Hz. Eyyub, çok zengin, sağlıklı ve geniş bir aileye sahip bir peygamberdi. Allah onu malını, çocuklarını ve sağlığını alarak imtihan etti.",
+      "Vücudunda ağır yaralar çıktı ve bu hastalık uzun yıllar sürdü. Ancak o, hiçbir zaman halinden şikayet etmedi, sabırla Allah'a şükretmeye devam etti.",
+      "Yıllar süren bu imtihanın sonunda Hz. Eyyub, 'Başıma bu dert geldi, Sen merhametlilerin en merhametlisisin' diyerek edeple dua etti.",
+      "Allah onun duasını kabul etti ve ayağını yere vurmasını emretti. Oradan çıkan şifalı suyla yıkandı ve hastalıktan kurtuldu. Allah ona ailesini ve malını eskisinden daha fazlasıyla geri verdi.",
+      "Hz. Eyyub’un sabrı, tüm insanlık için 'Sabr-ı Cemil' (güzel sabır) örneği olmuştur."
+    ],
+    "lessons": [
+      "Sabır, her türlü zorluğun ve musibetin tek ilacıdır.",
+      "Hastalık ve darlık, kulun Allah'a olan sadakatini ölçen bir imtihandır.",
+      "Allah'ın rahmeti, sabreden kulları için daima yakındır."
+    ],
+    "refs": ["Enbiya Suresi 83-84", "Sad Suresi 41-44"]
+  },
+
+  "daud": {
+    "id": "daud",
+    "name": "Hz. Davud",
+    "title": "Hz. Davud (a.s.)'ın Kıssası",
+    "summary": "Hz. Davud, kendisine güç, hikmet ve Zebur kitabı verilen hem bir hükümdar hem de bir peygamberdir.",
+    "story": [
+      "Hz. Davud, gençliğinde Allah'ın yardımıyla dev cüsseli Calut’u (Goliath) yenerek İsrailoğulları'nın kurtuluşunda büyük rol oynadı.",
+      "Allah onu hem kral hem de peygamber yaptı. Ona hikmet verdi ve ilahi kelam olan Zebur kitabını indirdi.",
+      "Hz. Davud o kadar güzel bir sesle Allah'ı zikrederdi ki, dağlar ve kuşlar onun zikrine eşlik ederdi. Ayrıca Allah, demiri onun elinde hamur gibi yumuşatmış, ona zırh yapma sanatını öğretmiştir.",
+      "Hz. Davud, ibadete çok düşkündü; bir gün oruç tutar, bir gün tutmazdı (Davud Orucu). Gecenin büyük bir kısmını ise ibadetle geçirirdi.",
+      "Onun kıssası; gücün, adaletin ve derin Allah sevgisinin nasıl birleşmesi gerektiğini gösterir."
+    ],
+    "lessons": [
+      "İyi bir lider hem adil hem de dindar olmalıdır.",
+      "Dünyevi güç ve sanat, Allah'ın rızası doğrultusunda kullanılmalıdır.",
+      "İbadette süreklilik ve ihlas en yüce erdemdir."
+    ],
+    "refs": ["Sad Suresi 17-26", "Bakara Suresi 251"]
+  },
+
+  "sulaiman": {
+    "id": "sulaiman",
+    "name": "Hz. Süleyman",
+    "title": "Hz. Süleyman (a.s.)'ın Kıssası",
+    "summary": "Hz. Süleyman, hayvanların dilini bilme ve cinlere hükmetme gibi eşsiz yeteneklerle donatılmış bir hükümdar peygamberdir.",
+    "story": [
+      "Hz. Süleyman, babası Hz. Davud'un hem krallığını hem de peygamberliğini devraldı. Allah ona rüzgarları, cinleri ve hayvanları emrine veren büyük bir güç bahşetti.",
+      "Hayvanların dilinden anlardı. Bir karıncanın diğerlerine 'Süleyman’ın ordusu sizi fark etmeden ezmesin' dediğini duyup tebessüm etmiş ve Allah’a şükretmiştir.",
+      "Hükümdarlığını tevhid davası için kullandı. Saba melikesi Belkıs'ı hak dine davet etti ve onun müslüman olmasına vesile oldu.",
+      "Büyük bir ihtişama sahip olmasına rağmen hiçbir zaman kibirlenmedi, her başarısını Allah’ın bir lütfu olarak gördü.",
+      "Vefatı sırasında asasına yaslanmış haldeydi. Cinler onun öldüğünü ancak asasını bir ağaç kurdu kemirip devirince anladılar. Bu, gaybı sadece Allah’ın bilebileceğinin bir kanıtıdır."
+    ],
+    "lessons": [
+      "Zenginlik ve iktidar Allah'ın bir emanetidir; şükrü ise adaletle yönetmektir.",
+      "En büyük nimetler karşısında bile mütevazı kalmak peygamberi bir tavırdır.",
+      "Gayb bilgisini (geleceği ve gizliyi) Allah'tan başkası bilemez."
+    ],
+    "refs": ["Neml Suresi 15-44", "Sebe Suresi 12-14"]
+  },
+
+  "isa": {
+    "id": "isa",
+    "name": "Hz. İsa",
+    "title": "Hz. İsa (a.s.)'ın Kıssası",
+    "summary": "Hz. İsa, babasız olarak mucizevi bir şekilde doğan ve İsrailoğulları'nı tevhide çağıran bir peygamberdir.",
+    "story": [
+      "Hz. İsa, Allah'ın bir mucizesi olarak Hz. Meryem'den babasız olarak dünyaya geldi. Onun doğuşu, Allah'ın yaratma kudretinin bir delilidir.",
+      "Daha beşikteyken konuşarak annesinin masumiyetini savundu. Büyüdüğünde İsrailoğulları'nı sapan yollarından döndürmeye ve Tevrat'ı doğrulamaya çalıştı.",
+      "Allah ona; hastaları iyileştirmek, ölüleri Allah'ın izniyle diriltmek ve çamurdan yaptığı kuşlara üfleyince onları canlandırmak gibi büyük mucizeler verdi.",
+      "Kavminden bazıları onu öldürmeye çalıştı. Ancak Allah onu düşmanlarından korudu ve onu kendi katına (göğe) yükseltti. İslam inancına göre o çarmıha gerilmemiştir.",
+      "Hz. İsa, kıyamete yakın bir zamanda yeryüzüne tekrar inecektir."
+    ],
+    "lessons": [
+      "Mucizeler ancak Allah'ın dilemesi ve izniyle gerçekleşir.",
+      "Tüm peygamberlerin ortak davası Allah'ın birliğidir.",
+      "Zorluk anlarında Allah, sadık kullarını asla yalnız bırakmaz."
+    ],
+    "refs": ["Meryem Suresi 16-36", "Ali İmran Suresi 45-55", "Maide Suresi 110"]
+  },
+
+  "muhammad": {
+    "id": "muhammad",
+    "name": "Hz. Muhammed (s.a.v.)",
+    "title": "Hz. Muhammed (s.a.v.)'in Kıssası",
+    "summary": "Hz. Muhammed, tüm insanlığa rahmet olarak gönderilen son peygamber ve peygamberler zincirinin halkasıdır.",
+    "story": [
+      "Hz. Muhammed, Mekke'de yetim olarak doğdu. Gençliğinde dürüstlüğü ve güvenilirliği sebebiyle kendisine 'el-Emin' denilmiştir.",
+      "40 yaşında Hira Mağarası'nda ilk vahyi alarak peygamberlikle görevlendirildi. İnsanları yalnızca tek olan Allah’a kul olmaya davet etti.",
+      "Mekke döneminde büyük baskı ve zulümlere maruz kaldı ancak davasından asla ödün vermedi. Büyük bir sabırla tebliğine devam etti.",
+      "Medine'ye hicret ederek orada adalet, sevgi ve kardeşlik üzerine kurulu bir İslam toplumu inşa etti. İslam'ın nuru, onun güzel ahlakı sayesinde hızla yayıldı.",
+      "Hz. Muhammed; ibadette, ahlakta, aile hayatında ve liderlikte insanlık için en güzel örnektir (Üsve-i Hasene). O, Hatemü'l-Enbiya yani peygamberlerin sonuncusudur."
+    ],
+    "lessons": [
+      "Güzel ahlak, dinin özü ve tebliğin temelidir.",
+      "Zorluklara karşı gösterilen sabır, ilahi zaferi getirir.",
+      "Hz. Peygamber, hayatın her alanında takip edilmesi gereken en mükemmel rehberdir."
+    ],
+    "refs": ["Ahzab Suresi 21", "Enbiya Suresi 107", "Fetih Suresi 29"]
+  }
+}

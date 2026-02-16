@@ -1,0 +1,221 @@
+{
+  "adam": {
+    "id": "adam",
+    "name": "Le Prophète Adam",
+    "title": "L'histoire du Prophète Adam (sur lui la paix)",
+    "summary": "Adam fut le premier être humain et le premier prophète envoyé par Allah à l'humanité.",
+    "story": [
+      "Allah créa Adam à partir d'argile, puis insuffla en lui son âme. Allah enseigna à Adam les noms de toutes choses, manifestant ainsi la supériorité de l'être humain par la science et l'intellect.",
+      "Les anges reçurent l'ordre de se prosterner devant Adam en signe de respect. Tous obéirent sauf Iblis (Satan) qui refusa par orgueil. Il s'estima supérieur car il fut créé de feu, alors qu'Adam fut créé de terre.",
+      "Adam et son épouse Hawa (Ève) vécurent au Paradis. Allah leur interdit de s'approcher d'un arbre spécifique, mais Iblis les tenta par ses insufflations jusqu'à ce qu'ils en mangent le fruit.",
+      "Réalisant leur erreur, Adam et Hawa se repentirent sincèrement en implorant le pardon d'Allah. Allah accepta leur repentir et les fit descendre sur terre en tant que lieutenants (Khalifa).",
+      "Sur terre, Adam enseigna le Tawhid (l'Unicité divine), l'adoration et la voie de la droiture. Il devint le premier guide pour sa descendance, les appelant à l'obéissance envers Allah."
+    ],
+    "lessons": [
+      "L'orgueil est le trait caractéristique d'Iblis et doit être banni.",
+      "La porte du repentir est toujours ouverte pour celui qui revient vers son Seigneur.",
+      "L'être humain est créé pour adorer Allah et agir comme Son représentant sur terre."
+    ],
+    "refs": ["Coran 2:30-39", "Coran 7:11-27", "Coran 20:115-123"]
+  },
+
+  "nuh": {
+    "id": "nuh",
+    "name": "Le Prophète Nuh",
+    "title": "L'histoire du Prophète Nuh (sur lui la paix)",
+    "summary": "Le prophète Nuh fut envoyé à son peuple qui adorait les idoles, prêchant durant des siècles avec une patience exemplaire.",
+    "story": [
+      "Nuh (Noé) fut envoyé à son peuple qui s'était égaré du Tawhid pour adorer des statues. Il les appela à n'adorer qu'Allah et à délaisser l'associationnisme.",
+      "Pendant 950 ans, Nuh prêcha avec patience, de jour comme de nuit, ouvertement et secrètement. Cependant, seul un petit nombre de personnes crut en son message.",
+      "Son peuple se moqua de lui, le traita de menteur et l'accusa d'égarement. Malgré ces épreuves, Nuh resta ferme dans sa mission et continua d'appeler à la Vérité.",
+      "Devant l'obstination de son peuple, Allah ordonna à Nuh de construire une Arche immense. Les croyants y montèrent ainsi qu'un couple de chaque espèce animale. Allah envoya alors le Déluge qui engloutit les mécréants.",
+      "L'Arche de Nuh accosta en toute sécurité. Ce récit témoigne que le salut n'appartient qu'à ceux qui ont la foi et obéissent aux commandements divins."
+    ],
+    "lessons": [
+      "La patience dans la transmission du message est primordiale.",
+      "La vérité ne se mesure pas au nombre de partisans.",
+      "Le salut provient exclusivement de la foi et de la piété."
+    ],
+    "refs": ["Coran 11:25-49", "Coran 71", "Coran 23:23-30"]
+  },
+
+  "ibrahim": {
+    "id": "ibrahim",
+    "name": "Le Prophète Ibrahim",
+    "title": "L'histoire du Prophète Ibrahim (sur lui la paix)",
+    "summary": "Ibrahim est considéré comme le père des prophètes et le modèle absolu de l'Unicité et de la confiance en Allah.",
+    "story": [
+      "Ibrahim (Abraham) vécut au sein d'une société idolâtre. Il utilisa sa raison et sa sagesse pour démontrer que les statues n'ont aucun pouvoir et ne méritent pas l'adoration.",
+      "Il détruisit les idoles de son peuple pour prouver leur impuissance. En représailles, ils le jetèrent dans un immense brasier, mais Allah rendit le feu 'fraîcheur et paix' pour lui.",
+      "Ibrahim continua de prêcher le Tawhid et finit par émigrer, quittant les siens pour préserver sa foi et l'appel vers Allah.",
+      "Allah l'éprouva en lui ordonnant de sacrifier son fils Ismaïl. Par totale soumission, Ibrahim et son fils s'apprêtèrent à exécuter l'ordre, mais Allah remplaça l'enfant par un bélier.",
+      "Ibrahim construisit ensuite la Kaaba avec son fils Ismaïl, en faisant le centre mondial de l'adoration monothéiste pour l'humanité."
+    ],
+    "lessons": [
+      "Le Tawhid doit être préservé même au prix des plus grandes épreuves.",
+      "L'obéissance à Allah prime sur tout sentiment ou attachement terrestre.",
+      "Les épreuves sont une manifestation de l'amour d'Allah envers Son serviteur."
+    ],
+    "refs": ["Coran 21:51-70", "Coran 37:99-111", "Coran 2:124-129"]
+  },
+
+  "musa": {
+    "id": "musa",
+    "name": "Le Prophète Musa",
+    "title": "L'histoire du Prophète Musa (sur lui la paix)",
+    "summary": "Musa fut envoyé vers Pharaon pour libérer les Enfants d'Israël et appeler à la reconnaissance d'Allah.",
+    "story": [
+      "Musa (Moïse) naquit sous le règne tyrannique de Pharaon. Allah le sauva nourrisson en le faisant recueillir et élever au sein même du palais de son ennemi.",
+      "À l'âge adulte, Musa reçut la révélation sur le mont Thour. Il reçut l'ordre de prêcher à Pharaon, de l'appeler à l'adoration d'Allah et de libérer son peuple.",
+      "Pharaon refusa avec arrogance. Allah dota Musa de miracles : un bâton se transformant en serpent et une main rayonnante de lumière, preuves de sa mission prophétique.",
+      "Finalement, Allah ordonna à Musa de faire sortir les Enfants d'Israël d'Égypte. La mer se fendit pour leur ouvrir un passage, tandis que Pharaon et son armée y périrent noyés.",
+      "Musa guida son peuple et reçut la Torah (Tawrat) comme guide législatif. Son récit enseigne la fermeté face à l'oppression et à la tyrannie."
+    ],
+    "lessons": [
+      "Le secours d'Allah accompagne toujours les croyants.",
+      "La Vérité finit toujours par triompher de l'injustice.",
+      "La patience et la fermeté sont indispensables pour guider une communauté."
+    ],
+    "refs": ["Coran 28:3-46", "Coran 20:9-98", "Coran 10:75-92"]
+  },
+
+  "yusuf": {
+    "id": "yusuf",
+    "name": "Le Prophète Yusuf",
+    "title": "L'histoire du Prophète Yusuf (sur lui la paix)",
+    "summary": "L'histoire de Yusuf est celle de la patience, de l'excellence morale et de la confiance absolue en la destinée divine.",
+    "story": [
+      "Yusuf (Joseph) était le fils du prophète Ya'qub. Jaloux, ses frères le jetèrent dans un puits, mais Allah le protégea et il fut recueilli par une caravane.",
+      "Vendu comme esclave en Égypte, il grandit en beauté et en noblesse de caractère. Malgré son innocence, il fut emprisonné suite à une calomnie après avoir refusé de succomber à la tentation.",
+      "En prison, il interpréta les rêves par la grâce d'Allah. Ce don permit plus tard sa libération et son appel auprès du Roi d'Égypte.",
+      "Après avoir interprété le rêve royal sur la famine à venir, Yusuf fut nommé intendant des finances et des récoltes de toute l'Égypte.",
+      "Il finit par retrouver sa famille et pardonna à ses frères sans aucune rancœur. Son récit prouve que la piété mène inévitablement au succès."
+    ],
+    "lessons": [
+      "La patience face à l'injustice attire le secours divin.",
+      "L'excellence du comportement (l'Ihsan) est la parure du croyant.",
+      "Allah est le Maître des destins, Il transforme l'épreuve en bénédiction."
+    ],
+    "refs": ["Coran 12 (Sourate complète)"]
+  },
+
+  "yunus": {
+    "id": "yunus",
+    "name": "Le Prophète Yunus",
+    "title": "L'histoire du Prophète Yunus (sur lui la paix)",
+    "summary": "Yunus est le prophète de l'invocation et du repentir, sauvé des profondeurs par sa dévotion.",
+    "story": [
+      "Yunus (Jonas) fut envoyé à un peuple qui rejeta initialement son appel. Désespéré, il quitta la ville sans avoir reçu l'autorisation explicite d'Allah.",
+      "Il s'embarqua sur un navire pris dans une tempête. Pour sauver le vaisseau, un tirage au sort désigna Yunus pour être jeté à la mer. Il fut alors avalé par un immense poisson.",
+      "Dans l'obscurité du ventre du poisson, Yunus invoqua Allah avec regret : 'Nulle divinité autre que Toi ! Pureté à Toi ! J'ai été vraiment du nombre des injustes !'",
+      "Allah accepta son repentir et ordonna au poisson de le rejeter sur le rivage. Allah fit pousser une plante pour le protéger et le soigner.",
+      "Yunus retourna ensuite vers son peuple qui, cette fois, crut en son message. Ils furent épargnés du châtiment, illustrant la miséricorde d'Allah envers ceux qui reviennent vers Lui."
+    ],
+    "lessons": [
+      "Un serviteur ne doit jamais désespérer de la guidée d'Allah.",
+      "Le repentir sincère peut changer le cours du destin.",
+      "La glorification d'Allah est un rempart contre les ténèbres de l'épreuve."
+    ],
+    "refs": ["Coran 10:98", "Coran 21:87-88", "Coran 37:139-148"]
+  },
+
+  "ayyub": {
+    "id": "ayyub",
+    "name": "Le Prophète Ayyub",
+    "title": "L'histoire du Prophète Ayyub (sur lui la paix)",
+    "summary": "Ayyub est l'exemple ultime de l'endurance face à la maladie et à la perte des biens.",
+    "story": [
+      "Ayyub (Job) était un prophète comblé de richesses, de santé et d'une grande famille. Allah l'éprouva en lui retirant ses biens, ses enfants et sa santé.",
+      "Il souffrit d'une maladie grave durant de longues années. Malgré cela, il ne se plaignit jamais et demeura constant dans son adoration et sa gratitude envers Allah.",
+      "Après des années de patience, Ayyub invoqua son Seigneur avec humilité, disant que le mal l'avait touché mais qu'Allah était le plus Miséricordieux.",
+      "Allah exauça sa prière et lui ordonna de frapper le sol du pied. Une source d'eau jaillit, le guérissant de ses maux. Allah lui rendit sa famille et doubla ses bénédictions.",
+      "La vie d'Ayyub demeure le symbole de la patience (Sabr) absolue face aux vicissitudes de l'existence."
+    ],
+    "lessons": [
+      "La patience est la clé de la délivrance.",
+      "La maladie et la pauvreté ne sont pas des signes de disgrâce, mais des épreuves de foi.",
+      "La gratitude envers Allah doit être présente dans l'aisance comme dans la difficulté."
+    ],
+    "refs": ["Coran 21:83-84", "Coran 38:41-44"]
+  },
+
+  "daud": {
+    "id": "daud",
+    "name": "Le Prophète Daud",
+    "title": "L'histoire du Prophète Daud (sur lui la paix)",
+    "summary": "Daud fut un roi et un prophète doté d'une force immense, de sagesse et du livre des Psaumes (Zabur).",
+    "story": [
+      "Daud (David) reçut d'Allah une force remarquable. Jeune homme, il terrassa le géant Jalut (Goliath) par la permission d'Allah, sauvant ainsi son peuple.",
+      "Allah fit de lui un roi prophète. Il régna avec justice et reçut le Zabur comme guide spirituel et recueil de louanges.",
+      "Daud possédait une voix si mélodieuse que les montagnes et les oiseaux célébraient les louanges d'Allah avec lui. Allah rendit aussi le fer malléable entre ses mains pour forger des cottes de mailles.",
+      "Daud était exemplaire dans sa dévotion, jeûnant un jour sur deux et passant une grande partie de ses nuits en prière et en évocation (Dhikr).",
+      "Son histoire illustre l'équilibre parfait entre le pouvoir temporel et la piété spirituelle."
+    ],
+    "lessons": [
+      "Le pouvoir est un dépôt sacré (Amanah) qui doit servir la justice.",
+      "Les talents et les forces physiques doivent être consacrés à la vérité.",
+      "Le repentir constant est la marque des grands serviteurs d'Allah."
+    ],
+    "refs": ["Coran 38:17-26", "Coran 2:251"]
+  },
+
+  "sulaiman": {
+    "id": "sulaiman",
+    "name": "Le Prophète Sulaiman",
+    "title": "L'histoire du Prophète Sulaiman (sur lui la paix)",
+    "summary": "Sulaiman fut un roi puissant à qui Allah soumit les éléments, les animaux et les djinns.",
+    "story": [
+      "Sulaiman (Salomon) était le fils de Daud. Il hérita de son royaume et de sa prophétie. Allah lui accorda un pouvoir inégalé sur les hommes, les djinns et le vent.",
+      "Il comprenait le langage des animaux. Un jour, il entendit une fourmi prévenir ses congénères de son passage et sourit en remerciant Allah pour Ses bienfaits.",
+      "Sulaiman utilisa son autorité pour le Tawhid. Il appela la Reine de Saba (Bilqis) à l'Islam, ce qui mena son peuple à la foi monothéiste.",
+      "Malgré son immense richesse, Sulaiman resta humble, conscient que tout pouvoir appartient à Allah seul.",
+      "Il mourut debout, appuyé sur son bâton. Les djinns ne s'aperçurent de sa mort que lorsque son bâton s'effondra, prouvant que nul ne connaît l'Inconnu (Ghaib) à part Allah."
+    ],
+    "lessons": [
+      "La richesse ne doit jamais mener à l'arrogance.",
+      "Chaque bénédiction reçue exige une gratitude active.",
+      "Nul ne possède la connaissance du mystère en dehors du Créateur."
+    ],
+    "refs": ["Coran 27:15-44", "Coran 34:12-14"]
+  },
+
+  "isa": {
+    "id": "isa",
+    "name": "Le Prophète Isa",
+    "title": "L'histoire du Prophète Isa (sur lui la paix)",
+    "summary": "Isa est le prophète né miraculeusement, envoyé aux Enfants d'Israël pour confirmer la Loi et annoncer la bonne nouvelle.",
+    "story": [
+      "Isa (Jésus) naquit de la vierge Maryam sans l'intervention d'un père, par un décret miraculeux d'Allah. Sa naissance est un signe de la toute-puissance créatrice.",
+      "Dès le berceau, Isa parla pour défendre l'honneur de sa mère. Il grandit en appelant les Enfants d'Israël à l'Unicité pure d'Allah.",
+      "Allah lui accorda des miracles éclatants : guérir l'aveugle et le lépreux, et ressusciter les morts par la permission d'Allah. Il façonnait aussi des oiseaux d'argile qui prenaient vie par décret divin.",
+      "Face à la trahison de certains, Allah le protégea et l'éleva vers Lui au ciel. L'Islam enseigne qu'il n'a été ni tué ni crucifié.",
+      "Isa reviendra sur terre à la fin des temps comme un signe majeur de l'approche du Jour de la Résurrection."
+    ],
+    "lessons": [
+      "Les miracles ne sont que des instruments de la volonté d'Allah.",
+      "Le Tawhid est le noyau commun à tous les messages prophétiques.",
+      "Allah préserve Ses messagers des complots des hommes."
+    ],
+    "refs": ["Coran 19:16-36", "Coran 3:45-55", "Coran 5:110"]
+  },
+
+  "muhammad": {
+    "id": "muhammad",
+    "name": "Le Prophète Muhammad ﷺ",
+    "title": "L'histoire du Prophète Muhammad ﷺ",
+    "summary": "Muhammad est le dernier des prophètes, envoyé à l'humanité entière comme une miséricorde pour les mondes.",
+    "story": [
+      "Muhammad naquit à la Mecque orphelin. Avant même la révélation, il était surnommé 'Al-Amin' (Le Digne de confiance) pour son honnêteté absolue.",
+      "À 40 ans, il reçut la première révélation dans la grotte de Hira. Il fut chargé d'appeler les hommes à n'adorer qu'Allah sans rien Lui associer.",
+      "Il subit d'intenses persécutions, mais resta inébranlable dans sa foi et sa bienveillance, même envers ses ennemis.",
+      "Il émigra à Médine (l'Hégire) où il fonda une société basée sur la justice, la fraternité et l'éthique. L'Islam rayonna par la noblesse de son caractère.",
+      "Le Prophète Muhammad est le modèle parfait de comportement, de spiritualité et de leadership. Il clôt la chaîne de la prophétie."
+    ],
+    "lessons": [
+      "La noblesse du caractère est le cœur de la religion.",
+      "La persévérance dans la vérité finit par porter ses fruits.",
+      "Le Prophète est l'exemple universel à suivre pour tout être humain."
+    ],
+    "refs": ["Coran 33:21", "Coran 21:107", "Coran 48:29"]
+  }
+}

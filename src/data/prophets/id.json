@@ -1,0 +1,221 @@
+{
+  "adam": {
+    "id": "adam",
+    "name": "Nabi Adam",
+    "title": "Kisah Nabi Adam عليه السلام",
+    "summary": "Nabi Adam adalah manusia pertama dan nabi pertama yang diutus Allah kepada umat manusia.",
+    "story": [
+      "Allah menciptakan Nabi Adam dari tanah, lalu meniupkan ruh kepadanya. Allah mengajarkan kepada Adam nama-nama segala sesuatu sebagai tanda keutamaan manusia dalam ilmu.",
+      "Para malaikat diperintahkan untuk sujud sebagai bentuk penghormatan kepada Adam. Semua malaikat patuh kecuali Iblis yang menolak karena kesombongan. Ia merasa lebih mulia karena diciptakan dari api.",
+      "Nabi Adam dan istrinya Hawa tinggal di surga. Allah melarang mereka mendekati satu pohon, namun Iblis menggoda mereka hingga akhirnya mereka memakan buah tersebut.",
+      "Setelah menyadari kesalahan, Nabi Adam dan Hawa segera bertaubat dengan tulus: mereka memohon ampun kepada Allah. Allah menerima taubat mereka dan menurunkan mereka ke bumi sebagai khalifah.",
+      "Di bumi, Nabi Adam mengajarkan manusia tentang tauhid, ibadah, dan kehidupan yang benar. Ia menjadi nabi pertama yang membimbing keturunannya menuju ketaatan kepada Allah."
+    ],
+    "lessons": [
+      "Kesombongan adalah sifat Iblis dan harus dijauhi.",
+      "Pintu taubat selalu terbuka bagi hamba yang kembali kepada Allah.",
+      "Manusia diciptakan untuk beribadah dan menjadi khalifah di bumi."
+    ],
+    "refs": ["QS Al-Baqarah 30-39", "QS Al-A'raf 11-27", "QS Taha 115-123"]
+  },
+
+  "nuh": {
+    "id": "nuh",
+    "name": "Nabi Nuh",
+    "title": "Kisah Nabi Nuh عليه السلام",
+    "summary": "Nabi Nuh diutus kepada kaumnya yang menyembah berhala dan berdakwah selama ratusan tahun dengan penuh kesabaran.",
+    "story": [
+      "Nabi Nuh diutus kepada kaumnya yang telah menyimpang dari tauhid dan menyembah berhala. Ia menyeru mereka agar hanya menyembah Allah dan meninggalkan kesyirikan.",
+      "Selama 950 tahun Nabi Nuh berdakwah dengan sabar, siang dan malam, secara terang-terangan maupun sembunyi-sembunyi. Namun hanya sedikit yang beriman.",
+      "Kaumnya mengejek dan menolak. Mereka bahkan menuduh Nabi Nuh sebagai orang yang sesat. Meskipun demikian, Nabi Nuh tetap sabar dan terus berdakwah.",
+      "Ketika kaumnya terus membangkang, Allah memerintahkan Nabi Nuh membuat kapal besar. Orang-orang beriman menaiki kapal bersama pasangan hewan. Kemudian Allah menurunkan banjir besar yang menenggelamkan kaum kafir.",
+      "Kapal Nabi Nuh berlabuh dengan selamat. Kisah ini menjadi tanda bahwa keselamatan hanya bagi orang-orang yang beriman dan taat kepada Allah."
+    ],
+    "lessons": [
+      "Kesabaran dalam dakwah adalah kunci.",
+      "Kebenaran tidak diukur dari jumlah pengikut.",
+      "Keselamatan datang dari iman dan ketaatan."
+    ],
+    "refs": ["QS Hud 25-49", "QS Nuh", "QS Al-Mu'minun 23-30"]
+  },
+
+  "ibrahim": {
+    "id": "ibrahim",
+    "name": "Nabi Ibrahim",
+    "title": "Kisah Nabi Ibrahim عليه السلام",
+    "summary": "Nabi Ibrahim dikenal sebagai bapak para nabi dan teladan dalam tauhid serta keteguhan iman.",
+    "story": [
+      "Nabi Ibrahim hidup di tengah masyarakat penyembah berhala. Ia menggunakan akal dan hikmah untuk menunjukkan bahwa berhala tidak memiliki kekuasaan.",
+      "Ia menghancurkan berhala-berhala kaumnya untuk menunjukkan kelemahan mereka. Kaumnya marah dan melemparkan Ibrahim ke dalam api, namun Allah menjadikan api itu dingin dan menyelamatkannya.",
+      "Nabi Ibrahim terus berdakwah kepada tauhid. Ia hijrah meninggalkan kaumnya demi mempertahankan iman.",
+      "Allah mengujinya dengan perintah menyembelih putranya Ismail. Dengan penuh ketaatan, Nabi Ibrahim dan Ismail siap melaksanakan perintah tersebut. Namun Allah menggantinya dengan seekor sembelihan.",
+      "Nabi Ibrahim juga membangun Ka'bah bersama Nabi Ismail sebagai pusat ibadah tauhid bagi manusia."
+    ],
+    "lessons": [
+      "Tauhid harus dijaga meski menghadapi ujian berat.",
+      "Ketaatan kepada Allah harus di atas segalanya.",
+      "Ujian adalah bentuk cinta Allah kepada hamba-Nya."
+    ],
+    "refs": ["QS Al-Anbiya 51-70", "QS As-Saffat 99-111", "QS Al-Baqarah 124-129"]
+  },
+
+  "musa": {
+    "id": "musa",
+    "name": "Nabi Musa",
+    "title": "Kisah Nabi Musa عليه السلام",
+    "summary": "Nabi Musa diutus kepada Fir'aun untuk membebaskan Bani Israil dan menyeru kepada tauhid.",
+    "story": [
+      "Nabi Musa lahir di masa kekuasaan Fir'aun yang zalim. Allah menyelamatkannya sejak bayi dengan menempatkannya di sungai hingga akhirnya ia dibesarkan di istana Fir'aun.",
+      "Setelah dewasa, Nabi Musa menerima wahyu di Gunung Thur dan diperintahkan untuk berdakwah kepada Fir'aun agar menyembah Allah.",
+      "Fir'aun menolak dan menentang. Allah memberikan mukjizat tongkat yang berubah menjadi ular dan tangan yang bercahaya sebagai bukti kenabian Musa.",
+      "Akhirnya Allah memerintahkan Nabi Musa membawa Bani Israil keluar dari Mesir. Laut terbelah sebagai jalan bagi mereka, sementara Fir'aun dan tentaranya tenggelam.",
+      "Nabi Musa memimpin kaumnya dan menerima Taurat sebagai petunjuk. Kisahnya mengajarkan keteguhan dalam menghadapi tirani."
+    ],
+    "lessons": [
+      "Allah menolong hamba-Nya yang beriman.",
+      "Kebenaran akan menang atas kezaliman.",
+      "Kesabaran diperlukan dalam memimpin umat."
+    ],
+    "refs": ["QS Al-Qasas 3-46", "QS Taha 9-98", "QS Yunus 75-92"]
+  },
+
+  "yusuf": {
+    "id": "yusuf",
+    "name": "Nabi Yusuf",
+    "title": "Kisah Nabi Yusuf عليه السلام",
+    "summary": "Kisah Nabi Yusuf adalah kisah kesabaran, keindahan akhlak, dan kepercayaan penuh kepada Allah.",
+    "story": [
+      "Nabi Yusuf adalah putra Nabi Ya'qub. Ia dibuang ke dalam sumur oleh saudara-saudaranya karena iri. Namun Allah menyelamatkannya.",
+      "Ia dijual sebagai budak di Mesir dan tumbuh menjadi pemuda yang tampan dan berakhlak mulia. Ia difitnah dan dipenjara meski tidak bersalah.",
+      "Di penjara, Nabi Yusuf menafsirkan mimpi dengan izin Allah. Kemampuannya akhirnya membuatnya dipanggil oleh raja Mesir.",
+      "Setelah menafsirkan mimpi raja tentang masa paceklik, Nabi Yusuf diangkat menjadi pejabat yang mengelola persediaan makanan.",
+      "Akhirnya ia bertemu kembali dengan keluarganya dan memaafkan saudara-saudaranya. Kisah ini menunjukkan bahwa kesabaran dan tawakal akan membawa kemenangan."
+    ],
+    "lessons": [
+      "Kesabaran membawa pertolongan Allah.",
+      "Kebaikan harus dibalas dengan kebaikan.",
+      "Allah mengatur rencana terbaik bagi hamba-Nya."
+    ],
+    "refs": ["QS Yusuf"]
+  },
+
+  "yunus": {
+    "id": "yunus",
+    "name": "Nabi Yunus",
+    "title": "Kisah Nabi Yunus عليه السلام",
+    "summary": "Nabi Yunus adalah nabi yang diuji dengan kesabaran dan taubat setelah meninggalkan kaumnya sebelum mendapat izin Allah.",
+    "story": [
+      "Nabi Yunus diutus kepada suatu kaum yang menolak dakwahnya. Karena merasa putus asa atas penolakan mereka, ia meninggalkan kaumnya sebelum mendapat perintah Allah.",
+      "Ia menaiki kapal yang kemudian dilanda badai besar. Untuk meringankan kapal, dilakukan undian dan Nabi Yunus terpilih untuk dilempar ke laut. Ia kemudian ditelan oleh ikan besar dengan izin Allah.",
+      "Dalam kegelapan perut ikan, di dalam lautan, dan di malam yang gelap, Nabi Yunus berdoa dengan penuh penyesalan: “Tidak ada Tuhan selain Engkau, Maha Suci Engkau, sungguh aku termasuk orang yang zalim.”",
+      "Allah menerima taubatnya dan memerintahkan ikan itu memuntahkannya ke daratan. Allah menumbuhkan pohon untuk melindunginya dan memulihkan kesehatannya.",
+      "Setelah itu Nabi Yunus kembali kepada kaumnya. Kali ini mereka beriman kepada Allah dan diselamatkan dari azab. Kisah ini menjadi pelajaran besar tentang taubat dan kesabaran."
+    ],
+    "lessons": [
+      "Jangan berputus asa dalam dakwah.",
+      "Taubat yang tulus selalu diterima Allah.",
+      "Allah menyelamatkan hamba yang kembali kepada-Nya."
+    ],
+    "refs": ["QS Yunus 98", "QS Al-Anbiya 87-88", "QS As-Saffat 139-148"]
+  },
+
+  "ayyub": {
+    "id": "ayyub",
+    "name": "Nabi Ayyub",
+    "title": "Kisah Nabi Ayyub عليه السلام",
+    "summary": "Nabi Ayyub adalah teladan kesabaran luar biasa saat diuji dengan penyakit, kehilangan harta, dan keluarga.",
+    "story": [
+      "Nabi Ayyub adalah seorang nabi yang kaya, sehat, dan memiliki keluarga besar. Allah kemudian mengujinya dengan kehilangan harta, anak-anak, dan kesehatan.",
+      "Ia menderita penyakit berat dalam waktu lama. Meski demikian, ia tidak pernah mengeluh kepada manusia dan tetap bersabar serta beribadah kepada Allah.",
+      "Setelah bertahun-tahun bersabar, Nabi Ayyub berdoa kepada Allah dengan penuh kerendahan: bahwa ia telah ditimpa kesulitan dan Allah adalah Yang Maha Penyayang.",
+      "Allah mengabulkan doanya dan memerintahkan Nabi Ayyub menghentakkan kakinya ke tanah. Dari sana keluar air yang menyembuhkan penyakitnya. Allah juga mengembalikan keluarganya dan melipatgandakan nikmatnya.",
+      "Kisah Nabi Ayyub menjadi simbol kesabaran sejati dalam menghadapi ujian hidup."
+    ],
+    "lessons": [
+      "Kesabaran adalah kunci menghadapi ujian.",
+      "Ujian adalah tanda cinta Allah.",
+      "Pertolongan Allah datang setelah kesabaran."
+    ],
+    "refs": ["QS Al-Anbiya 83-84", "QS Sad 41-44"]
+  },
+
+  "daud": {
+    "id": "daud",
+    "name": "Nabi Daud",
+    "title": "Kisah Nabi Daud عليه السلام",
+    "summary": "Nabi Daud adalah raja dan nabi yang diberi kekuatan, hikmah, serta kitab Zabur.",
+    "story": [
+      "Nabi Daud diberi kekuatan luar biasa oleh Allah. Ia berhasil mengalahkan Jalut dalam pertempuran dengan izin Allah.",
+      "Allah menjadikannya raja sekaligus nabi. Ia memimpin dengan keadilan dan hikmah, serta diberi kitab Zabur sebagai petunjuk.",
+      "Gunung dan burung bertasbih bersama Nabi Daud. Allah juga memberinya kemampuan melembutkan besi untuk membuat baju perang.",
+      "Nabi Daud dikenal sebagai hamba yang rajin beribadah, berpuasa, dan berdzikir. Ia selalu bertaubat ketika melakukan kesalahan.",
+      "Kisah Nabi Daud menunjukkan pentingnya keadilan, kekuatan iman, dan ketaatan kepada Allah."
+    ],
+    "lessons": [
+      "Pemimpin harus adil dan bertakwa.",
+      "Kekuatan harus digunakan untuk kebenaran.",
+      "Bertaubat adalah sifat para nabi."
+    ],
+    "refs": ["QS Sad 17-26", "QS Al-Baqarah 251"]
+  },
+
+  "sulaiman": {
+    "id": "sulaiman",
+    "name": "Nabi Sulaiman",
+    "title": "Kisah Nabi Sulaiman عليه السلام",
+    "summary": "Nabi Sulaiman adalah raja yang diberi kekuasaan besar, termasuk kemampuan memahami bahasa hewan dan mengendalikan jin.",
+    "story": [
+      "Nabi Sulaiman adalah putra Nabi Dawud dan mewarisi kenabian serta kerajaan. Allah memberinya kekuasaan besar atas manusia, jin, dan angin.",
+      "Ia mampu memahami bahasa hewan. Suatu ketika ia mendengar semut berbicara dan tersenyum karena bersyukur kepada Allah atas nikmat tersebut.",
+      "Nabi Sulaiman memimpin dengan keadilan dan tauhid. Ia berdakwah kepada Ratu Saba hingga akhirnya ia dan kaumnya beriman kepada Allah.",
+      "Meskipun memiliki kerajaan besar, Nabi Sulaiman tetap rendah hati dan bersyukur kepada Allah.",
+      "Ia wafat dalam keadaan berdiri bersandar pada tongkat. Jin baru menyadari wafatnya setelah tongkatnya jatuh. Ini menunjukkan bahwa hanya Allah yang mengetahui hal gaib."
+    ],
+    "lessons": [
+      "Kekuasaan adalah amanah dari Allah.",
+      "Syukur harus menyertai setiap nikmat.",
+      "Hanya Allah yang mengetahui hal gaib."
+    ],
+    "refs": ["QS An-Naml 15-44", "QS Saba 12-14"]
+  },
+
+  "isa": {
+    "id": "isa",
+    "name": "Nabi Isa",
+    "title": "Kisah Nabi Isa عليه السلام",
+    "summary": "Nabi Isa adalah nabi yang lahir secara mukjizat dan diutus kepada Bani Israil untuk mengajak kepada tauhid.",
+    "story": [
+      "Nabi Isa dilahirkan oleh Maryam tanpa ayah sebagai mukjizat dari Allah. Kelahirannya adalah tanda kekuasaan Allah.",
+      "Sejak bayi, Nabi Isa berbicara untuk membela ibunya. Ia tumbuh menjadi nabi yang menyeru Bani Israil kepada tauhid.",
+      "Allah memberinya berbagai mukjizat: menyembuhkan orang sakit, menghidupkan orang mati dengan izin Allah, dan membentuk burung dari tanah liat yang menjadi hidup.",
+      "Sebagian kaumnya menolak dan merencanakan untuk membunuhnya. Namun Allah menyelamatkan Nabi Isa dan mengangkatnya ke langit.",
+      "Nabi Isa akan kembali menjelang akhir zaman sebagai tanda besar kiamat."
+    ],
+    "lessons": [
+      "Mukjizat terjadi dengan izin Allah.",
+      "Tauhid adalah inti dakwah para nabi.",
+      "Allah melindungi para nabi-Nya."
+    ],
+    "refs": ["QS Maryam 16-36", "QS Ali Imran 45-55", "QS Al-Ma'idah 110"]
+  },
+
+  "muhammad": {
+    "id": "muhammad",
+    "name": "Nabi Muhammad ﷺ",
+    "title": "Kisah Nabi Muhammad ﷺ",
+    "summary": "Nabi Muhammad adalah nabi terakhir yang diutus untuk seluruh manusia sebagai rahmat bagi alam semesta.",
+    "story": [
+      "Nabi Muhammad lahir di Mekah dalam keadaan yatim. Ia dikenal sebagai Al-Amin karena kejujurannya.",
+      "Pada usia 40 tahun, beliau menerima wahyu pertama di Gua Hira. Beliau diutus untuk mengajak manusia menyembah Allah semata.",
+      "Beliau menghadapi banyak penolakan dan ujian dari kaumnya. Namun beliau tetap sabar dan terus berdakwah.",
+      "Beliau hijrah ke Madinah dan membangun masyarakat Islam yang adil dan penuh kasih. Islam berkembang luas melalui dakwah dan akhlaknya.",
+      "Nabi Muhammad adalah teladan sempurna dalam akhlak, ibadah, kepemimpinan, dan kasih sayang. Beliau adalah penutup para nabi."
+    ],
+    "lessons": [
+      "Akhlak mulia adalah inti dakwah.",
+      "Kesabaran membawa kemenangan.",
+      "Nabi Muhammad adalah teladan terbaik bagi manusia."
+    ],
+    "refs": ["QS Al-Ahzab 21", "QS Al-Anbiya 107", "QS Al-Fath 29"]
+  }
+}
