@@ -7,17 +7,40 @@
     "source": "Bukhari"
   },
   "2": {
-    "title": "Protection in morning",
-    "arabic": "بِسْمِ اللهِ الَّذِي لا يَضُرُّ",
+    "title": "Morning protection",
+    "arabic": "بِسْمِ اللهِ الَّذِي لا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ",
     "transliteration": "Bismillah alladhi la yadurru",
-    "translation": "In the name of Allah with whose name nothing is harmed.",
+    "translation": "In the name of Allah, with whose name nothing can harm.",
     "source": "Tirmidhi"
   },
   "3": {
-    "title": "Gratitude",
+    "title": "Gratitude in morning",
     "arabic": "اللّهُـمَّ ما أَصْبَـحَ بي مِنْ نِعْـمَة",
     "transliteration": "Allahumma ma asbaha bi min ni'mah",
     "translation": "O Allah, whatever blessing I wake with is from You.",
     "source": "Abu Dawud"
+  },
+
+  "4": {
+    "title": "Evening remembrance",
+    "arabic": "أَمْسَيْنا وَأَمْسَى المُلْكُ لله",
+    "transliteration": "Amsayna wa amsal mulku lillah",
+    "translation": "We have reached the evening and the dominion belongs to Allah.",
+    "source": "Muslim"
+  },
+  "5": {
+    "title": "Evening protection",
+    "arabic": "اللّهُـمَّ إِنِّي أَمْسَيْتُ أُشْهِدُكَ",
+    "transliteration": "Allahumma inni amsaytu ush'hiduka",
+    "translation": "O Allah, I bear witness this evening that You are Allah.",
+    "source": "Abu Dawud"
+  },
+
+  "6": {
+    "title": "Seeking forgiveness",
+    "arabic": "رَبِّ اغْفِرْ لِي",
+    "transliteration": "Rabbi ighfir li",
+    "translation": "My Lord, forgive me.",
+    "source": "Quran"
   }
 }

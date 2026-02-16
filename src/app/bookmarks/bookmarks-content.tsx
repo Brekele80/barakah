@@ -8,7 +8,8 @@ import { getHadithBookmarks } from "@/lib/hadith-bookmarks";
 import { withLang } from "@/lib/lang";
 import SkeletonCard from "@/app/components/skeleton-card";
 import { getDuaBookmarks } from "@/lib/dua-bookmarks";
-import { loadDuas, Dua } from "@/lib/duas";
+import { loadDuas } from "@/lib/duas";
+import type { DuaFull } from "@/lib/duas";
 
 type QuranBookmark = {
   key: string;
@@ -84,7 +85,7 @@ export default function BookmarksContent() {
 
   const [quranBookmarks, setQuranBookmarks] = useState<QuranBookmark[] | null>(null);
   const [hadithList, setHadithList] = useState<HadithFull[] | null>(null);
-  const [duaList, setDuaList] = useState<Dua[] | null>(null);
+  const [duaList, setDuaList] = useState<DuaFull[] | null>(null);
 
   // 🔹 load quran bookmarks safely
   useEffect(() => {
@@ -151,9 +152,9 @@ export default function BookmarksContent() {
 
       const all = await loadDuas(lang);
 
-      const list: Dua[] = saved
-        .map((b) => all.find((d) => d.id === b.id))
-        .filter((d): d is Dua => Boolean(d));
+      const list: DuaFull[] = saved
+        .map((b) => all.find((d: DuaFull) => d.id === b.id))
+        .filter((d): d is DuaFull => Boolean(d));
 
       if (active) setDuaList(list);
     }

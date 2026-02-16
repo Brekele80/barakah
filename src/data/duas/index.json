@@ -1,22 +1,46 @@
 [
-  { "id": "1", "category": "morning", "tags": [] },
-  { "id": "2", "category": "morning", "tags": [] },
-  { "id": "3", "category": "morning", "tags": [] },
-  { "id": "4", "category": "evening", "tags": [] },
-  { "id": "5", "category": "evening", "tags": [] },
-  { "id": "6", "category": "evening", "tags": [] },
-  { "id": "7", "category": "sleep", "tags": [] },
-  { "id": "8", "category": "sleep", "tags": [] },
-  { "id": "9", "category": "travel", "tags": [] },
-  { "id": "10", "category": "travel", "tags": [] },
-  { "id": "11", "category": "forgiveness", "tags": [] },
-  { "id": "12", "category": "forgiveness", "tags": [] },
-  { "id": "13", "category": "rizq", "tags": [] },
-  { "id": "14", "category": "rizq", "tags": [] },
-  { "id": "15", "category": "anxiety", "tags": [] },
-  { "id": "16", "category": "anxiety", "tags": [] },
-  { "id": "17", "category": "knowledge", "tags": [] },
-  { "id": "18", "category": "knowledge", "tags": [] },
-  { "id": "19", "category": "family", "tags": [] },
-  { "id": "20", "category": "family", "tags": [] }
+  { "id": "1", "category": "morning", "tags": ["morning"] },
+  { "id": "2", "category": "morning", "tags": ["morning"] },
+  { "id": "3", "category": "morning", "tags": ["morning"] },
+
+  { "id": "4", "category": "evening", "tags": ["evening"] },
+  { "id": "5", "category": "evening", "tags": ["evening"] },
+  { "id": "6", "category": "evening", "tags": ["evening"] },
+
+  { "id": "7", "category": "sleep", "tags": ["sleep"] },
+  { "id": "8", "category": "sleep", "tags": ["sleep"] },
+
+  { "id": "9", "category": "travel", "tags": ["travel"] },
+  { "id": "10", "category": "travel", "tags": ["travel"] },
+
+  { "id": "11", "category": "forgiveness", "tags": ["forgiveness"] },
+  { "id": "12", "category": "forgiveness", "tags": ["forgiveness"] },
+
+  { "id": "13", "category": "rizq", "tags": ["rizq"] },
+  { "id": "14", "category": "rizq", "tags": ["rizq"] },
+
+  { "id": "15", "category": "anxiety", "tags": ["anxiety"] },
+  { "id": "16", "category": "anxiety", "tags": ["anxiety"] },
+
+  { "id": "17", "category": "knowledge", "tags": ["knowledge"] },
+  { "id": "18", "category": "knowledge", "tags": ["knowledge"] },
+
+  { "id": "19", "category": "family", "tags": ["family"] },
+  { "id": "20", "category": "family", "tags": ["family"] },
+
+  { "id": "21", "category": "protection", "tags": ["protection"] },
+  { "id": "22", "category": "protection", "tags": ["protection"] },
+
+  { "id": "23", "category": "health", "tags": ["health"] },
+  { "id": "24", "category": "health", "tags": ["health"] },
+
+  { "id": "25", "category": "hardship", "tags": ["hardship"] },
+  { "id": "26", "category": "hardship", "tags": ["hardship"] },
+
+  { "id": "27", "category": "gratitude", "tags": ["gratitude"] },
+  { "id": "28", "category": "gratitude", "tags": ["gratitude"] },
+
+  { "id": "29", "category": "repentance", "tags": ["repentance"] },
+  { "id": "30", "category": "repentance", "tags": ["repentance"] }
+
 ]

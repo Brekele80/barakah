@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { withLang } from "@/lib/lang";
-import type { Dua } from "@/lib/duas";
+import type { DuaFull as Dua } from "@/lib/duas";
 
 type Props = {
   duas: Dua[];
