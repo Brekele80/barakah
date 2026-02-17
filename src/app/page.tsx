@@ -10,6 +10,7 @@ type DashboardUI = {
   duas: string;
   qibla: string;
   stories: string;
+  games: string;
   donations: string;
   tagline: string;
 };
@@ -23,6 +24,7 @@ const dashboardText: Record<string, DashboardUI> = {
     duas: "Duas",
     qibla: "Qibla",
     stories: "Stories of the Prophets",
+    games: "Islamic Games",
     donations: "Donations",
     tagline: "Faith. Giving. Guidance.",
   },
@@ -34,6 +36,7 @@ const dashboardText: Record<string, DashboardUI> = {
     duas: "Doa",
     qibla: "Arah Kiblat",
     stories: "Kisah Para Nabi",
+    games: "Permainan Islami",
     donations: "Donasi",
     tagline: "Faith. Giving. Guidance.",
   },
@@ -45,6 +48,7 @@ const dashboardText: Record<string, DashboardUI> = {
     duas: "Dualar",
     qibla: "Kıble",
     stories: "Peygamber Hikayeleri",
+    games: "Islami Oyunlar",
     donations: "Bağış",
     tagline: "Faith. Giving. Guidance.",
   },
@@ -56,6 +60,7 @@ const dashboardText: Record<string, DashboardUI> = {
     duas: "Invocations",
     qibla: "Qibla",
     stories: "Histoires des Prophètes",
+    games: "Jeux Islamiques",
     donations: "Dons",
     tagline: "Faith. Giving. Guidance.",
   },
@@ -67,6 +72,7 @@ const dashboardText: Record<string, DashboardUI> = {
     duas: "دعائیں",
     qibla: "قبلہ",
     stories: "انبیاء کے واقعات",
+    games: "اسلامی کھیل",
     donations: "عطیات",
     tagline: "Faith. Giving. Guidance.",
   },
@@ -99,6 +105,7 @@ export default async function DashboardPage({
         <FeatureCard href="/duas" lang={lang}>{t.duas}</FeatureCard>
         <FeatureCard href="/qibla" lang={lang}>{t.qibla}</FeatureCard>
         <FeatureCard href="/stories" lang={lang}>{t.stories}</FeatureCard>
+        <FeatureCard href="/games" lang={lang}>{t.games}</FeatureCard>
         <FeatureCard href="/donations" lang={lang}>{t.donations}</FeatureCard>
 
       </div>

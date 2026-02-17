@@ -1,0 +1,3105 @@
+[
+{
+"id":"x1",
+"question":"Dalam ilmu ushul fiqh, kaidah 'Al-yaqinu la yuzalu bisy-syakk' berarti?",
+"options":[
+"Keraguan menghilangkan keyakinan",
+"Keyakinan tidak hilang karena keraguan",
+"Semua hukum berdasarkan dugaan",
+"Keraguan lebih kuat dari keyakinan"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x2",
+"question":"Metode istinbath hukum yang menggunakan pertimbangan kemaslahatan umum tanpa dalil khusus disebut?",
+"options":[
+"Ijma",
+"Maslahah Mursalah",
+"Qiyas",
+"Istishab"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x3",
+"question":"Istihsan dalam ushul fiqh berarti?",
+"options":[
+"Mengikuti qiyas secara mutlak",
+"Meninggalkan qiyas zahir karena dalil lebih kuat",
+"Menghapus dalil",
+"Menolak hadits"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x4",
+"question":"Kasus warisan ketika total bagian melebihi harta disebut?",
+"options":[
+"Radd",
+"Aul",
+"Gharrawain",
+"Fardh"
+],
+"answer":1,
+"category":"mawaris"
+},
+{
+"id":"x5",
+"question":"Dalam ilmu faraidh, 'Radd' terjadi ketika?",
+"options":[
+"Harta kurang dari bagian",
+"Tidak ada ahli waris",
+"Ada sisa harta setelah pembagian",
+"Semua ahli waris laki-laki"
+],
+"answer":2,
+"category":"mawaris"
+},
+{
+"id":"x6",
+"question":"Gharrawain dalam ilmu waris terjadi pada kasus?",
+"options":[
+"Suami dan dua anak",
+"Ibu, ayah, dan suami/istri",
+"Hanya anak perempuan",
+"Saudara kandung saja"
+],
+"answer":1,
+"category":"mawaris"
+},
+{
+"id":"x7",
+"question":"Imam qira’at yang riwayatnya paling banyak dipakai di dunia Islam saat ini adalah?",
+"options":[
+"Warsh",
+"Hafs",
+"Qalun",
+"Kisai"
+],
+"answer":1,
+"category":"qiraat"
+},
+{
+"id":"x8",
+"question":"Hafs adalah perawi dari qari?",
+"options":[
+"Nafi’",
+"Asim",
+"Ibnu Katsir",
+"Abu Amr"
+],
+"answer":1,
+"category":"qiraat"
+},
+{
+"id":"x9",
+"question":"Warsh adalah perawi dari qari?",
+"options":[
+"Nafi’",
+"Asim",
+"Hamzah",
+"Kisai"
+],
+"answer":0,
+"category":"qiraat"
+},
+{
+"id":"x10",
+"question":"Jumlah qira’at mutawatir yang diakui secara klasik adalah?",
+"options":[
+"3",
+"7",
+"10",
+"14"
+],
+"answer":2,
+"category":"qiraat"
+},
+{
+"id":"x11",
+"question":"Perbedaan Tafsir bil Ma’tsur dan Tafsir bir Ra’yi terletak pada?",
+"options":[
+"Bahasa Arab",
+"Sumber penafsiran",
+"Jumlah ayat",
+"Metode hafalan"
+],
+"answer":1,
+"category":"tafsir"
+},
+{
+"id":"x12",
+"question":"Tafsir bil Ma’tsur bersumber utama dari?",
+"options":[
+"Logika pribadi",
+"Pendapat filsuf",
+"Qur'an, hadits, dan sahabat",
+"Tradisi lokal"
+],
+"answer":2,
+"category":"tafsir"
+},
+{
+"id":"x13",
+"question":"Ayat yang maknanya jelas dan tidak membutuhkan penafsiran disebut?",
+"options":[
+"Mutasyabihat",
+"Muhkamat",
+"Mansukh",
+"Makkiyah"
+],
+"answer":1,
+"category":"ulumul-quran"
+},
+{
+"id":"x14",
+"question":"Ayat yang maknanya memerlukan penafsiran disebut?",
+"options":[
+"Muhkamat",
+"Mutasyabihat",
+"Nasikh",
+"Mansukh"
+],
+"answer":1,
+"category":"ulumul-quran"
+},
+{
+"id":"x15",
+"question":"Nasikh dalam ilmu Al-Qur'an berarti?",
+"options":[
+"Ayat yang dihapus",
+"Ayat yang menghapus hukum sebelumnya",
+"Ayat pertama",
+"Ayat terakhir"
+],
+"answer":1,
+"category":"ulumul-quran"
+},
+{
+"id":"x16",
+"question":"Hadits mutawatir adalah hadits yang?",
+"options":[
+"Diriwayatkan satu orang",
+"Banyak perawi setiap tingkatan",
+"Lemah",
+"Palsu"
+],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"x17",
+"question":"Hadits ahad adalah hadits yang?",
+"options":[
+"Mutawatir",
+"Tidak mencapai mutawatir",
+"Palsu",
+"Qudsi"
+],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"x18",
+"question":"Hadits Qudsi adalah hadits yang?",
+"options":[
+"Lafaz dan makna dari Allah",
+"Makna dari Allah, lafaz dari Nabi",
+"Lafaz dari sahabat",
+"Bukan wahyu"
+],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"x19",
+"question":"Kitab hadits yang disusun Imam Bukhari bernama?",
+"options":[
+"Al-Muwatta",
+"Sahih Bukhari",
+"Sunan Nasa'i",
+"Musnad Ahmad"
+],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"x20",
+"question":"Kitab Al-Muwatta disusun oleh?",
+"options":[
+"Imam Malik",
+"Imam Syafi’i",
+"Imam Ahmad",
+"Imam Bukhari"
+],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x21",
+"question":"Ilmu yang menilai kredibilitas perawi hadits disebut?",
+"options":[
+"Tafsir",
+"Jarh wa Ta’dil",
+"Qira’at",
+"Balaghah"
+],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"x22",
+"question":"Ilmu yang mempelajari sanad dan matan hadits disebut?",
+"options":[
+"Mustalah hadith",
+"Tajwid",
+"Fiqh",
+"Nahwu"
+],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x23",
+"question":"Perjanjian Hudaibiyah terjadi pada tahun Hijriyah?",
+"options":[
+"4",
+"5",
+"6",
+"8"
+],
+"answer":2,
+"category":"seerah"
+},
+{
+"id":"x24",
+"question":"Sahabat yang mendapat gelar 'Ghasil al-Malaikah' adalah?",
+"options":[
+"Ali bin Abi Talib",
+"Hanzhalah",
+"Bilal",
+"Abu Hurairah"
+],
+"answer":1,
+"category":"sahaba"
+},
+{
+"id":"x25",
+"question":"Gelar 'As-Siddiq' diberikan kepada?",
+"options":[
+"Umar",
+"Abu Bakar",
+"Ali",
+"Utsman"
+],
+"answer":1,
+"category":"sahaba"
+},
+{
+"id":"x26",
+"question":"Ibnu Sina terkenal dalam bidang?",
+"options":[
+"Astronomi",
+"Kedokteran",
+"Matematika",
+"Fiqh"
+],
+"answer":1,
+"category":"civilization"
+},
+{
+"id":"x27",
+"question":"Al-Khawarizmi dikenal sebagai pelopor ilmu?",
+"options":[
+"Kimia",
+"Aljabar",
+"Hadits",
+"Tafsir"
+],
+"answer":1,
+"category":"civilization"
+},
+{
+"id":"x28",
+"question":"Dinasti yang terkenal dengan pusat ilmu di Baghdad adalah?",
+"options":[
+"Umayyah",
+"Abbasiyah",
+"Fatimiyah",
+"Utsmani"
+],
+"answer":1,
+"category":"sejarah"
+},
+{
+"id":"x29",
+"question":"Baitul Hikmah didirikan pada masa?",
+"options":[
+"Khulafaur Rasyidin",
+"Abbasiyah",
+"Umayyah",
+"Utsmani"
+],
+"answer":1,
+"category":"sejarah"
+},
+{
+"id":"x30",
+"question":"Maqasid syariah bertujuan menjaga berapa hal pokok?",
+"options":[
+"3",
+"5",
+"7",
+"10"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x31",
+"question":"Yang termasuk maqasid syariah adalah?",
+"options":[
+"Menjaga agama",
+"Menjaga warna kulit",
+"Menjaga suku",
+"Menjaga harta musuh"
+],
+"answer":0,
+"category":"usul-fiqh"
+},
+{
+"id":"x32",
+"question":"Ijma adalah?",
+"options":[
+"Pendapat satu ulama",
+"Kesepakatan ulama",
+"Pendapat sahabat saja",
+"Pendapat tabi'in"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x33",
+"question":"Qiyas adalah?",
+"options":[
+"Kesepakatan ulama",
+"Analogi hukum",
+"Dalil langsung",
+"Hukum tanpa dalil"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x34",
+"question":"Istishab berarti?",
+"options":[
+"Menghapus hukum",
+"Menetapkan hukum lama sampai ada dalil baru",
+"Qiyas",
+"Ijma"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x35",
+"question":"Dalam aqidah, perbedaan Asy’ari dan Maturidi terutama pada?",
+"options":[
+"Shalat",
+"Sifat Allah dan akal",
+"Puasa",
+"Haji"
+],
+"answer":1,
+"category":"aqidah"
+},
+{
+"id":"x36",
+"question":"Mu’tazilah terkenal dengan pendekatan?",
+"options":[
+"Literal",
+"Rasional",
+"Sufi",
+"Fiqh"
+],
+"answer":1,
+"category":"aqidah"
+},
+{
+"id":"x37",
+"question":"Ilmu kalam membahas tentang?",
+"options":[
+"Fiqh",
+"Tafsir",
+"Aqidah rasional",
+"Qiraat"
+],
+"answer":2,
+"category":"aqidah"
+},
+{
+"id":"x38",
+"question":"Kitab 'Al-Umm' ditulis oleh?",
+"options":[
+"Imam Malik",
+"Imam Syafi’i",
+"Imam Ahmad",
+"Imam Abu Hanifah"
+],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"x39",
+"question":"Kitab 'Al-Mughni' ditulis oleh?",
+"options":[
+"Ibnu Qudamah",
+"Imam Nawawi",
+"Ibnu Taimiyah",
+"Al-Ghazali"
+],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x40",
+"question":"Kitab 'Ihya Ulumuddin' ditulis oleh?",
+"options":[
+"Al-Ghazali",
+"Ibnu Sina",
+"Imam Malik",
+"Imam Ahmad"
+],
+"answer":0,
+"category":"civilization"
+},
+{
+"id":"x41",
+"question":"Fiqh prioritas (Fiqh al-Awlawiyyat) menekankan?",
+"options":[
+"Semua hukum sama",
+"Prioritas amal",
+"Tanpa dalil",
+"Hanya sunnah"
+],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"x42",
+"question":"Dalam haji, rukun paling utama adalah?",
+"options":[
+"Tawaf",
+"Wuquf di Arafah",
+"Sa’i",
+"Talbiyah"
+],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"x43",
+"question":"Talbiyah dibaca saat?",
+"options":[
+"Shalat",
+"Ihram",
+"Tawaf",
+"Sa’i"
+],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"x44",
+"question":"Zakat mal wajib jika harta mencapai?",
+"options":[
+"Nisab",
+"Haul",
+"Sedekah",
+"Wasiat"
+],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x45",
+"question":"Haul berarti?",
+"options":[
+"Jumlah",
+"Satu tahun kepemilikan",
+"Sedekah",
+"Niat"
+],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"x46",
+"question":"Riba dalam Islam hukumnya?",
+"options":[
+"Makruh",
+"Wajib",
+"Haram",
+"Mubah"
+],
+"answer":2,
+"category":"muamalah"
+},
+{
+"id":"x47",
+"question":"Akad jual beli dalam Islam harus menghindari?",
+"options":[
+"Kejujuran",
+"Gharar",
+"Kerelaan",
+"Niat"
+],
+"answer":1,
+"category":"muamalah"
+},
+{
+"id":"x48",
+"question":"Gharar berarti?",
+"options":[
+"Jelas",
+"Ketidakpastian berlebihan",
+"Untung",
+"Sedekah"
+],
+"answer":1,
+"category":"muamalah"
+},
+{
+"id":"x49",
+"question":"Istilah sanad dalam hadits berarti?",
+"options":[
+"Teks hadits",
+"Rantai perawi",
+"Makna",
+"Tafsir"
+],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"x50",
+"question":"Matan dalam hadits berarti?",
+"options":[
+"Sanad",
+"Isi teks hadits",
+"Perawi",
+"Tafsir"
+],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"x51",
+"question":"Kaidah fiqh 'Al-masyaqqah tajlibut taisir' berarti?",
+"options":[
+"Kesulitan meniadakan hukum",
+"Kesulitan mendatangkan kemudahan",
+"Hukum selalu berat",
+"Tidak ada rukhsah"
+],
+"answer":1,
+"category":"qawaid-fiqh"
+},
+{
+"id":"x52",
+"question":"Kaidah 'Adh-dhararu yuzal' berarti?",
+"options":[
+"Bahaya dibiarkan",
+"Bahaya harus dihilangkan",
+"Bahaya dianjurkan",
+"Tidak ada hukum"
+],
+"answer":1,
+"category":"qawaid-fiqh"
+},
+{
+"id":"x53",
+"question":"Istilah 'rukhsah' dalam fiqh berarti?",
+"options":[
+"Hukum asal",
+"Keringanan syariat",
+"Haram",
+"Wajib"
+],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"x54",
+"question":"Azimah dalam fiqh berarti?",
+"options":[
+"Keringanan",
+"Hukum asal tanpa keringanan",
+"Sunah",
+"Makruh"
+],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"x55",
+"question":"Dalam mustalah hadits, sanad munqathi’ berarti?",
+"options":[
+"Sanad bersambung",
+"Sanad terputus di tengah",
+"Sanad palsu",
+"Sanad mutawatir"
+],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"x56",
+"question":"Hadits mursal adalah hadits yang diriwayatkan tabi'in langsung dari?",
+"options":[
+"Sahabat",
+"Nabi ﷺ",
+"Tabi'in lain",
+"Imam"
+],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"x57",
+"question":"Hadits mauquf adalah hadits yang berhenti pada?",
+"options":[
+"Nabi",
+"Sahabat",
+"Tabi'in",
+"Imam"
+],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"x58",
+"question":"Hadits maqthu’ adalah hadits yang berhenti pada?",
+"options":[
+"Nabi",
+"Sahabat",
+"Tabi'in",
+"Imam"
+],
+"answer":2,
+"category":"hadith"
+},
+{
+"id":"x59",
+"question":"Ilmu yang mempelajari sebab-sebab munculnya hadits disebut?",
+"options":[
+"Asbabun wurud",
+"Asbabun nuzul",
+"Tafsir",
+"Fiqh"
+],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x60",
+"question":"Kitab 'Ar-Risalah' dalam ushul fiqh ditulis oleh?",
+"options":[
+"Imam Malik",
+"Imam Syafi’i",
+"Imam Ahmad",
+"Imam Nawawi"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x61",
+"question":"Imam Nawawi terkenal dengan kitab hadits?",
+"options":[
+"Arba'in Nawawi",
+"Sahih Muslim",
+"Muwatta",
+"Musnad"
+],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x62",
+"question":"Kitab Sahih Muslim disusun oleh?",
+"options":[
+"Imam Muslim",
+"Imam Bukhari",
+"Imam Ahmad",
+"Imam Malik"
+],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x63",
+"question":"Dalam qira’at, istilah 'tawatur' berarti?",
+"options":[
+"Diriwayatkan satu orang",
+"Diriwayatkan banyak jalur mustahil dusta",
+"Hadits lemah",
+"Pendapat pribadi"
+],
+"answer":1,
+"category":"qiraat"
+},
+{
+"id":"x64",
+"question":"Qira’at yang tidak memenuhi syarat mutawatir disebut?",
+"options":[
+"Syadz",
+"Mutawatir",
+"Sahih",
+"Hasan"
+],
+"answer":0,
+"category":"qiraat"
+},
+{
+"id":"x65",
+"question":"Ilmu tajwid bertujuan?",
+"options":[
+"Menghafal",
+"Membaca Al-Qur'an dengan benar",
+"Menafsirkan",
+"Menghitung ayat"
+],
+"answer":1,
+"category":"qiraat"
+},
+{
+"id":"x66",
+"question":"Dalam mawaris, ahli waris yang mendapat 1/6 adalah?",
+"options":[
+"Ibu",
+"Anak laki",
+"Saudara",
+"Paman"
+],
+"answer":0,
+"category":"mawaris"
+},
+{
+"id":"x67",
+"question":"Ashabah dalam ilmu waris berarti?",
+"options":[
+"Ahli waris tanpa sisa",
+"Ahli waris yang mendapat sisa",
+"Ahli waris perempuan",
+"Bukan ahli waris"
+],
+"answer":1,
+"category":"mawaris"
+},
+{
+"id":"x68",
+"question":"Dzawil furudh adalah?",
+"options":[
+"Ahli waris dengan bagian pasti",
+"Ahli waris tanpa bagian",
+"Bukan ahli waris",
+"Saksi"
+],
+"answer":0,
+"category":"mawaris"
+},
+{
+"id":"x69",
+"question":"Maslahah mu’tabarah adalah maslahah yang?",
+"options":[
+"Ditolak syariat",
+"Didukung dalil syariat",
+"Bertentangan",
+"Baru muncul"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x70",
+"question":"Maslahah mulghah adalah maslahah yang?",
+"options":[
+"Didukung syariat",
+"Ditolak syariat",
+"Netral",
+"Wajib"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x71",
+"question":"Istilah 'Sadd adz-Dzari’ah' berarti?",
+"options":[
+"Membuka jalan",
+"Menutup jalan menuju haram",
+"Menghapus hukum",
+"Menetapkan hukum"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x72",
+"question":"Fatwa adalah?",
+"options":[
+"Putusan pengadilan",
+"Pendapat hukum ulama",
+"Hadits",
+"Ayat"
+],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"x73",
+"question":"Ijtihad berarti?",
+"options":[
+"Menghafal",
+"Mencari hukum dengan usaha maksimal",
+"Menolak dalil",
+"Mengikuti tanpa dalil"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x74",
+"question":"Taqlid berarti?",
+"options":[
+"Ijtihad",
+"Mengikuti pendapat ulama tanpa dalil sendiri",
+"Menolak ulama",
+"Menafsirkan"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x75",
+"question":"Mazhab fiqh terbesar di Indonesia adalah?",
+"options":[
+"Hanafi",
+"Maliki",
+"Syafi’i",
+"Hanbali"
+],
+"answer":2,
+"category":"fiqh"
+},
+{
+"id":"x76",
+"question":"Mazhab Hanafi didirikan oleh?",
+"options":[
+"Abu Hanifah",
+"Malik",
+"Syafi’i",
+"Ahmad"
+],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x77",
+"question":"Imam Ahmad bin Hanbal terkenal dengan kitab?",
+"options":[
+"Musnad Ahmad",
+"Muwatta",
+"Arba'in",
+"Risalah"
+],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x78",
+"question":"Ilmu balaghah mempelajari?",
+"options":[
+"Hukum",
+"Keindahan bahasa Arab",
+"Fiqh",
+"Sejarah"
+],
+"answer":1,
+"category":"arabic"
+},
+{
+"id":"x79",
+"question":"Nahwu mempelajari?",
+"options":[
+"Makna kata",
+"Tata bahasa Arab",
+"Tajwid",
+"Fiqh"
+],
+"answer":1,
+"category":"arabic"
+},
+{
+"id":"x80",
+"question":"Sharaf mempelajari?",
+"options":[
+"Perubahan bentuk kata",
+"Tafsir",
+"Fiqh",
+"Hadits"
+],
+"answer":0,
+"category":"arabic"
+},
+{
+"id":"x81",
+"question":"Imam Al-Ghazali dikenal sebagai tokoh?",
+"options":[
+"Filsafat & tasawuf",
+"Matematika",
+"Kedokteran",
+"Astronomi"
+],
+"answer":0,
+"category":"civilization"
+},
+{
+"id":"x82",
+"question":"Kitab 'Al-Mustashfa' dalam ushul fiqh ditulis oleh?",
+"options":[
+"Al-Ghazali",
+"Ibnu Taimiyah",
+"Syafi’i",
+"Nawawi"
+],
+"answer":0,
+"category":"usul-fiqh"
+},
+{
+"id":"x83",
+"question":"Ibnu Taimiyah hidup pada masa?",
+"options":[
+"Abbasiyah",
+"Umayyah",
+"Mamluk",
+"Utsmani"
+],
+"answer":2,
+"category":"sejarah"
+},
+{
+"id":"x84",
+"question":"Dinasti Umayyah di Andalusia berpusat di?",
+"options":[
+"Cordoba",
+"Baghdad",
+"Damaskus",
+"Kairo"
+],
+"answer":0,
+"category":"sejarah"
+},
+{
+"id":"x85",
+"question":"Masjid Cordoba dibangun pada masa?",
+"options":[
+"Abbasiyah",
+"Umayyah Andalusia",
+"Utsmani",
+"Fatimiyah"
+],
+"answer":1,
+"category":"sejarah"
+},
+{
+"id":"x86",
+"question":"Ilmu kalam berkembang untuk membela?",
+"options":[
+"Fiqh",
+"Aqidah",
+"Tafsir",
+"Hadits"
+],
+"answer":1,
+"category":"aqidah"
+},
+{
+"id":"x87",
+"question":"Aliran Maturidi berkembang di wilayah?",
+"options":[
+"Asia Tengah",
+"Andalusia",
+"Mesir",
+"Yaman"
+],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"x88",
+"question":"Aliran Asy’ari didirikan oleh?",
+"options":[
+"Al-Asy’ari",
+"Al-Ghazali",
+"Al-Maturidi",
+"Syafi’i"
+],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"x89",
+"question":"Istilah 'takhsis' dalam ushul fiqh berarti?",
+"options":[
+"Penghapusan hukum",
+"Pengkhususan dalil umum",
+"Penetapan hukum baru",
+"Penolakan hadits"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x90",
+"question":"Istilah 'taqyid' berarti?",
+"options":[
+"Menghapus",
+"Membatasi dalil mutlak",
+"Menguatkan",
+"Mengubah"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x91",
+"question":"Mutlaq berarti?",
+"options":[
+"Terbatas",
+"Umum tanpa batas",
+"Khusus",
+"Haram"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x92",
+"question":"Muqayyad berarti?",
+"options":[
+"Umum",
+"Terbatas",
+"Mutlak",
+"Sunnah"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x93",
+"question":"Dalam fiqh muamalah, akad salam adalah?",
+"options":[
+"Jual beli tunai",
+"Pembayaran di awal barang kemudian",
+"Sewa",
+"Hibah"
+],
+"answer":1,
+"category":"muamalah"
+},
+{
+"id":"x94",
+"question":"Akad murabahah adalah?",
+"options":[
+"Jual beli tanpa untung",
+"Jual beli dengan margin diketahui",
+"Sewa",
+"Hibah"
+],
+"answer":1,
+"category":"muamalah"
+},
+{
+"id":"x95",
+"question":"Akad mudharabah adalah?",
+"options":[
+"Pinjaman",
+"Bagi hasil usaha",
+"Sewa",
+"Hibah"
+],
+"answer":1,
+"category":"muamalah"
+},
+{
+"id":"x96",
+"question":"Akad musyarakah adalah?",
+"options":[
+"Sewa",
+"Kerja sama modal",
+"Hibah",
+"Pinjam"
+],
+"answer":1,
+"category":"muamalah"
+},
+{
+"id":"x97",
+"question":"Riba nasi’ah terjadi karena?",
+"options":[
+"Tambahan karena penundaan",
+"Sedekah",
+"Zakat",
+"Jual beli halal"
+],
+"answer":0,
+"category":"muamalah"
+},
+{
+"id":"x98",
+"question":"Riba fadhl terjadi pada?",
+"options":[
+"Pertukaran barang ribawi tidak setara",
+"Sedekah",
+"Wasiat",
+"Hibah"
+],
+"answer":0,
+"category":"muamalah"
+},
+{
+"id":"x99",
+"question":"Ilmu maqasid syariah dikembangkan oleh?",
+"options":[
+"Imam Syatibi",
+"Imam Malik",
+"Imam Ahmad",
+"Imam Bukhari"
+],
+"answer":0,
+"category":"usul-fiqh"
+},
+{
+"id":"x100",
+"question":"Kitab 'Al-Muwafaqat' ditulis oleh?",
+"options":[
+"Syatibi",
+"Ghazali",
+"Syafi’i",
+"Malik"
+],
+"answer":0,
+"category":"usul-fiqh"
+},
+{
+"id":"x101",
+"question":"Dalam ushul fiqh, istilah 'dalalah al-ibarah' merujuk pada?",
+"options":[
+"Makna tersirat jauh",
+"Makna eksplisit dari lafaz",
+"Makna majaz",
+"Makna qiyas"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x102",
+"question":"Dalalah al-isyarah berarti?",
+"options":[
+"Makna langsung",
+"Makna tersirat dari struktur lafaz",
+"Makna qiyas",
+"Makna nasakh"
+],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x103",
+"question":"Nasakh dalam Al-Qur’an berarti?",
+"options":[
+"Penjelasan ayat",
+"Penghapusan hukum ayat dengan ayat lain",
+"Penguatan ayat",
+"Penafsiran"
+],
+"answer":1,
+"category":"ulumul-quran"
+},
+{
+"id":"x104",
+"question":"Ayat yang menghapus hukum ayat lain disebut?",
+"options":[
+"Mansukh",
+"Nasikh",
+"Muhkam",
+"Mutasyabih"
+],
+"answer":1,
+"category":"ulumul-quran"
+},
+{
+"id":"x105",
+"question":"Dalam mustalah hadits, 'mudallis' adalah perawi yang?",
+"options":[
+"Jujur",
+"Menyembunyikan cacat sanad",
+"Tidak hafal",
+"Terputus sanad"
+],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"x106",
+"question":"Hadits mu’allaq adalah hadits yang?",
+"options":[
+"Sanadnya lengkap",
+"Terputus di awal sanad",
+"Terputus di tengah",
+"Palsu"
+],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"x107",
+"question":"Hadits mudraj berarti?",
+"options":[
+"Tambahan lafaz dari perawi",
+"Sanad palsu",
+"Sanad kuat",
+"Mutawatir"
+],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x108",
+"question":"Istilah 'illah' dalam hadits berarti?",
+"options":[
+"Kesalahan tersembunyi",
+"Kelebihan sanad",
+"Mutawatir",
+"Sahih"
+],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x109",
+"question":"Ilmu rijal al-hadits mempelajari?",
+"options":[
+"Tafsir",
+"Perawi hadits",
+"Fiqh",
+"Sejarah"
+],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"x110",
+"question":"Jarh wa ta’dil berarti?",
+"options":[
+"Menghafal hadits",
+"Menilai kredibilitas perawi",
+"Menulis tafsir",
+"Menetapkan hukum"
+],
+"answer":1,
+"category":"hadith"
+},
+
+{
+"id":"x111",
+"question":"Qira’at Warsh berasal dari riwayat Imam?",
+"options":[
+"‘Asim",
+"Nafi’",
+"Ibnu Kathir",
+"Hamzah"
+],
+"answer":1,
+"category":"qiraat"
+},
+{
+"id":"x112",
+"question":"Riwayat Hafs yang umum digunakan di dunia Islam berasal dari Imam?",
+"options":[
+"‘Asim",
+"Nafi’",
+"Abu Amr",
+"Kisai"
+],
+"answer":0,
+"category":"qiraat"
+},
+{
+"id":"x113",
+"question":"Ilmu 'asbabun nuzul' penting untuk memahami?",
+"options":[
+"Tajwid",
+"Konteks turunnya ayat",
+"Fiqh saja",
+"Bahasa"
+],
+"answer":1,
+"category":"ulumul-quran"
+},
+{
+"id":"x114",
+"question":"Makkiyah adalah ayat yang turun sebelum?",
+"options":[
+"Hijrah",
+"Wafat Nabi",
+"Isra Mi’raj",
+"Perang Badar"
+],
+"answer":0,
+"category":"ulumul-quran"
+},
+{
+"id":"x115",
+"question":"Madaniyah adalah ayat yang turun setelah?",
+"options":[
+"Hijrah",
+"Wafat Nabi",
+"Perang Uhud",
+"Fathu Makkah"
+],
+"answer":0,
+"category":"ulumul-quran"
+},
+{
+"id":"x116",
+"question":"Dalam mawaris, istilah 'aul' terjadi ketika?",
+"options":[
+"Sisa warisan",
+"Bagian melebihi total harta",
+"Tanpa ahli waris",
+"Harta hilang"
+],
+"answer":1,
+"category":"mawaris"
+},
+{
+"id":"x117",
+"question":"Radd dalam mawaris berarti?",
+"options":[
+"Pengurangan",
+"Pengembalian sisa ke ahli waris tertentu",
+"Penolakan warisan",
+"Hibah"
+],
+"answer":1,
+"category":"mawaris"
+},
+{
+"id":"x118",
+"question":"Kasus gharrawain dalam mawaris melibatkan?",
+"options":[
+"Istri & anak",
+"Ayah, ibu, suami/istri",
+"Paman",
+"Kakek"
+],
+"answer":1,
+"category":"mawaris"
+},
+{
+"id":"x119",
+"question":"Dalam maqasid syariah, menjaga agama termasuk kategori?",
+"options":[
+"Hajiyyat",
+"Daruriyyat",
+"Tahsiniyyat",
+"Makruh"
+],
+"answer":1,
+"category":"maqasid"
+},
+{
+"id":"x120",
+"question":"Jumlah tujuan pokok maqasid syariah menurut Syatibi adalah?",
+"options":[
+"3",
+"5",
+"7",
+"10"
+],
+"answer":1,
+"category":"maqasid"
+},
+
+{
+"id":"x121",
+"question":"Ilmu kalam berkembang untuk mempertahankan akidah dari?",
+"options":[
+"Fiqh",
+"Pemikiran filsafat",
+"Tafsir",
+"Hadits"
+],
+"answer":1,
+"category":"aqidah"
+},
+{
+"id":"x122",
+"question":"Aliran Mu’tazilah terkenal menekankan?",
+"options":[
+"Tekstualisme",
+"Akal rasional",
+"Fiqh",
+"Tasawuf"
+],
+"answer":1,
+"category":"aqidah"
+},
+{
+"id":"x123",
+"question":"Imam Abu Hasan al-Asy’ari sebelumnya mengikuti aliran?",
+"options":[
+"Hanbali",
+"Mu’tazilah",
+"Maliki",
+"Syafi’i"
+],
+"answer":1,
+"category":"aqidah"
+},
+{
+"id":"x124",
+"question":"Ilmu tasawuf fokus pada?",
+"options":[
+"Hukum",
+"Penyucian jiwa",
+"Sejarah",
+"Matematika"
+],
+"answer":1,
+"category":"tasawuf"
+},
+{
+"id":"x125",
+"question":"Konsep 'ihsan' dalam hadits Jibril berarti?",
+"options":[
+"Berbuat baik",
+"Menyembah Allah seakan melihat-Nya",
+"Zakat",
+"Puasa"
+],
+"answer":1,
+"category":"aqidah"
+},
+{
+"id":"x126",
+"question":"Imam Bukhari lahir di?",
+"options":[
+"Baghdad",
+"Bukhara",
+"Damaskus",
+"Madinah"
+],
+"answer":1,
+"category":"sejarah"
+},
+{
+"id":"x127",
+"question":"Ibnu Khaldun terkenal dengan kitab?",
+"options":[
+"Muqaddimah",
+"Tafsir",
+"Sahih",
+"Muwatta"
+],
+"answer":0,
+"category":"sejarah"
+},
+{
+"id":"x128",
+"question":"Ibnu Khaldun dikenal sebagai pelopor ilmu?",
+"options":[
+"Sosiologi",
+"Fiqh",
+"Tafsir",
+"Tasawuf"
+],
+"answer":0,
+"category":"sejarah"
+},
+{
+"id":"x129",
+"question":"Al-Biruni terkenal dalam bidang?",
+"options":[
+"Astronomi",
+"Fiqh",
+"Hadits",
+"Tafsir"
+],
+"answer":0,
+"category":"civilization"
+},
+{
+"id":"x130",
+"question":"Ibnu al-Haitsam terkenal dalam bidang?",
+"options":[
+"Optik",
+"Fiqh",
+"Tasawuf",
+"Hadits"
+],
+"answer":0,
+"category":"civilization"
+},
+
+{
+"id":"x131",
+"question":"Dalam fiqh muamalah, akad ijarah berarti?",
+"options":[
+"Sewa",
+"Jual beli",
+"Hibah",
+"Pinjaman"
+],
+"answer":0,
+"category":"muamalah"
+},
+{
+"id":"x132",
+"question":"Akad kafalah berarti?",
+"options":[
+"Penjaminan",
+"Sewa",
+"Jual beli",
+"Pinjam"
+],
+"answer":0,
+"category":"muamalah"
+},
+{
+"id":"x133",
+"question":"Akad wakalah berarti?",
+"options":[
+"Perwakilan",
+"Jual beli",
+"Hibah",
+"Pinjaman"
+],
+"answer":0,
+"category":"muamalah"
+},
+{
+"id":"x134",
+"question":"Akad hibah berarti?",
+"options":[
+"Pinjaman",
+"Pemberian tanpa imbalan",
+"Jual beli",
+"Sewa"
+],
+"answer":1,
+"category":"muamalah"
+},
+{
+"id":"x135",
+"question":"Gharar dalam muamalah berarti?",
+"options":[
+"Keuntungan",
+"Ketidakjelasan",
+"Hibah",
+"Zakat"
+],
+"answer":1,
+"category":"muamalah"
+},
+{
+"id":"x136",
+"question":"Maisir berarti?",
+"options":[
+"Perjudian",
+"Sedekah",
+"Zakat",
+"Haji"
+],
+"answer":0,
+"category":"muamalah"
+},
+{
+"id":"x137",
+"question":"Ilmu faraidh adalah ilmu tentang?",
+"options":[
+"Waris",
+"Tafsir",
+"Fiqh",
+"Hadits"
+],
+"answer":0,
+"category":"mawaris"
+},
+{
+"id":"x138",
+"question":"Kakek dalam mawaris bisa menggantikan?",
+"options":[
+"Ayah",
+"Anak",
+"Ibu",
+"Istri"
+],
+"answer":0,
+"category":"mawaris"
+},
+{
+"id":"x139",
+"question":"Saudara kandung terhalang warisan oleh?",
+"options":[
+"Anak laki-laki",
+"Paman",
+"Sepupu",
+"Istri"
+],
+"answer":0,
+"category":"mawaris"
+},
+{
+"id":"x140",
+"question":"Dalam fiqh, istishab berarti?",
+"options":[
+"Menetapkan hukum asal sampai ada dalil baru",
+"Menghapus hukum",
+"Menetapkan hukum baru",
+"Qiyas"
+],
+"answer":0,
+"category":"usul-fiqh"
+},
+
+{
+"id":"x141",
+"question":"Istilah 'takhayyur' dalam fiqh berarti?",
+"options":[
+"Memilih pendapat terkuat",
+"Menghapus hukum",
+"Menolak mazhab",
+"Ijtihad"
+],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x142",
+"question":"Talfiq berarti?",
+"options":[
+"Menggabungkan pendapat mazhab",
+"Menolak mazhab",
+"Ijtihad",
+"Qiyas"
+],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x143",
+"question":"Dalam qawaid fiqh, 'al-‘adah muhakkamah' berarti?",
+"options":[
+"Adat bisa jadi hukum",
+"Adat haram",
+"Adat wajib",
+"Adat makruh"
+],
+"answer":0,
+"category":"qawaid-fiqh"
+},
+{
+"id":"x144",
+"question":"Kaidah 'la darar wa la dirar' berarti?",
+"options":[
+"Tidak boleh saling merugikan",
+"Wajib merugikan",
+"Boleh riba",
+"Tidak ada hukum"
+],
+"answer":0,
+"category":"qawaid-fiqh"
+},
+{
+"id":"x145",
+"question":"Imam Malik terkenal dengan kitab?",
+"options":[
+"Al-Muwatta",
+"Sahih Bukhari",
+"Musnad",
+"Risalah"
+],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x146",
+"question":"Mazhab Maliki berkembang di wilayah?",
+"options":[
+"Afrika Utara",
+"India",
+"Indonesia",
+"Turki"
+],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x147",
+"question":"Mazhab Hanbali banyak diikuti di?",
+"options":[
+"Arab Saudi",
+"Indonesia",
+"Turki",
+"India"
+],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x148",
+"question":"Imam Abu Hanifah hidup pada masa?",
+"options":[
+"Tabi'in",
+"Sahabat",
+"Utsmani",
+"Abbasiyah akhir"
+],
+"answer":0,
+"category":"sejarah"
+},
+{
+"id":"x149",
+"question":"Ilmu tafsir bil ma’tsur berarti?",
+"options":[
+"Tafsir berdasarkan riwayat",
+"Tafsir akal",
+"Tafsir modern",
+"Tafsir fiqh"
+],
+"answer":0,
+"category":"tafsir"
+},
+{
+"id":"x150",
+"question":"Tafsir bir ra’yi berarti?",
+"options":[
+"Tafsir dengan ijtihad rasional",
+"Tafsir tanpa dalil",
+"Tafsir palsu",
+"Tafsir haram"
+],
+"answer":0,
+"category":"tafsir"
+},
+
+{
+"id":"x151",
+"question":"Dalam qira’at, jumlah imam qira’at mutawatir adalah?",
+"options":["7","5","3","10"],
+"answer":0,
+"category":"qiraat"
+},
+{
+"id":"x152",
+"question":"Imam Qira’at Ibnu Kathir berasal dari?",
+"options":["Makkah","Kufah","Basrah","Madinah"],
+"answer":0,
+"category":"qiraat"
+},
+{
+"id":"x153",
+"question":"Imam Qira’at Abu Amr berasal dari?",
+"options":["Basrah","Makkah","Madinah","Kufah"],
+"answer":0,
+"category":"qiraat"
+},
+{
+"id":"x154",
+"question":"Ilmu 'gharibul hadits' mempelajari?",
+"options":[
+"Kata asing dalam hadits",
+"Sanad",
+"Fiqh",
+"Tafsir"
+],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x155",
+"question":"Ilmu 'nasikh wa mansukh' penting untuk memahami?",
+"options":[
+"Perubahan hukum",
+"Bahasa",
+"Sejarah",
+"Qiraat"
+],
+"answer":0,
+"category":"ulumul-quran"
+},
+{
+"id":"x156",
+"question":"Istilah 'tadwin hadits' berarti?",
+"options":[
+"Pengumpulan hadits",
+"Penghapusan hadits",
+"Penafsiran",
+"Fiqh"
+],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x157",
+"question":"Kodifikasi hadits besar dimulai pada masa khalifah?",
+"options":[
+"Umar bin Abdul Aziz",
+"Umar bin Khattab",
+"Ali",
+"Utsman"
+],
+"answer":0,
+"category":"sejarah"
+},
+{
+"id":"x158",
+"question":"Ilmu 'maqasid syariah' mempelajari?",
+"options":[
+"Tujuan hukum Islam",
+"Tafsir",
+"Hadits",
+"Qiraat"
+],
+"answer":0,
+"category":"maqasid"
+},
+{
+"id":"x159",
+"question":"Dalam maqasid, menjaga akal termasuk kategori?",
+"options":[
+"Daruriyyat",
+"Tahsiniyyat",
+"Hajiyyat",
+"Makruh"
+],
+"answer":0,
+"category":"maqasid"
+},
+{
+"id":"x160",
+"question":"Menjaga keturunan termasuk?",
+"options":[
+"Daruriyyat",
+"Tahsiniyyat",
+"Hajiyyat",
+"Sunnah"
+],
+"answer":0,
+"category":"maqasid"
+},
+
+{
+"id":"x161",
+"question":"Istilah 'taklif' dalam ushul fiqh berarti?",
+"options":[
+"Pembebanan hukum syariat",
+"Penghapusan hukum",
+"Qiyas",
+"Fatwa"
+],
+"answer":0,
+"category":"usul-fiqh"
+},
+{
+"id":"x162",
+"question":"Mukallaf adalah orang yang?",
+"options":[
+"Terkena beban hukum",
+"Tidak berakal",
+"Anak kecil",
+"Tidak baligh"
+],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x163",
+"question":"Syarat taklif adalah?",
+"options":[
+"Baligh dan berakal",
+"Kaya",
+"Sehat saja",
+"Laki-laki"
+],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x164",
+"question":"Hukum asal segala muamalah adalah?",
+"options":[
+"Haram",
+"Mubah",
+"Wajib",
+"Makruh"
+],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"x165",
+"question":"Hukum asal ibadah adalah?",
+"options":[
+"Boleh",
+"Haram sampai ada dalil",
+"Wajib",
+"Makruh"
+],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"x166",
+"question":"Dalam ushul fiqh, 'amr' menunjukkan hukum?",
+"options":[
+"Wajib",
+"Haram",
+"Mubah",
+"Makruh"
+],
+"answer":0,
+"category":"usul-fiqh"
+},
+{
+"id":"x167",
+"question":"Nahi dalam dalil menunjukkan hukum?",
+"options":[
+"Haram",
+"Wajib",
+"Sunnah",
+"Mubah"
+],
+"answer":0,
+"category":"usul-fiqh"
+},
+{
+"id":"x168",
+"question":"Istilah 'mafhum mukhalafah' berarti?",
+"options":[
+"Makna kebalikan dari lafaz",
+"Makna langsung",
+"Makna umum",
+"Makna qiyas"
+],
+"answer":0,
+"category":"usul-fiqh"
+},
+{
+"id":"x169",
+"question":"Mafhum muwafaqah berarti?",
+"options":[
+"Makna sejalan dengan lafaz",
+"Kebalikan",
+"Qiyas",
+"Nasakh"
+],
+"answer":0,
+"category":"usul-fiqh"
+},
+{
+"id":"x170",
+"question":"Istilah 'ijtihad jama’i' berarti?",
+"options":[
+"Ijtihad kolektif ulama",
+"Ijtihad individu",
+"Taqlid",
+"Fatwa"
+],
+"answer":0,
+"category":"usul-fiqh"
+},
+
+{
+"id":"x171",
+"question":"Majma’ Fiqh Islami adalah lembaga?",
+"options":[
+"Ijtihad kolektif modern",
+"Tafsir",
+"Hadits",
+"Sejarah"
+],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x172",
+"question":"Dalam fiqh kontemporer, bank syariah menghindari?",
+"options":[
+"Riba",
+"Zakat",
+"Sedekah",
+"Haji"
+],
+"answer":0,
+"category":"muamalah"
+},
+{
+"id":"x173",
+"question":"Fatwa kontemporer sering menggunakan metode?",
+"options":[
+"Maqasid syariah",
+"Tafsir saja",
+"Hadits saja",
+"Tanpa dalil"
+],
+"answer":0,
+"category":"usul-fiqh"
+},
+{
+"id":"x174",
+"question":"Ilmu falak digunakan untuk menentukan?",
+"options":[
+"Waktu shalat & hilal",
+"Waris",
+"Zakat",
+"Hadits"
+],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x175",
+"question":"Rukyat hilal digunakan untuk menentukan awal?",
+"options":[
+"Bulan hijriyah",
+"Tahun masehi",
+"Shalat",
+"Zakat"
+],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x176",
+"question":"Hisab adalah metode?",
+"options":[
+"Perhitungan astronomi",
+"Tafsir",
+"Fiqh",
+"Hadits"
+],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x177",
+"question":"Ilmu mantik mempelajari?",
+"options":[
+"Logika",
+"Tafsir",
+"Fiqh",
+"Hadits"
+],
+"answer":0,
+"category":"philosophy"
+},
+{
+"id":"x178",
+"question":"Filsafat Islam berkembang pesat pada masa?",
+"options":[
+"Abbasiyah",
+"Utsmani",
+"Umayyah awal",
+"Modern"
+],
+"answer":0,
+"category":"sejarah"
+},
+{
+"id":"x179",
+"question":"Baitul Hikmah berada di kota?",
+"options":[
+"Baghdad",
+"Damaskus",
+"Kairo",
+"Cordoba"
+],
+"answer":0,
+"category":"sejarah"
+},
+{
+"id":"x180",
+"question":"Gerakan penerjemahan besar terjadi pada masa?",
+"options":[
+"Abbasiyah",
+"Umayyah",
+"Utsmani",
+"Mamluk"
+],
+"answer":0,
+"category":"sejarah"
+},
+
+{
+"id":"x181",
+"question":"Ilmu tafsir tematik disebut?",
+"options":[
+"Tafsir maudhu’i",
+"Tafsir tahlili",
+"Tafsir ijmali",
+"Tafsir lughawi"
+],
+"answer":0,
+"category":"tafsir"
+},
+{
+"id":"x182",
+"question":"Tafsir tahlili adalah metode tafsir?",
+"options":[
+"Ayat per ayat",
+"Tematik",
+"Ringkas",
+"Bahasa"
+],
+"answer":0,
+"category":"tafsir"
+},
+{
+"id":"x183",
+"question":"Tafsir ijmali berarti?",
+"options":[
+"Ringkas global",
+"Detail panjang",
+"Tematik",
+"Bahasa"
+],
+"answer":0,
+"category":"tafsir"
+},
+{
+"id":"x184",
+"question":"Ilmu balaghah mencakup?",
+"options":[
+"Ma’ani, bayan, badi’",
+"Tajwid",
+"Fiqh",
+"Hadits"
+],
+"answer":0,
+"category":"arabic"
+},
+{
+"id":"x185",
+"question":"Ilmu bayan mempelajari?",
+"options":[
+"Gaya bahasa kiasan",
+"Tata bahasa",
+"Fiqh",
+"Hadits"
+],
+"answer":0,
+"category":"arabic"
+},
+{
+"id":"x186",
+"question":"Ilmu ma’ani mempelajari?",
+"options":[
+"Struktur kalimat",
+"Tajwid",
+"Fiqh",
+"Sejarah"
+],
+"answer":0,
+"category":"arabic"
+},
+{
+"id":"x187",
+"question":"Ilmu badi’ mempelajari?",
+"options":[
+"Keindahan retorika",
+"Fiqh",
+"Tafsir",
+"Hadits"
+],
+"answer":0,
+"category":"arabic"
+},
+{
+"id":"x188",
+"question":"Istilah 'sunnatullah' berarti?",
+"options":[
+"Hukum Allah di alam",
+"Hadits",
+"Fiqh",
+"Tafsir"
+],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"x189",
+"question":"Tawakal berarti?",
+"options":[
+"Berserah kepada Allah setelah usaha",
+"Pasrah tanpa usaha",
+"Takut",
+"Zakat"
+],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"x190",
+"question":"Ikhlas berarti?",
+"options":[
+"Memurnikan niat karena Allah",
+"Riya",
+"Sum’ah",
+"Haram"
+],
+"answer":0,
+"category":"aqidah"
+},
+
+{
+"id":"x191",
+"question":"Riya berarti?",
+"options":[
+"Pamer ibadah",
+"Ikhlas",
+"Sabar",
+"Syukur"
+],
+"answer":0,
+"category":"akhlaq"
+},
+{
+"id":"x192",
+"question":"Ujub berarti?",
+"options":[
+"Bangga diri",
+"Ikhlas",
+"Tawakal",
+"Sabar"
+],
+"answer":0,
+"category":"akhlaq"
+},
+{
+"id":"x193",
+"question":"Hasad berarti?",
+"options":[
+"Iri terhadap nikmat orang lain",
+"Syukur",
+"Sabar",
+"Tawakal"
+],
+"answer":0,
+"category":"akhlaq"
+},
+{
+"id":"x194",
+"question":"Sabar berarti?",
+"options":[
+"Menahan diri dalam ketaatan",
+"Marah",
+"Putus asa",
+"Haram"
+],
+"answer":0,
+"category":"akhlaq"
+},
+{
+"id":"x195",
+"question":"Syukur berarti?",
+"options":[
+"Berterima kasih kepada Allah",
+"Kufur",
+"Putus asa",
+"Haram"
+],
+"answer":0,
+"category":"akhlaq"
+},
+{
+"id":"x196",
+"question":"Taqwa berarti?",
+"options":[
+"Takut & taat kepada Allah",
+"Marah",
+"Lupa",
+"Haram"
+],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"x197",
+"question":"Iman meningkat dengan?",
+"options":[
+"Ketaatan",
+"Maksiat",
+"Malas",
+"Lupa"
+],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"x198",
+"question":"Iman berkurang dengan?",
+"options":[
+"Maksiat",
+"Zikir",
+"Shalat",
+"Ilmu"
+],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"x199",
+"question":"Tujuan utama syariat adalah?",
+"options":[
+"Maslahah manusia",
+"Harta",
+"Kekuasaan",
+"Dunia"
+],
+"answer":0,
+"category":"maqasid"
+},
+{
+"id":"x200",
+"question":"Sumber utama hukum Islam adalah?",
+"options":[
+"Al-Qur'an & Sunnah",
+"Pendapat ulama",
+"Adat",
+"Akal saja"
+],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"x201",
+"question":"Dalam ushul fiqh, 'istishlah' identik dengan?",
+"options":["Maslahah mursalah","Qiyas","Ijma","Nasakh"],
+"answer":0,
+"category":"usul-fiqh"
+},
+{
+"id":"x202",
+"question":"Maslahah mursalah adalah kemaslahatan yang?",
+"options":["Ada dalil khusus","Tidak ada dalil khusus tapi tidak bertentangan syariah","Bertentangan","Diharamkan"],
+"answer":1,
+"category":"usul-fiqh"
+},
+{
+"id":"x203",
+"question":"Istihsan menurut Hanafiyah adalah?",
+"options":["Meninggalkan qiyas menuju dalil lebih kuat","Menolak qiyas","Ijma","Nasakh"],
+"answer":0,
+"category":"usul-fiqh"
+},
+{
+"id":"x204",
+"question":"Sad adz-dzari’ah berarti?",
+"options":["Menutup jalan menuju haram","Membuka jalan","Qiyas","Ijma"],
+"answer":0,
+"category":"usul-fiqh"
+},
+{
+"id":"x205",
+"question":"Fath adz-dzari’ah berarti?",
+"options":["Membuka jalan menuju maslahat","Menutup jalan","Nasakh","Ijtihad"],
+"answer":0,
+"category":"usul-fiqh"
+},
+{
+"id":"x206",
+"question":"Al-‘urf dalam ushul fiqh berarti?",
+"options":["Kebiasaan masyarakat","Dalil qath’i","Ijma","Hadits"],
+"answer":0,
+"category":"usul-fiqh"
+},
+{
+"id":"x207",
+"question":"Syarat ‘urf dapat dijadikan hukum adalah?",
+"options":["Tidak bertentangan syariat","Bertentangan","Haram","Makruh"],
+"answer":0,
+"category":"usul-fiqh"
+},
+{
+"id":"x208",
+"question":"Istilah 'qath’i al-dalalah' berarti?",
+"options":["Makna pasti","Makna dugaan","Majaz","Mutasyabih"],
+"answer":0,
+"category":"usul-fiqh"
+},
+{
+"id":"x209",
+"question":"Zhanni al-dalalah berarti?",
+"options":["Makna dugaan","Makna pasti","Nasakh","Ijma"],
+"answer":0,
+"category":"usul-fiqh"
+},
+{
+"id":"x210",
+"question":"Dalil qath’i adalah dalil yang?",
+"options":["Pasti kebenarannya","Dugaan","Lemah","Palsu"],
+"answer":0,
+"category":"usul-fiqh"
+},
+
+{
+"id":"x211",
+"question":"Dalam mustalah hadits, hadits musalsal adalah?",
+"options":["Sanad dengan pola tertentu berulang","Sanad putus","Sanad palsu","Mutawatir"],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x212",
+"question":"Hadits mudtarib adalah hadits yang?",
+"options":["Sanadnya kacau","Sanad kuat","Mutawatir","Sahih"],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x213",
+"question":"Hadits maqlub berarti?",
+"options":["Terbalik sanad atau matan","Mutawatir","Sahih","Hasan"],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x214",
+"question":"Hadits marfu’ adalah hadits yang disandarkan kepada?",
+"options":["Nabi ﷺ","Sahabat","Tabi’in","Ulama"],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x215",
+"question":"Hadits mauquf disandarkan kepada?",
+"options":["Sahabat","Nabi","Tabi’in","Ulama"],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x216",
+"question":"Hadits maqtu’ disandarkan kepada?",
+"options":["Tabi’in","Nabi","Sahabat","Ulama"],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x217",
+"question":"Sahih li ghairihi adalah hadits?",
+"options":["Naik derajat karena penguat","Sahih mutlak","Lemah","Palsu"],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x218",
+"question":"Hasan li dzatihi berarti?",
+"options":["Hasan karena sanadnya sendiri","Karena penguat","Lemah","Palsu"],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x219",
+"question":"Hadits mu’an’an adalah sanad dengan lafaz?",
+"options":["‘an","Haddatsana","Sami’tu","Qala"],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x220",
+"question":"Hadits mu’annan memerlukan syarat?",
+"options":["Tidak ada tadlis","Palsu","Terputus","Mutawatir"],
+"answer":0,
+"category":"hadith"
+},
+
+{
+"id":"x221",
+"question":"Dalam qira’at, Warsh membaca mad badal biasanya?",
+"options":["Panjang","Pendek","Tidak ada","Haram"],
+"answer":0,
+"category":"qiraat"
+},
+{
+"id":"x222",
+"question":"Qira’at Hamzah terkenal dengan?",
+"options":["Imalah","Tidak ada mad","Tajwid khusus","Qiraat lemah"],
+"answer":0,
+"category":"qiraat"
+},
+{
+"id":"x223",
+"question":"Qira’at Kisai berasal dari kota?",
+"options":["Kufah","Madinah","Makkah","Basrah"],
+"answer":0,
+"category":"qiraat"
+},
+{
+"id":"x224",
+"question":"Ilmu tajwid mempelajari?",
+"options":["Cara membaca Al-Qur’an","Fiqh","Hadits","Tafsir"],
+"answer":0,
+"category":"quran"
+},
+{
+"id":"x225",
+"question":"Mad wajib muttasil terjadi ketika?",
+"options":["Mad bertemu hamzah dalam satu kata","Terpisah","Tidak ada","Haram"],
+"answer":0,
+"category":"quran"
+},
+{
+"id":"x226",
+"question":"Mad jaiz munfasil terjadi ketika?",
+"options":["Mad bertemu hamzah beda kata","Satu kata","Tidak ada","Haram"],
+"answer":0,
+"category":"quran"
+},
+{
+"id":"x227",
+"question":"Ikhfa terjadi ketika nun mati bertemu huruf?",
+"options":["15 huruf ikhfa","Ba","Lam","Ra"],
+"answer":0,
+"category":"tajwid"
+},
+{
+"id":"x228",
+"question":"Idgham bighunnah terjadi ketika nun mati bertemu huruf?",
+"options":["Ya, nun, mim, wau","Ba","Lam","Ra"],
+"answer":0,
+"category":"tajwid"
+},
+{
+"id":"x229",
+"question":"Iqlab terjadi ketika nun mati bertemu huruf?",
+"options":["Ba","Lam","Ra","Ya"],
+"answer":0,
+"category":"tajwid"
+},
+{
+"id":"x230",
+"question":"Idzhar halqi terjadi ketika nun mati bertemu huruf?",
+"options":["Huruf halqi","Ba","Lam","Ra"],
+"answer":0,
+"category":"tajwid"
+},
+
+{
+"id":"x231",
+"question":"Dalam mawaris, bagian suami jika istri tidak punya anak adalah?",
+"options":["1/2","1/4","1/8","1/3"],
+"answer":0,
+"category":"mawaris"
+},
+{
+"id":"x232",
+"question":"Bagian suami jika istri punya anak?",
+"options":["1/4","1/2","1/8","1/3"],
+"answer":0,
+"category":"mawaris"
+},
+{
+"id":"x233",
+"question":"Bagian istri jika suami tidak punya anak?",
+"options":["1/4","1/8","1/2","1/3"],
+"answer":0,
+"category":"mawaris"
+},
+{
+"id":"x234",
+"question":"Bagian istri jika suami punya anak?",
+"options":["1/8","1/4","1/2","1/3"],
+"answer":0,
+"category":"mawaris"
+},
+{
+"id":"x235",
+"question":"Ibu mendapat 1/3 jika?",
+"options":["Tidak ada anak & saudara","Ada anak","Ada ayah","Ada suami"],
+"answer":0,
+"category":"mawaris"
+},
+{
+"id":"x236",
+"question":"Ibu mendapat 1/6 jika?",
+"options":["Ada anak","Tidak ada anak","Tidak ada ayah","Tidak ada suami"],
+"answer":0,
+"category":"mawaris"
+},
+{
+"id":"x237",
+"question":"Anak perempuan tunggal mendapat?",
+"options":["1/2","1/4","1/8","1/6"],
+"answer":0,
+"category":"mawaris"
+},
+{
+"id":"x238",
+"question":"Dua anak perempuan atau lebih mendapat?",
+"options":["2/3","1/2","1/3","1/4"],
+"answer":0,
+"category":"mawaris"
+},
+{
+"id":"x239",
+"question":"Saudara seibu satu orang mendapat?",
+"options":["1/6","1/2","1/4","1/3"],
+"answer":0,
+"category":"mawaris"
+},
+{
+"id":"x240",
+"question":"Dua saudara seibu atau lebih mendapat?",
+"options":["1/3","1/2","1/6","2/3"],
+"answer":0,
+"category":"mawaris"
+},
+
+{
+"id":"x241",
+"question":"Ilmu kalam membahas sifat Allah seperti?",
+"options":["Wujud, qidam, baqa","Fiqh","Hadits","Sejarah"],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"x242",
+"question":"Sifat mustahil bagi Allah adalah?",
+"options":["Adam","Wujud","Qidam","Baqa"],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"x243",
+"question":"Sifat jaiz bagi Allah adalah?",
+"options":["Fi’lu kulli mumkin","Wujud","Qidam","Baqa"],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"x244",
+"question":"Ilmu tauhid juga disebut?",
+"options":["Aqidah","Fiqh","Tafsir","Hadits"],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"x245",
+"question":"Tauhid rububiyah berarti?",
+"options":["Meyakini Allah sebagai pencipta","Ibadah","Nama sifat","Takdir"],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"x246",
+"question":"Tauhid uluhiyah berarti?",
+"options":["Ibadah hanya kepada Allah","Pencipta","Nama sifat","Takdir"],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"x247",
+"question":"Tauhid asma wa sifat berarti?",
+"options":["Menetapkan nama sifat Allah","Ibadah","Pencipta","Takdir"],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"x248",
+"question":"Ilmu tasawuf klasik dipelopori tokoh seperti?",
+"options":["Al-Ghazali","Imam Malik","Bukhari","Syafi’i"],
+"answer":0,
+"category":"tasawuf"
+},
+{
+"id":"x249",
+"question":"Kitab Ihya Ulumuddin ditulis oleh?",
+"options":["Al-Ghazali","Bukhari","Syafi’i","Malik"],
+"answer":0,
+"category":"sejarah"
+},
+{
+"id":"x250",
+"question":"Imam Nawawi terkenal dengan kitab?",
+"options":["Riyadhus Shalihin","Muwatta","Musnad","Tafsir"],
+"answer":0,
+"category":"hadith"
+},
+
+{
+"id":"x251",
+"question":"Kitab Arba’in Nawawi berisi?",
+"options":["40 hadits pokok","Fiqh","Tafsir","Sejarah"],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x252",
+"question":"Kitab Bulughul Maram ditulis oleh?",
+"options":["Ibnu Hajar","Bukhari","Muslim","Nawawi"],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x253",
+"question":"Kitab Fathul Bari adalah syarah kitab?",
+"options":["Sahih Bukhari","Muslim","Tirmidzi","Nasai"],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x254",
+"question":"Kitab Al-Mughni ditulis oleh?",
+"options":["Ibnu Qudamah","Syafi’i","Malik","Nawawi"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x255",
+"question":"Kitab Al-Umm ditulis oleh?",
+"options":["Imam Syafi’i","Malik","Ahmad","Abu Hanifah"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x256",
+"question":"Kitab Al-Muwatta disusun sebelum?",
+"options":["Sahih Bukhari","Muslim","Tirmidzi","Nasai"],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"x257",
+"question":"Ilmu maqamat dalam tasawuf membahas?",
+"options":["Tingkatan spiritual","Fiqh","Hadits","Sejarah"],
+"answer":0,
+"category":"tasawuf"
+},
+{
+"id":"x258",
+"question":"Hal dalam tasawuf berarti?",
+"options":["Keadaan spiritual sementara","Tingkatan tetap","Fiqh","Hadits"],
+"answer":0,
+"category":"tasawuf"
+},
+{
+"id":"x259",
+"question":"Zuhud berarti?",
+"options":["Tidak terikat dunia","Miskin","Kaya","Sedekah"],
+"answer":0,
+"category":"tasawuf"
+},
+{
+"id":"x260",
+"question":"Tawakkal berarti?",
+"options":["Berserah setelah usaha","Pasrah tanpa usaha","Malas","Putus asa"],
+"answer":0,
+"category":"tasawuf"
+},
+
+{
+"id":"x261",
+"question":"Ilmu adab mempelajari?",
+"options":["Akhlak","Fiqh","Hadits","Tafsir"],
+"answer":0,
+"category":"akhlaq"
+},
+{
+"id":"x262",
+"question":"Akhlak kepada orang tua disebut?",
+"options":["Birrul walidain","Zakat","Haji","Jihad"],
+"answer":0,
+"category":"akhlaq"
+},
+{
+"id":"x263",
+"question":"Silaturahim berarti?",
+"options":["Menyambung hubungan","Memutus","Benci","Dendam"],
+"answer":0,
+"category":"akhlaq"
+},
+{
+"id":"x264",
+"question":"Ghibah berarti?",
+"options":["Membicarakan keburukan","Nasihat","Doa","Zikir"],
+"answer":0,
+"category":"akhlaq"
+},
+{
+"id":"x265",
+"question":"Namimah berarti?",
+"options":["Adu domba","Sedekah","Zakat","Shalat"],
+"answer":0,
+"category":"akhlaq"
+},
+{
+"id":"x266",
+"question":"Takabbur berarti?",
+"options":["Sombong","Ikhlas","Tawakal","Sabar"],
+"answer":0,
+"category":"akhlaq"
+},
+{
+"id":"x267",
+"question":"Tawadhu berarti?",
+"options":["Rendah hati","Sombong","Malas","Putus asa"],
+"answer":0,
+"category":"akhlaq"
+},
+{
+"id":"x268",
+"question":"Hilm berarti?",
+"options":["Sabar & tenang","Marah","Sedih","Takut"],
+"answer":0,
+"category":"akhlaq"
+},
+{
+"id":"x269",
+"question":"Wara’ berarti?",
+"options":["Menjauhi syubhat","Makan banyak","Malas","Boros"],
+"answer":0,
+"category":"akhlaq"
+},
+{
+"id":"x270",
+"question":"Qana’ah berarti?",
+"options":["Merasa cukup","Serakah","Boros","Malas"],
+"answer":0,
+"category":"akhlaq"
+},
+
+{
+"id":"x271",
+"question":"Ilmu siyasah syar’iyyah mempelajari?",
+"options":["Pemerintahan Islam","Tafsir","Hadits","Fiqh ibadah"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x272",
+"question":"Khilafah Rasyidah berlangsung sekitar?",
+"options":["30 tahun","10 tahun","100 tahun","5 tahun"],
+"answer":0,
+"category":"sejarah"
+},
+{
+"id":"x273",
+"question":"Khalifah pertama adalah?",
+"options":["Abu Bakar","Umar","Utsman","Ali"],
+"answer":0,
+"category":"sejarah"
+},
+{
+"id":"x274",
+"question":"Khalifah kedua adalah?",
+"options":["Umar","Ali","Utsman","Muawiyah"],
+"answer":0,
+"category":"sejarah"
+},
+{
+"id":"x275",
+"question":"Khalifah ketiga adalah?",
+"options":["Utsman","Ali","Umar","Abu Bakar"],
+"answer":0,
+"category":"sejarah"
+},
+{
+"id":"x276",
+"question":"Khalifah keempat adalah?",
+"options":["Ali","Utsman","Umar","Abu Bakar"],
+"answer":0,
+"category":"sejarah"
+},
+{
+"id":"x277",
+"question":"Dinasti Umayyah berpusat di?",
+"options":["Damaskus","Baghdad","Kairo","Madinah"],
+"answer":0,
+"category":"sejarah"
+},
+{
+"id":"x278",
+"question":"Dinasti Abbasiyah berpusat di?",
+"options":["Baghdad","Damaskus","Kairo","Cordoba"],
+"answer":0,
+"category":"sejarah"
+},
+{
+"id":"x279",
+"question":"Andalusia berada di wilayah?",
+"options":["Spanyol","Turki","Mesir","Irak"],
+"answer":0,
+"category":"sejarah"
+},
+{
+"id":"x280",
+"question":"Kota Cordoba terkenal pada masa?",
+"options":["Umayyah Andalusia","Abbasiyah","Utsmani","Mamluk"],
+"answer":0,
+"category":"sejarah"
+},
+
+{
+"id":"x281",
+"question":"Ilmu falak digunakan menentukan?",
+"options":["Arah kiblat","Waris","Hadits","Tafsir"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x282",
+"question":"Miqat adalah?",
+"options":["Batas ihram","Shalat","Zakat","Puasa"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x283",
+"question":"Ihram adalah?",
+"options":["Niat haji/umrah","Shalat","Puasa","Zakat"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x284",
+"question":"Sa’i adalah?",
+"options":["Lari antara Safa Marwah","Tawaf","Shalat","Zakat"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x285",
+"question":"Wuquf adalah?",
+"options":["Berhenti di Arafah","Tawaf","Sa’i","Shalat"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x286",
+"question":"Tawaf ifadah adalah rukun?",
+"options":["Haji","Shalat","Zakat","Puasa"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x287",
+"question":"Hadyu adalah?",
+"options":["Hewan kurban haji","Zakat","Puasa","Shalat"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x288",
+"question":"Dam dalam haji berarti?",
+"options":["Denda hewan","Shalat","Puasa","Zakat"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x289",
+"question":"Tahalul berarti?",
+"options":["Keluar dari ihram","Masuk ihram","Shalat","Zakat"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x290",
+"question":"Ihram dimulai dari?",
+"options":["Miqat","Makkah","Madinah","Rumah"],
+"answer":0,
+"category":"fiqh"
+},
+
+{
+"id":"x291",
+"question":"Zakat mal wajib jika harta mencapai?",
+"options":["Nisab","Haul","Sedekah","Haji"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x292",
+"question":"Haul berarti?",
+"options":["1 tahun","1 bulan","1 hari","10 tahun"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x293",
+"question":"Nisab emas sekitar?",
+"options":["85 gram","10 gram","1 kg","1 gram"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x294",
+"question":"Zakat fitrah wajib bagi?",
+"options":["Muslim mampu","Semua orang","Non muslim","Anak kecil saja"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x295",
+"question":"Waktu zakat fitrah paling utama?",
+"options":["Sebelum shalat Id","Setelah","Bulan Syawal","Rajab"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x296",
+"question":"Puasa Ramadhan wajib bagi?",
+"options":["Muslim baligh","Anak kecil","Non muslim","Orang gila"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x297",
+"question":"Rukun puasa adalah?",
+"options":["Niat & menahan diri","Shalat","Zakat","Haji"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x298",
+"question":"Niat puasa wajib dilakukan?",
+"options":["Malam hari","Siang","Sore","Setelah berbuka"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"x299",
+"question":"Tujuan utama ibadah dalam Islam adalah?",
+"options":["Mendekat kepada Allah","Dunia","Harta","Kekuasaan"],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"x300",
+"question":"Sumber hukum Islam tertinggi adalah?",
+"options":["Al-Qur’an","Hadits saja","Ijma","Qiyas"],
+"answer":0,
+"category":"aqidah"
+}
+]

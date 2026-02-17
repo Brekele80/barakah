@@ -1,0 +1,710 @@
+[
+{
+"id":"e1",
+"question":"Kitab suci umat Islam adalah?",
+"options":["Injil","Taurat","Al-Qur'an","Zabur"],
+"answer":2,
+"category":"quran"
+},
+{
+"id":"e2",
+"question":"Nabi terakhir dalam Islam adalah?",
+"options":["Nabi Musa","Nabi Isa","Nabi Muhammad","Nabi Ibrahim"],
+"answer":2,
+"category":"prophet"
+},
+{
+"id":"e3",
+"question":"Jumlah rukun Islam ada?",
+"options":["3","4","5","6"],
+"answer":2,
+"category":"aqidah"
+},
+{
+"id":"e4",
+"question":"Shalat wajib sehari semalam berjumlah?",
+"options":["3","4","5","6"],
+"answer":2,
+"category":"fiqh"
+},
+{
+"id":"e5",
+"question":"Puasa Ramadhan dilakukan pada bulan?",
+"options":["Syawal","Ramadhan","Rajab","Dzulhijjah"],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"e6",
+"question":"Ka'bah berada di kota?",
+"options":["Madinah","Makkah","Yerusalem","Taif"],
+"answer":1,
+"category":"quran"
+},
+{
+"id":"e7",
+"question":"Nabi yang membangun Ka'bah bersama Nabi Ismail adalah?",
+"options":["Nabi Nuh","Nabi Ibrahim","Nabi Musa","Nabi Daud"],
+"answer":1,
+"category":"prophet"
+},
+{
+"id":"e8",
+"question":"Kitab Al-Qur'an diturunkan kepada Nabi?",
+"options":["Isa","Muhammad","Musa","Nuh"],
+"answer":1,
+"category":"quran"
+},
+{
+"id":"e9",
+"question":"Hari raya setelah Ramadhan adalah?",
+"options":["Idul Adha","Idul Fitri","Maulid","Asyura"],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"e10",
+"question":"Amalan pertama yang dihisab di hari kiamat adalah?",
+"options":["Puasa","Zakat","Shalat","Haji"],
+"answer":2,
+"category":"hadith"
+},
+
+{
+"id":"e11",
+"question":"Malaikat yang menyampaikan wahyu adalah?",
+"options":["Mikail","Israfil","Jibril","Ridwan"],
+"answer":2,
+"category":"aqidah"
+},
+{
+"id":"e12",
+"question":"Jumlah rukun iman ada?",
+"options":["4","5","6","7"],
+"answer":2,
+"category":"aqidah"
+},
+{
+"id":"e13",
+"question":"Kitab yang diturunkan kepada Nabi Musa adalah?",
+"options":["Zabur","Taurat","Injil","Qur'an"],
+"answer":1,
+"category":"quran"
+},
+{
+"id":"e14",
+"question":"Shalat Subuh berjumlah rakaat?",
+"options":["2","3","4","5"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"e15",
+"question":"Shalat Maghrib berjumlah rakaat?",
+"options":["2","3","4","5"],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"e16",
+"question":"Shalat Isya berjumlah rakaat?",
+"options":["2","3","4","5"],
+"answer":2,
+"category":"fiqh"
+},
+{
+"id":"e17",
+"question":"Zakat termasuk rukun Islam yang ke-?",
+"options":["1","2","3","4"],
+"answer":2,
+"category":"fiqh"
+},
+{
+"id":"e18",
+"question":"Puasa Ramadhan hukumnya?",
+"options":["Sunnah","Wajib","Makruh","Mubah"],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"e19",
+"question":"Nabi yang ditelan ikan adalah?",
+"options":["Yunus","Musa","Ibrahim","Hud"],
+"answer":0,
+"category":"prophet"
+},
+{
+"id":"e20",
+"question":"Nabi yang dapat berbicara sejak bayi adalah?",
+"options":["Isa","Yusuf","Musa","Ibrahim"],
+"answer":0,
+"category":"prophet"
+},
+
+{
+"id":"e21",
+"question":"Masjid pertama dalam Islam adalah?",
+"options":["Masjid Nabawi","Masjid Quba","Masjidil Haram","Al-Aqsa"],
+"answer":1,
+"category":"prophet"
+},
+{
+"id":"e22",
+"question":"Nabi Muhammad lahir di kota?",
+"options":["Madinah","Makkah","Taif","Damaskus"],
+"answer":1,
+"category":"prophet"
+},
+{
+"id":"e23",
+"question":"Shalat Jumat dilakukan pada hari?",
+"options":["Sabtu","Ahad","Jumat","Senin"],
+"answer":2,
+"category":"fiqh"
+},
+{
+"id":"e24",
+"question":"Air zamzam berada di?",
+"options":["Madinah","Makkah","Yaman","Mesir"],
+"answer":1,
+"category":"quran"
+},
+{
+"id":"e25",
+"question":"Al-Qur'an terdiri dari berapa juz?",
+"options":["20","25","30","40"],
+"answer":2,
+"category":"quran"
+},
+{
+"id":"e26",
+"question":"Surah pertama dalam Al-Qur'an adalah?",
+"options":["Al-Baqarah","Al-Fatihah","Yasin","Ikhlas"],
+"answer":1,
+"category":"quran"
+},
+{
+"id":"e27",
+"question":"Surah terakhir dalam Al-Qur'an adalah?",
+"options":["An-Nas","Ikhlas","Falaq","Kafirun"],
+"answer":0,
+"category":"quran"
+},
+{
+"id":"e28",
+"question":"Orang yang hijrah dari Makkah ke Madinah disebut?",
+"options":["Ansar","Muhajirin","Tabi'in","Sahabat"],
+"answer":1,
+"category":"prophet"
+},
+{
+"id":"e29",
+"question":"Kaum yang menolong Nabi di Madinah disebut?",
+"options":["Muhajirin","Ansar","Quraisy","Yahudi"],
+"answer":1,
+"category":"prophet"
+},
+{
+"id":"e30",
+"question":"Shalat sebelum Subuh disebut?",
+"options":["Tahajud","Dhuha","Rawatib","Tarawih"],
+"answer":2,
+"category":"fiqh"
+},
+
+{
+"id":"e31",
+"question":"Malaikat pencatat amal adalah?",
+"options":["Jibril","Mikail","Kiraman Katibin","Israfil"],
+"answer":2,
+"category":"aqidah"
+},
+{
+"id":"e32",
+"question":"Hari kebangkitan disebut hari?",
+"options":["Jumat","Arafah","Kiamat","Tasyrik"],
+"answer":2,
+"category":"aqidah"
+},
+{
+"id":"e33",
+"question":"Nabi yang memiliki mukjizat tongkat adalah?",
+"options":["Musa","Isa","Ibrahim","Yusuf"],
+"answer":0,
+"category":"prophet"
+},
+{
+"id":"e34",
+"question":"Nabi yang terkenal sangat sabar adalah?",
+"options":["Ayyub","Yusuf","Daud","Ilyas"],
+"answer":0,
+"category":"prophet"
+},
+{
+"id":"e35",
+"question":"Haji dilakukan di bulan?",
+"options":["Ramadhan","Syawal","Dzulhijjah","Rajab"],
+"answer":2,
+"category":"fiqh"
+},
+{
+"id":"e36",
+"question":"Puasa sunnah Senin Kamis dilakukan pada hari?",
+"options":["Senin dan Kamis","Sabtu","Ahad","Selasa"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"e37",
+"question":"Kiblat pertama umat Islam adalah?",
+"options":["Masjidil Haram","Masjid Nabawi","Masjidil Aqsa","Quba"],
+"answer":2,
+"category":"quran"
+},
+{
+"id":"e38",
+"question":"Jumlah rakaat shalat Dzuhur?",
+"options":["2","3","4","5"],
+"answer":2,
+"category":"fiqh"
+},
+{
+"id":"e39",
+"question":"Jumlah rakaat shalat Ashar?",
+"options":["2","3","4","5"],
+"answer":2,
+"category":"fiqh"
+},
+{
+"id":"e40",
+"question":"Nabi yang terkenal tampan adalah?",
+"options":["Yusuf","Musa","Hud","Shalih"],
+"answer":0,
+"category":"prophet"
+},
+
+{
+"id":"e41",
+"question":"Shalat sunnah sebelum Subuh berjumlah?",
+"options":["1","2","3","4"],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"e42",
+"question":"Doa sebelum makan dianjurkan membaca?",
+"options":["Alhamdulillah","Bismillah","Subhanallah","Allahu Akbar"],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"e43",
+"question":"Ucapan setelah bersin adalah?",
+"options":["MasyaAllah","Alhamdulillah","Astaghfirullah","Subhanallah"],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"e44",
+"question":"Orang yang mendengar bersin menjawab?",
+"options":["Barakallah","Yarhamukallah","Amin","Subhanallah"],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"e45",
+"question":"Nabi yang membuat kapal besar adalah?",
+"options":["Nuh","Hud","Musa","Isa"],
+"answer":0,
+"category":"prophet"
+},
+{
+"id":"e46",
+"question":"Kitab Zabur diturunkan kepada Nabi?",
+"options":["Musa","Daud","Isa","Ibrahim"],
+"answer":1,
+"category":"quran"
+},
+{
+"id":"e47",
+"question":"Arah shalat umat Islam disebut?",
+"options":["Qiblat","Ka'bah","Mihrab","Minbar"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"e48",
+"question":"Shalat sunnah malam disebut?",
+"options":["Dhuha","Tahajud","Tarawih","Witir"],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"e49",
+"question":"Malaikat yang meniup sangkakala adalah?",
+"options":["Jibril","Israfil","Mikail","Ridwan"],
+"answer":1,
+"category":"aqidah"
+},
+{
+"id":"e50",
+"question":"Surga dalam bahasa Arab disebut?",
+"options":["Nar","Jannah","Barzakh","Arsy"],
+"answer":1,
+"category":"aqidah"
+},
+{
+"id":"e51",
+"question":"Nama lain hari kiamat adalah?",
+"options":["Yaumul Hisab","Yaumul Jumuah","Yaumul Arafah","Yaumul Tasyrik"],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"e52",
+"question":"Iman kepada malaikat termasuk rukun iman yang ke-?",
+"options":["1","2","3","4"],
+"answer":1,
+"category":"aqidah"
+},
+{
+"id":"e53",
+"question":"Jumlah nabi dan rasul yang wajib diketahui ada?",
+"options":["10","15","20","25"],
+"answer":3,
+"category":"prophet"
+},
+{
+"id":"e54",
+"question":"Nabi pertama dalam Islam adalah?",
+"options":["Nabi Ibrahim","Nabi Adam","Nabi Nuh","Nabi Idris"],
+"answer":1,
+"category":"prophet"
+},
+{
+"id":"e55",
+"question":"Istri Nabi Adam bernama?",
+"options":["Hawa","Sarah","Maryam","Aisyah"],
+"answer":0,
+"category":"prophet"
+},
+{
+"id":"e56",
+"question":"Ayah Nabi Ibrahim bernama?",
+"options":["Azar","Ya'qub","Imran","Luqman"],
+"answer":0,
+"category":"prophet"
+},
+{
+"id":"e57",
+"question":"Nabi yang diberi mukjizat dapat menghidupkan orang mati dengan izin Allah adalah?",
+"options":["Musa","Isa","Yusuf","Ibrahim"],
+"answer":1,
+"category":"prophet"
+},
+{
+"id":"e58",
+"question":"Mukjizat utama Nabi Muhammad ﷺ adalah?",
+"options":["Tongkat","Kitab Taurat","Al-Qur'an","Kapal besar"],
+"answer":2,
+"category":"quran"
+},
+{
+"id":"e59",
+"question":"Al-Qur'an diturunkan secara bertahap selama kurang lebih?",
+"options":["10 tahun","15 tahun","20 tahun","23 tahun"],
+"answer":3,
+"category":"quran"
+},
+{
+"id":"e60",
+"question":"Wahyu pertama turun di gua?",
+"options":["Hira","Tsur","Uhud","Arafah"],
+"answer":0,
+"category":"quran"
+},
+
+{
+"id":"e61",
+"question":"Malaikat yang bertugas membagi rezeki adalah?",
+"options":["Jibril","Mikail","Israfil","Malik"],
+"answer":1,
+"category":"aqidah"
+},
+{
+"id":"e62",
+"question":"Malaikat penjaga neraka adalah?",
+"options":["Ridwan","Malik","Israfil","Munkar"],
+"answer":1,
+"category":"aqidah"
+},
+{
+"id":"e63",
+"question":"Malaikat yang bertanya di alam kubur adalah?",
+"options":["Jibril dan Mikail","Ridwan dan Malik","Munkar dan Nakir","Israfil dan Mikail"],
+"answer":2,
+"category":"aqidah"
+},
+{
+"id":"e64",
+"question":"Hari raya Idul Adha diperingati pada tanggal?",
+"options":["1 Syawal","10 Dzulhijjah","9 Dzulhijjah","12 Rabiul Awal"],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"e65",
+"question":"Puasa sunnah pada tanggal 9 Dzulhijjah disebut?",
+"options":["Puasa Asyura","Puasa Arafah","Puasa Syawal","Puasa Daud"],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"e66",
+"question":"Puasa sunnah tanggal 10 Muharram disebut?",
+"options":["Arafah","Syawal","Asyura","Daud"],
+"answer":2,
+"category":"fiqh"
+},
+{
+"id":"e67",
+"question":"Zakat fitrah wajib ditunaikan sebelum?",
+"options":["Shalat Id","Puasa Ramadhan","Shalat Jumat","Shalat Subuh"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"e68",
+"question":"Ukuran zakat fitrah setara dengan?",
+"options":["1 kg beras","2,5 kg beras","5 kg beras","10 kg beras"],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"e69",
+"question":"Orang yang berhak menerima zakat disebut?",
+"options":["Muzakki","Mustahik","Amil","Faqih"],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"e70",
+"question":"Jumlah golongan penerima zakat ada?",
+"options":["6","7","8","9"],
+"answer":2,
+"category":"fiqh"
+},
+
+{
+"id":"e71",
+"question":"Surah Al-Ikhlas termasuk surah?",
+"options":["Makkiyah","Madaniyah","Panjang","Hukum"],
+"answer":0,
+"category":"quran"
+},
+{
+"id":"e72",
+"question":"Surah Yasin sering disebut sebagai?",
+"options":["Induk Al-Qur'an","Jantung Al-Qur'an","Penutup Al-Qur'an","Pembuka Al-Qur'an"],
+"answer":1,
+"category":"quran"
+},
+{
+"id":"e73",
+"question":"Ayat Kursi terdapat dalam surah?",
+"options":["Al-Fatihah","Al-Baqarah","Ali Imran","An-Nisa"],
+"answer":1,
+"category":"quran"
+},
+{
+"id":"e74",
+"question":"Surah terpanjang dalam Al-Qur'an adalah?",
+"options":["Ali Imran","An-Nisa","Al-Baqarah","Al-A'raf"],
+"answer":2,
+"category":"quran"
+},
+{
+"id":"e75",
+"question":"Surah terpendek dalam Al-Qur'an adalah?",
+"options":["Al-Ikhlas","Al-Kautsar","An-Nas","Al-Falaq"],
+"answer":1,
+"category":"quran"
+},
+{
+"id":"e76",
+"question":"Al-Qur'an diturunkan pada malam?",
+"options":["Nisfu Sya'ban","Lailatul Qadar","Isra Mi'raj","Arafah"],
+"answer":1,
+"category":"quran"
+},
+{
+"id":"e77",
+"question":"Malam Lailatul Qadar lebih baik dari?",
+"options":["100 bulan","500 bulan","1000 bulan","2000 bulan"],
+"answer":2,
+"category":"quran"
+},
+{
+"id":"e78",
+"question":"Membaca Al-Qur'an termasuk ibadah yang bernilai?",
+"options":["Makruh","Mubah","Sunnah","Haram"],
+"answer":2,
+"category":"quran"
+},
+{
+"id":"e79",
+"question":"Setiap huruf Al-Qur'an bernilai pahala?",
+"options":["1","5","10","100"],
+"answer":2,
+"category":"hadith"
+},
+{
+"id":"e80",
+"question":"Doa merupakan bentuk?",
+"options":["Permintaan kepada manusia","Ibadah kepada Allah","Tradisi","Kebiasaan"],
+"answer":1,
+"category":"aqidah"
+},
+
+{
+"id":"e81",
+"question":"Beriman kepada hari akhir termasuk rukun iman ke-?",
+"options":["3","4","5","6"],
+"answer":3,
+"category":"aqidah"
+},
+{
+"id":"e82",
+"question":"Hari pembalasan amal disebut?",
+"options":["Yaumul Hisab","Yaumul Jumuah","Yaumul Arafah","Yaumul Hijrah"],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"e83",
+"question":"Tempat penimbangan amal di akhirat disebut?",
+"options":["Mizan","Sirath","Arsy","Barzakh"],
+"answer":0,
+"category":"aqidah"
+},
+{
+"id":"e84",
+"question":"Jembatan yang harus dilalui di akhirat disebut?",
+"options":["Barzakh","Mizan","Sirath","Arsy"],
+"answer":2,
+"category":"aqidah"
+},
+{
+"id":"e85",
+"question":"Neraka dalam bahasa Arab disebut?",
+"options":["Jannah","Nar","Firdaus","Arsy"],
+"answer":1,
+"category":"aqidah"
+},
+{
+"id":"e86",
+"question":"Surga tertinggi bernama?",
+"options":["Adn","Na'im","Firdaus","Khuld"],
+"answer":2,
+"category":"aqidah"
+},
+{
+"id":"e87",
+"question":"Amalan yang pahalanya terus mengalir disebut?",
+"options":["Sedekah jariyah","Zakat","Puasa","Haji"],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"e88",
+"question":"Menuntut ilmu hukumnya?",
+"options":["Makruh","Sunnah","Wajib","Haram"],
+"answer":2,
+"category":"hadith"
+},
+{
+"id":"e89",
+"question":"Islam mengajarkan untuk berkata?",
+"options":["Sejujurnya","Sebisanya","Seenaknya","Seperlunya"],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"e90",
+"question":"Senyum kepada sesama muslim termasuk?",
+"options":["Makruh","Sedekah","Dosa","Hibah"],
+"answer":1,
+"category":"hadith"
+},
+
+{
+"id":"e91",
+"question":"Mengucapkan salam hukumnya?",
+"options":["Wajib","Sunnah","Makruh","Haram"],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"e92",
+"question":"Menjawab salam hukumnya?",
+"options":["Sunnah","Wajib","Makruh","Mubah"],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"e93",
+"question":"Adab masuk masjid adalah mendahulukan kaki?",
+"options":["Kanan","Kiri","Bebas","Tidak ada"],
+"answer":0,
+"category":"hadith"
+},
+{
+"id":"e94",
+"question":"Adab keluar masjid mendahulukan kaki?",
+"options":["Kanan","Kiri","Bebas","Tidak ada"],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"e95",
+"question":"Menjaga kebersihan sebagian dari?",
+"options":["Budaya","Iman","Adat","Tradisi"],
+"answer":1,
+"category":"hadith"
+},
+{
+"id":"e96",
+"question":"Wudhu dilakukan untuk?",
+"options":["Membersihkan tubuh","Syarat shalat","Tradisi","Adat"],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"e97",
+"question":"Tayamum dilakukan jika?",
+"options":["Air mahal","Tidak ada air","Cuaca panas","Malam hari"],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"e98",
+"question":"Menghadap kiblat termasuk?",
+"options":["Rukun shalat","Sunnah shalat","Makruh","Mubah"],
+"answer":0,
+"category":"fiqh"
+},
+{
+"id":"e99",
+"question":"Niat shalat tempatnya di?",
+"options":["Lisan","Hati","Gerakan","Tulisan"],
+"answer":1,
+"category":"fiqh"
+},
+{
+"id":"e100",
+"question":"Shalat adalah tiang?",
+"options":["Negara","Agama","Iman","Kehidupan"],
+"answer":1,
+"category":"hadith"
+}
+]
